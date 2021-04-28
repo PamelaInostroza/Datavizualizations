@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>World conflicts visualizations</title>
+
+        <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    </head>
+
+    <body>
+        <H1>Are governmental indicators related to the number of Conflicts and Fatalities in each conflicts??</H1> 
+        
+        <div class="indicators-lines" id="parallel">
+
+            <!-- <select id="selectButton" value=2020 selected></select><br>   -->
+            <select name="plan" id="selectButton">
+                <option value="none" selected disabled hidden>
+                  Select a Year
+              </option>
+                <option value="2018">2018</option>
+                <option value="2019">2019 </option>
+                <option value="2020" selected>2020 </option>
+                <option value="2021">2021</option>
+            </select>
+
+            <fieldset class="group">      
+                <legend>Select regions to visualize</legend>     
+                <ul class="checkbox">
+                    <li><input type="checkbox" name="region" value="Caribbean" ><label>Caribbean</label></li>  
+                    <li><input type="checkbox" name="region" value="Caucasus and Central Asia" ><label>Caucasus and Central Asia</label></li> 
+                    <li><input type="checkbox" name="region" value="Central America" ><label>Central America</label></li>
+                    <li><input type="checkbox" name="region" value="East Asia" ><label>East Asia</label></li>
+                    <li><input type="checkbox" name="region" value="Eastern Africa" ><label>Eastern Africa</label></li> 
+                    <li><input type="checkbox" name="region" value="Europe" checked><label>Europe</label></li> 
+                    <li><input type="checkbox" name="region" value="Middle Africa" checked><label>Middle Africa</label></li>
+                    <li><input type="checkbox" name="region" value="Middle East" ><label>Middle East</label></li> 
+                    <li><input type="checkbox" name="region" value="North America" ><label>North America</label></li> 
+                    <li><input type="checkbox" name="region" value="Northern Africa" checked><label>Northern Africa</label></li> 
+                    <li><input type="checkbox" name="region" value="South America" ><label>South America</label></li>
+                    <li><input type="checkbox" name="region" value="South Asia" ><label>South Asia</label></li>
+                    <li><input type="checkbox" name="region" value="Southeast Asia" ><label>Southeast Asia</label></li>
+                    <li><input type="checkbox" name="region" value="Southern Africa" ><label>Southern Africa</label></li>
+                    <li><input type="checkbox" name="region" value="Western Africa" ><label>Western Africa</label></li>
+                </ul>     
+                <input id="update" name="updateButton" type="button" value="Update" onclick="updateRegionSelection()">   
+            </fieldset>  
+
+                       
+        </div>
+        
+        
+        <script>
+            //Global state
+            const margin = {top: 10, right: 10, bottom: 10, left: 10},
+                width = 800 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+            
+            let selectedYear = 2020
+            const colorKey = "region";
+
+            let selectedItems = updateRegionSelection();
+           
+            // Fixed (doesn't change)
+    
+   
+
+
+            const svg = d3.select("#parallel")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            const div = d3.select("body").append("div")	
+                .attr("class", "tooltip")				
+                .style("opacity", 0);
+
+            // Loading the data
+            d3.csv('./assets/dataCat.csv', d => {
+            // Make sure that numbers are interpreted as numbers and not strings
+            return {
+                year: d.year,
+                country: d.country,
+                region: d.region,
+                "Control of Corruption": +d["Control of Corruption"],
+                "Government Effectiveness": +d["Government Effectiveness"],
+                "Political Stability and Absence of Violence/Terrorism": +d["Political Stability and Absence of Violence/Terrorism"],
+                "Regulatory Quality": +d["Regulatory Quality"],
+                "Rule of Law": +d["Rule of Law"],
+                "Conflicts": +d["Conflicts"],
+                "Fatalities": +d["Fatalities"]
+            };
+            }).then(data => { 
+                //Fixed, not change through interactions
+                const dataFilter = data.filter(function(d) { 
+                    if(selectedItems.includes(d["region"]) && d["year"]==selectedYear)
+                    { 
+                        return d;
+                    } 
+                })
+
+                const keys = data.columns.filter(function(d) {
+                        return d !== "" && d !== "year";
+                    });
+
+                const keystodraw = data.columns.filter(function(d) {
+                    return d !== "" && d !== "year" && d !== "country" && d !== "region";
+                });
+
+                       
+                console.log(keys)
+                console.log(dataFilter[0])
+
+                const colorScale = d3.scaleOrdinal()
+                    .domain(selectedItems)
+                    .range(d3.schemeTableau10);
+                
+    
+
+                const x = new Map(
+                    Array.from(keystodraw, 
+                        key => [
+                            key, 
+                            d3.scaleLinear()
+                            .domain(d3.extent(data, d=>d[key]))
+                            .range([0, width])
+                            .nice()
+                        ]
+                    )
+                );
+                
+                // y is the height of the rectangle where the visualization will be draw
+                const y = d3.scalePoint(keystodraw, [0, height-100]);
+                 
+                const line = d3.line()
+                    .defined(([, value]) => value != null)
+                    .x(([key, value]) => x.get(key)(value))
+                    .y(([key]) => y(key));
+                
+                // const tip = d3.tip()
+                //     .attr('class', 'd3-tip')
+                //     .offset([-10, 0])
+                //     .html(function(d) {
+                //         return "<strong>Country:</strong> <span style='color:red'>" + d.country + "</span>";
+                //     });
+                
+                // Function that draws the data
+                const dataSelection = svg.append("g")
+                    .attr("fill", "none")
+                    .attr("stroke-width", 1.5)
+                    .attr("stroke-opacity", 0.4)
+                    .on("mouseover", function(d,i){
+                        d3.selectAll("path")
+                        div.transition().duration(200)
+                        .style("stroke", "red") //this should be colorScale..
+                        .style("opacity", "0.2");
+                        div.html(d.Fatalities) // how to show values in d.country and d.Fatalities
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY -28) + "px");
+
+                    })
+                    .on("mouseleave", function(d) {
+                        d3.selectAll("path")
+                        div.transition().duration(200).delay(200)
+                        .style("stroke", "black")
+                        .style("opacity", "1")
+                    } )
+  
+                 // Draw the horizontal lines with names and scales
+                const x_0 = d3.axisBottom(x.get('region')).tickFormat(d3.format("d"));
+                const x0 = d3.axisBottom(x.get('Control of Corruption')).tickFormat(d3.format(".2n"));
+                const x1 = d3.axisBottom(x.get('Government Effectiveness')).tickFormat(d3.format(".2n"));
+                const x2 = d3.axisBottom(x.get('Political Stability and Absence of Violence/Terrorism')).tickFormat(d3.format(".2n"));
+                const x3 = d3.axisBottom(x.get('Regulatory Quality')).tickFormat(d3.format(".2n"));
+                const x4 = d3.axisBottom(x.get('Rule of Law')).tickFormat(d3.format(".2n"));
+                const x5 = d3.axisBottom(x.get('Conflicts')).tickFormat(d3.format("d"));
+                const x6 = d3.axisBottom(x.get('Fatalities')).tickFormat(d3.format("d"));
+
+                //svg.append("g").attr("transform", "translate(0," + y('region') + ")").call(x_0);
+                svg.append("g").attr("transform", "translate(0," + y('Control of Corruption') + ")").call(x0);
+                svg.append("g").attr("transform", "translate(0," + y('Government Effectiveness') + ")").call(x1);
+                svg.append("g").attr("transform", "translate(0," + y('Political Stability and Absence of Violence/Terrorism') + ")").call(x2);
+                svg.append("g").attr("transform", "translate(0," + y('Regulatory Quality') + ")").call(x3);
+                svg.append("g").attr("transform", "translate(0," + y('Rule of Law') + ")").call(x4);
+                svg.append("g").attr("transform", "translate(0," + y('Conflicts') + ")").call(x5);
+                svg.append("g").attr("transform", "translate(0," + y('Fatalities') + ")").call(x6);
+                
+                //Write horizontal lines with variable names and values
+                svg.append("g")
+                    .selectAll("g")
+                    .data(keystodraw)
+                    .join("g")
+                    .attr("transform", d => `translate(0,${y(d)})`)
+                    .each(function(d) { d3.select(this)
+                    })
+                    .call(g => g.append("text")
+                        .attr("x", 300)
+                        .attr("y", 40)
+                        .attr("text-anchor", "start")
+                        .attr("fill", "currentColor")
+                        .text(d => d))
+                        
+                    .call(g => g.selectAll("text")
+                        .clone(true).lower()
+                        .attr("fill", "none")
+                        .attr("stroke-width", 5) 
+                        .attr("stroke-linejoin", "round")
+                        .attr("stroke", "white")
+                        );
+                //function that draws the filtered data
+                const update = () => {
+                    console.log('update', selectedYear, selectedItems);
+
+                    const dataFilter = data.filter(d => 
+                        selectedItems.includes(d["region"]) && d["year"]==selectedYear
+                    ).slice()
+                    .sort((a, b) => d3.ascending(a[colorKey], b[colorKey]));     
+
+                    dataSelection.selectAll("path")
+                    .data(dataFilter)
+                    .join(
+                        enter => enter
+                            .append('path')
+                            .style("stroke", function (d){return colorScale(d.region)}),
+                        update => update, 
+                        exit => exit.remove())
+                    .attr("d", d => line(d3.cross(keystodraw, [d], (key, d) => [key, d[key]])))         
+                    .append("title")
+                        .text(d => d.name);
+                }
+
+                update()
+                d3.select("#selectButton").on("change", function(d) {
+                    // recover the option that has been chosen
+                    selectedYear = d3.select(this).property("value")
+                    console.log("Button", selectedYear)
+                    update()
+                })
+                d3.select("#update").on("click", function(d) {
+                    // recover the option that has been chosen
+                    selectedItems = updateRegionSelection() 
+                    console.log("Checkbox Update",selectedItems)
+                    update()
+                })
+            }
+            )
+
+            function updateRegionSelection()  
+            {  
+                let checkboxes = document.getElementsByName("region");  
+                let numberOfCheckedItems = 0;  
+                let selectedItems=[];
+                for(var i = 0; i < checkboxes.length; i++)  
+                {  
+                    if(checkboxes[i].checked == true)  {
+                        numberOfCheckedItems++;       
+                        selectedItems = selectedItems.concat(checkboxes[i].value);
+                    }  
+                }
+                return selectedItems;
+            }
+
+        </script>
+    </body>
+</html>

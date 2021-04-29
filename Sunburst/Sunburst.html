@@ -105,7 +105,7 @@
                 d3.select("#fatalities")
                     .text(d.value);
 
-                var sequenceArray = d.ancestors().reverse();
+                var sequenceArray = d.root.ancestors().reverse();
                 sequenceArray.shift(); 
 
               

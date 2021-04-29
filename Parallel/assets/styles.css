@@ -1,10 +1,11 @@
 .indicators-lines {
     width: 810px;
-    height: 590px;
+    height: 750px;
     border: solid #ddd 1px;
     border-radius: 5px;
 }
-body { font: 11px Arial;}
+body { font: 11px Arial;
+    width: 810px}
 
 ul.checkbox  { 
     margin: 00; 
@@ -34,6 +35,20 @@ ul.checkbox li {
     font-size: 100%; 
     color: black; 
   } 
+
+  /* Tooltip */
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;	
+    /* width: 60px;					
+    height: 28px;					 */
+    padding: 5px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
 
   .axis {
     opacity: 0.4;

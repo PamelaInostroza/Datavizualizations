@@ -11,8 +11,8 @@
     </head>
 
     <body>
-        <H1>Sunburst for event type by countries and date</H1> 
-        <h3>  number of fatalities
+        <H1>Word conflicts, event and subevent types for countries by year</H1> 
+        <h3>  Number of fatalities in conflicts
         </h3>
 
         <svg></svg>
@@ -27,16 +27,7 @@
             const height = 750;
             const radius = Math.min(width, height) / 2;
             const color = d3.scaleOrdinal(d3.schemeTableau10);
-            //var color = ["#da1d23", "#ebb40f", "#187a2f", "#0aa3b5", "#c94930", "#ad213e", "#a87b64", "#e65832", "#da0d68"];
-
-
-            var rotationColors = {
-                "2018": 5,
-                "2019": 10,
-                "2020": 15,
-                "2021": 20
-            };
-
+           
             // Create primary <g> element
             const g = d3.select('svg')
                 .attr('width', width)
@@ -55,7 +46,40 @@
 
             //JSON data
             d3.json("./assets/Sunburst.json").then(nodeData => { 
-                console.log(nodeData)
+
+                var textGroup = g.append("g");
+                    textGroup.append("text")
+                        .attr("id", "year")
+                        .attr("y", -5)
+                        .attr("class", "year")
+                        .attr("text-anchor", "middle");
+                    
+                    textGroup.append("text")
+                        .attr("id", "event_type")
+                        .attr("y", 5)
+                        .attr("class", "event_type")
+                        .attr("text-anchor", "middle");
+
+                    textGroup.append("text")
+                        .attr("id", "subevent_type")
+                        .attr("y", 15)
+                        .attr("class", "subevent_type")
+                        .attr("text-anchor", "middle");
+
+                    textGroup.append("text")
+                        .attr("id", "country")
+                        .attr("y", 25)
+                        .attr("class", "country")
+                        .attr("text-anchor", "middle");
+
+                    textGroup.append("text")
+                        .attr("id", "fatalities")
+                        .attr("y", -30)
+                        .attr("class", "fatalities")
+                        .attr("text-anchor", "middle");
+
+                console.log(textGroup)
+
                 // Find data root
                 const root = d3.hierarchy(nodeData)
                     .sum(function (d) { return d.fatalities})
@@ -68,7 +92,7 @@
                     .endAngle(function (d) { d.x1s = d.x1; return d.x1 })
                     .innerRadius(function (d) { return d.y0; })
                     .outerRadius(function (d) { return d.y1; });
-                    
+                
 
                 // Put it all together
                 const slice = g.selectAll('g')
@@ -82,12 +106,16 @@
                     .style("fill", function (d) { return color((d.children ? d : d.parent).data.name);})
                     .on("mouseover", mouseover);
             
-                slice.append("text")
+                slice.filter(function(node) {
+                        return ((node.x1 - node.x0) > Math.PI/4);
+                    }).append("text")
                     .attr("transform", function(d) {
                         return "translate(" + arc.centroid(d) + ")rotate(" + computeTextRotation(d) + ")"; })
                     .attr("dx", "-20")
                     .attr("dy", ".5em")
                     .text(function(d) { return d.parent ? d.data.name : "" });
+
+                
 
                 d3.select("#chart-container").on("mouseleave", mouseleave);   
             });
@@ -101,18 +129,45 @@
                 //return (angle < 180) ? angle - 90 : angle + 90;  // labels as spokes
             }
 
-            function mouseover(d) {
+            function mouseover(e, d) {
                 d3.select("#fatalities")
                     .text(d.value);
-
-                var sequenceArray = d.root.ancestors().reverse();
+                    
+                var sequenceArray = d.ancestors().reverse();
+                
                 sequenceArray.shift(); 
+                    
+                d3.select("#year").text(d.data.fatalities);
+                d3.select("#event_type").text("");
+                d3.select("#subevent_type").text("");
+                d3.select("#country").text("");
+                d3.select("#name").text("");
 
-              
+                sequenceArray.forEach(d => {
+                  
+                    if (d.depth === 1) {
+                        d3.select("#year")
+                            .text(d.data.name)
+                            
+                            ;
+                    } else if (d.depth === 2) {
+                        d3.select("#event_type")
+                            .text(d.data.name)
+                            ;
+                    } else if (d.depth === 3) {
+                        d3.select("#subevent_type")
+                            .text(d.data.name)
+                            ;
+                    } else if (d.depth === 4) {
+                        d3.select("#country")
+                            .text(d.data.country)
+                            ;
+                    }
+                });
+
+
                 d3.selectAll("path") 
-                    .style("opacity", 0.3);
-
-                vis.selectAll("path") 
+                    .style("opacity", 0.3)
                     .filter(function(node) {
                         return (sequenceArray.indexOf(node) >= 0);
                     })
@@ -131,64 +186,6 @@
                     });
             }
 
-            function getFillValue(d) {
-                if (d.depth === 1) {
-                    return color[d.data.name];
-                }
-
-                if (d.depth === 2) {
-                    let parentColor = color[d.parent.data.position];
-                    let rotateValue = (d.x0 + d.x1) / 2 * 57.29;
-                    let patternId = d.data.name + d.parent.data.position;
-
-                    if (d.data.name == "2018") {
-                        let pattern = d3.select("#defs")
-                            .append("pattern")
-                            .attr("id", patternId)
-                            .attr("width", "8")
-                            .attr("height", "8")
-                            .attr("patternUnits", "userSpaceOnUse")
-                            .attr("patternTransform", "rotate(" + rotateValue + ")");
-                        pattern.append("rect")
-                            .attr("width", "4")
-                            .attr("height", "8")
-                            .attr("fill", parentColor);
-                        return "url(#" + patternId +")";
-                    } else if (d.data.name == "2019") {
-                        let pattern = d3.select("#defs")
-                            .append("pattern")
-                            .attr("id", patternId)
-                            .attr("width", "10")
-                            .attr("height", "10")
-                            .attr("patternUnits", "userSpaceOnUse");
-                        pattern.append("circle")
-                            .attr("r", "5")
-                            .attr("fill", parentColor);
-                        return "url(#" + patternId +")";
-                    } else if (d.data.name == "2020") {
-                        let pattern = d3.select("#defs")
-                            .append("pattern")
-                            .attr("id", patternId)
-                            .attr("width", "8")
-                            .attr("height", "8")
-                            .attr("patternUnits", "userSpaceOnUse")
-                            .attr("patternTransform", "rotate(" + (rotateValue + 90) + ")");
-                        pattern.append("rect")
-                            .attr("width", "1")
-                            .attr("height", "8")
-                            .attr("fill", parentColor);
-                        return "url(#" + patternId +")";
-                    }
-                }
-
-                if (d.depth === 3) {
-                    let parentColor = d3.hsl(color[d.parent.parent.data.position]);
-                    parentColor.h += rotationColors[d.data.name];
-                    return  parentColor + "";
-                }
-
-                return "";
-            }
         </script>
 
 

@@ -67,7 +67,10 @@ d3.csv('./assets/ParallelCoordinatesVisCat.csv', d => {
                 ]
             )
         );
+        x.get('Fatalities').domain(x.get('Fatalities').domain().reverse());
+        x.get('Conflicts').domain(x.get('Conflicts').domain().reverse());
         
+
         // yScale
         const y = d3.scalePoint(keystodraw, [0, height]);
 
@@ -169,6 +172,20 @@ d3.csv('./assets/ParallelCoordinatesVisCat.csv', d => {
                 .on("mouseleave", hover_out);
         
         }
+
+                
+        function hover_out() {
+
+            // Reverse everything again like it was before hovering.
+            d3.select(".country-paths").selectAll("path")
+                .attr("stroke", function (d){return colorScale(d.region)})
+                .attr("stroke-width", 1.5)
+                .attr("stroke-opacity", 0.4);
+
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);
+        }
     });     
     
     
@@ -214,15 +231,3 @@ function hover_in() {
 
 }
 
-function hover_out() {
-
-    // Reverse everything again like it was before hovering.
-    d3.select(".country-paths").selectAll("path")
-        //.attr("stroke", function (d){return colorScale(d.region)})
-        .attr("stroke-width", 1.5)
-        .attr("stroke-opacity", 0.4);
-
-    div.transition()		
-        .duration(500)		
-        .style("opacity", 0);
-}

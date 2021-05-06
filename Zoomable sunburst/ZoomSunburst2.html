@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <H1>Word conflicts, event and subevent types geographical variables</H1> 
+        <H1>Word conflicts events by year and month</H1> 
         <h3>  Number of conflicts
         </h3>
 
@@ -33,11 +33,11 @@
             .clamp(true);
 
         var y = d3.scalePow()
-            .exponent(0.8)
+            .exponent(1.5)
             .range([maxRadius*.1, maxRadius]);
 
-        var color = d3.scaleOrdinal(d3.schemeCategory20);
-
+        var color = d3.scaleOrdinal(d3.schemeCategory20)//d3.schemeTableau10);
+        
         var partition = d3.partition();
         
         var arc = d3.arc()
@@ -58,14 +58,34 @@
             var path = d3.path();
             path.arc(0, 0, r, angles[0], angles[1], invertDirection);
             return path.toString();
+            console.log(path)
         };
 
         var textFits = d => {
-            var CHAR_SPACE = 4;
+            var CHAR_SPACE = 6;
 
             var deltaAngle = x(d.x1) - x(d.x0);
             var r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
             var perimeter = r * deltaAngle;
+            // if (d.depth == 2) {
+            //         let text = d => {d.data.name
+            //             .replace("1", "January")
+            //             .replace("2", "February")
+            //             .replace("3", "March")
+            //             .replace("4", "April")
+            //             .replace("5", "May")
+            //             .replace("6", "June")
+            //             .replace("7", "July")
+            //             .replace("8", "August")
+            //             .replace("9", "September")
+            //             .replace("10", "October")
+            //             .replace("11", "November")
+            //             .replace("12", "December")};
+            //         d3.select(d.data.name)
+            //             .text(text);
+
+            //         console.log(d.data.name)
+            //     }
 
             
             return d.data.name.length * CHAR_SPACE < perimeter;
@@ -78,14 +98,15 @@
             .on('click', () => focusOn()); // Reset zoom on canvas click
 
         d3.json('./assets/ZoomSunburst2.json', (error, root) => {
-        
             root = d3.hierarchy(root);
             root.sum(d => d.value);
             var slice = svg.selectAll('g.slice')
                 .data(partition(root).descendants())
-                .attr("fill", d => { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name); })
+                .attr("fill", d => { d = d.parent; return color((d.children ? d : d.parent).data.name)})
                 ;
 
+
+            console.log(partition(root).descendants())
             slice.exit().remove();
 
             var newSlice = slice.enter()
@@ -101,7 +122,8 @@
             newSlice.append('path')
                 .attr('class', 'main-arc')
                 .attr("display", function (d) { return d.depth ? null : "none"; })
-                .style('fill', function(d){ while (d.depth > 1) d = d.parent; return color((d.children ? d : d.children).data.name); })
+                .attr("fill", d => {if (d.depth != 3) { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name);}
+                                    else {return  color(d.data.name)} })
                 .attr('d', arc);
 
             newSlice.append('path')

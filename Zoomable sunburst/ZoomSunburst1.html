@@ -32,7 +32,7 @@
             .clamp(true);
 
         var y = d3.scalePow()
-            .exponent(0.8)
+            .exponent(1)
             .range([maxRadius*.1, maxRadius]);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
@@ -79,15 +79,14 @@
         
             root = d3.hierarchy(root);
             root.sum(d => d.value);
-console.log(root)
+
             var slice = svg.selectAll('g.slice')
                 .data(partition(root).descendants())
-                .attr("fill",  d => { while (d.depth > 2) d = d.parent; return color(d.data.name); })
-                //.attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
-                //.attr("d", d => arc(d.current))
+                .attr("fill",  d => color(d.data.name))
                 ;
+            console.log(partition(root).descendants())
 
-           // slice.exit().remove();
+            slice.exit().remove();
 
             var newSlice = slice.enter()
                 .append('g').attr('class', 'slice')
@@ -101,7 +100,8 @@ console.log(root)
 
             newSlice.append('path')
                 .attr('class', 'main-arc')
-                .style('fill', d => { while (d.depth > 1) d = d.parent; return color(d.data.name); })
+                .attr("fill", d => {if (d.depth < 3) { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name);}
+                                    else { while (d.depth > 4) d = d.parent; return color((d.children ? d : d.parent).data.name);} })
                 .attr('d', arc);
 
             newSlice.append('path')

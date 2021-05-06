@@ -1,0 +1,19 @@
+    {"name": "Conflicts", "children": [{
+        "name": "2018",
+        "children": [{"name": "Protests", 
+            "children":[{"name": "Chile","Fatalities": 5},{"name":"Belgium", "Fatalities":5}]},
+            {"name": "Riots", "Fatalities": 5}]
+    }, {
+        "name": "2019",
+        "children": [{"name": "Protests", "Fatalities": 5},
+            {"name": "Violence against civilians", "Fatalities": 3},
+            {"name": "Battles", "Fatalities": 50}]
+    }, {
+        "name": "2020",
+        "children": [{"name": "Protests", "Fatalities": 4},
+            {"name": "Strategic developments", "Fatalities": 4}]
+    }, {
+        "name": "2021",
+        "children": [{"name": "Protests", "Fatalities": 4},
+            {"name": "Battles", "Fatalities": 4}]
+    }]}

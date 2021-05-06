@@ -1,1309 +1,1094 @@
-  {
+    {
         "name": "Conflicts",
         "children": [
             {
-                "name": "1",
+                "name": "2018",
                 "children": [
                     {
-                        "name": "Battles",
+                        "name": "2",
                         "children": [
                             {
-                                "name": "2019",
-                                "value": 4288
-                            },
-                            {
-                                "name": "2020",
-                                "value": 3345
-                            },
-                            {
-                                "name": "2021",
-                                "value": 2412
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2019",
-                                "value": 2317
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2538
-                            },
-                            {
-                                "name": "2021",
-                                "value": 1600
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2019",
-                                "value": 5972
-                            },
-                            {
-                                "name": "2020",
-                                "value": 10560
-                            },
-                            {
-                                "name": "2021",
-                                "value": 12608
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2019",
-                                "value": 1247
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1324
-                            },
-                            {
-                                "name": "2021",
-                                "value": 1147
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2019",
-                                "value": 783
-                            },
-                            {
-                                "name": "2020",
-                                "value": 812
-                            },
-                            {
-                                "name": "2021",
-                                "value": 1038
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Violence against civilians",
-                        "children": [
-                            {
-                                "name": "2019",
-                                "value": 2332
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2122
-                            },
-                            {
-                                "name": "2021",
-                                "value": 2101
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "2",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 1386
                             },
                             {
-                                "name": "2019",
-                                "value": 3371
-                            },
-                            {
-                                "name": "2020",
-                                "value": 3210
-                            },
-                            {
-                                "name": "2021",
-                                "value": 1538
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 1241
                             },
                             {
-                                "name": "2019",
-                                "value": 2605
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2701
-                            },
-                            {
-                                "name": "2021",
-                                "value": 1123
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 1406
                             },
                             {
-                                "name": "2019",
-                                "value": 6553
-                            },
-                            {
-                                "name": "2020",
-                                "value": 9401
-                            },
-                            {
-                                "name": "2021",
-                                "value": 9076
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 239
                             },
                             {
-                                "name": "2019",
-                                "value": 1153
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1123
-                            },
-                            {
-                                "name": "2021",
-                                "value": 749
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 231
                             },
                             {
-                                "name": "2019",
-                                "value": 644
-                            },
-                            {
-                                "name": "2020",
-                                "value": 805
-                            },
-                            {
-                                "name": "2021",
-                                "value": 611
+                                "name": "Violence against civilians",
+                                "value": 571
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "3",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 571
-                            },
-                            {
-                                "name": "2019",
-                                "value": 2015
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1897
-                            },
-                            {
-                                "name": "2021",
-                                "value": 1194
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "3",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4245
                             },
                             {
-                                "name": "2019",
-                                "value": 3961
-                            },
-                            {
-                                "name": "2020",
-                                "value": 3276
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 3403
                             },
                             {
-                                "name": "2019",
-                                "value": 3189
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2455
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 4798
                             },
                             {
-                                "name": "2019",
-                                "value": 6495
-                            },
-                            {
-                                "name": "2020",
-                                "value": 6594
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 881
                             },
                             {
-                                "name": "2019",
-                                "value": 1118
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1182
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 641
                             },
                             {
-                                "name": "2019",
-                                "value": 832
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1122
+                                "name": "Violence against civilians",
+                                "value": 2019
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "4",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2019
-                            },
-                            {
-                                "name": "2019",
-                                "value": 2034
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1980
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "4",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4407
                             },
                             {
-                                "name": "2019",
-                                "value": 3662
-                            },
-                            {
-                                "name": "2020",
-                                "value": 3112
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 3294
                             },
                             {
-                                "name": "2019",
-                                "value": 3286
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2116
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 5514
                             },
                             {
-                                "name": "2019",
-                                "value": 5333
-                            },
-                            {
-                                "name": "2020",
-                                "value": 4383
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 1064
                             },
                             {
-                                "name": "2019",
-                                "value": 1566
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1161
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 640
                             },
                             {
-                                "name": "2019",
-                                "value": 612
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1030
+                                "name": "Violence against civilians",
+                                "value": 1963
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "5",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 1963
-                            },
-                            {
-                                "name": "2019",
-                                "value": 1926
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2098
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "5",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4618
                             },
                             {
-                                "name": "2019",
-                                "value": 3663
-                            },
-                            {
-                                "name": "2020",
-                                "value": 3150
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2953
                             },
                             {
-                                "name": "2019",
-                                "value": 3869
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2211
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 8494
                             },
                             {
-                                "name": "2019",
-                                "value": 7219
-                            },
-                            {
-                                "name": "2020",
-                                "value": 9504
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 1005
                             },
                             {
-                                "name": "2019",
-                                "value": 1576
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1356
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 631
                             },
                             {
-                                "name": "2019",
-                                "value": 654
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1033
+                                "name": "Violence against civilians",
+                                "value": 1960
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "6",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 1960
-                            },
-                            {
-                                "name": "2019",
-                                "value": 1952
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2180
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "6",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4583
                             },
                             {
-                                "name": "2019",
-                                "value": 3858
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2854
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2807
                             },
                             {
-                                "name": "2019",
-                                "value": 3203
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1894
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 4696
                             },
                             {
-                                "name": "2019",
-                                "value": 6538
-                            },
-                            {
-                                "name": "2020",
-                                "value": 17730
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 829
                             },
                             {
-                                "name": "2019",
-                                "value": 1317
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1208
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 718
                             },
                             {
-                                "name": "2019",
-                                "value": 669
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1148
+                                "name": "Violence against civilians",
+                                "value": 2047
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "7",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2047
-                            },
-                            {
-                                "name": "2019",
-                                "value": 2052
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1934
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "7",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4406
                             },
                             {
-                                "name": "2019",
-                                "value": 3604
-                            },
-                            {
-                                "name": "2020",
-                                "value": 3140
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2714
                             },
                             {
-                                "name": "2019",
-                                "value": 3806
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1796
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 4651
                             },
                             {
-                                "name": "2019",
-                                "value": 6406
-                            },
-                            {
-                                "name": "2020",
-                                "value": 12358
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 853
                             },
                             {
-                                "name": "2019",
-                                "value": 1126
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1267
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 765
                             },
                             {
-                                "name": "2019",
-                                "value": 787
-                            },
-                            {
-                                "name": "2020",
-                                "value": 980
+                                "name": "Violence against civilians",
+                                "value": 2151
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "8",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2151
-                            },
-                            {
-                                "name": "2019",
-                                "value": 1978
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2012
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "8",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4484
                             },
                             {
-                                "name": "2019",
-                                "value": 3815
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2783
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2367
                             },
                             {
-                                "name": "2019",
-                                "value": 2975
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1550
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 5027
                             },
                             {
-                                "name": "2019",
-                                "value": 6803
-                            },
-                            {
-                                "name": "2020",
-                                "value": 12323
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 904
                             },
                             {
-                                "name": "2019",
-                                "value": 1157
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1182
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 802
                             },
                             {
-                                "name": "2019",
-                                "value": 766
-                            },
-                            {
-                                "name": "2020",
-                                "value": 945
+                                "name": "Violence against civilians",
+                                "value": 2279
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "9",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2279
-                            },
-                            {
-                                "name": "2019",
-                                "value": 1973
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1845
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "9",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4270
                             },
                             {
-                                "name": "2019",
-                                "value": 3839
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2749
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2460
                             },
                             {
-                                "name": "2019",
-                                "value": 2693
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1630
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 5986
                             },
                             {
-                                "name": "2019",
-                                "value": 7047
-                            },
-                            {
-                                "name": "2020",
-                                "value": 14354
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 1138
                             },
                             {
-                                "name": "2019",
-                                "value": 1088
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1186
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 702
                             },
                             {
-                                "name": "2019",
-                                "value": 837
-                            },
-                            {
-                                "name": "2020",
-                                "value": 994
+                                "name": "Violence against civilians",
+                                "value": 1865
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "10",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 1865
-                            },
-                            {
-                                "name": "2019",
-                                "value": 1939
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1854
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "10",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 4182
                             },
                             {
-                                "name": "2019",
-                                "value": 4212
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2698
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2277
                             },
                             {
-                                "name": "2019",
-                                "value": 2894
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2071
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 5386
                             },
                             {
-                                "name": "2019",
-                                "value": 8262
-                            },
-                            {
-                                "name": "2020",
-                                "value": 17276
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 1157
                             },
                             {
-                                "name": "2019",
-                                "value": 1570
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1476
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 703
                             },
                             {
-                                "name": "2019",
-                                "value": 1133
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1058
+                                "name": "Violence against civilians",
+                                "value": 2076
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "11",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2076
-                            },
-                            {
-                                "name": "2019",
-                                "value": 2102
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1921
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "11",
-                "children": [
-                    {
-                        "name": "Battles",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Battles",
                                 "value": 3976
                             },
                             {
-                                "name": "2019",
-                                "value": 3555
-                            },
-                            {
-                                "name": "2020",
-                                "value": 2410
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Explosions/Remote violence",
                                 "value": 2347
                             },
                             {
-                                "name": "2019",
-                                "value": 2985
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1714
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Protests",
                                 "value": 5514
                             },
                             {
-                                "name": "2019",
-                                "value": 8805
-                            },
-                            {
-                                "name": "2020",
-                                "value": 13586
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Riots",
                                 "value": 1116
                             },
                             {
-                                "name": "2019",
-                                "value": 1824
-                            },
-                            {
-                                "name": "2020",
-                                "value": 1109
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
+                                "name": "Strategic developments",
                                 "value": 739
                             },
                             {
-                                "name": "2019",
-                                "value": 971
-                            },
-                            {
-                                "name": "2020",
-                                "value": 952
+                                "name": "Violence against civilians",
+                                "value": 2004
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "12",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2004
+                                "name": "Battles",
+                                "value": 4230
                             },
                             {
-                                "name": "2019",
-                                "value": 1903
+                                "name": "Explosions/Remote violence",
+                                "value": 2354
                             },
                             {
-                                "name": "2020",
-                                "value": 1966
+                                "name": "Protests",
+                                "value": 5838
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1333
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 727
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2040
                             }
                         ]
                     }
                 ]
             },
             {
-                "name": "12",
+                "name": "2019",
                 "children": [
                     {
-                        "name": "Battles",
+                        "name": "1",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 4230
+                                "name": "Battles",
+                                "value": 4288
                             },
                             {
-                                "name": "2019",
+                                "name": "Explosions/Remote violence",
+                                "value": 2317
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 5972
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1247
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 783
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2332
+                            }
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3371
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2605
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 6553
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1153
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 644
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2015
+                            }
+                        ]
+                    },
+                    {
+                        "name": "3",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3961
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 3189
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 6495
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1118
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 832
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2034
+                            }
+                        ]
+                    },
+                    {
+                        "name": "4",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3662
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 3286
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 5333
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1566
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 612
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1926
+                            }
+                        ]
+                    },
+                    {
+                        "name": "5",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3663
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 3869
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 7219
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1576
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 654
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1952
+                            }
+                        ]
+                    },
+                    {
+                        "name": "6",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3858
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 3203
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 6538
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1317
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 669
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2052
+                            }
+                        ]
+                    },
+                    {
+                        "name": "7",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3604
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 3806
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 6406
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1126
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 787
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1978
+                            }
+                        ]
+                    },
+                    {
+                        "name": "8",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3815
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2975
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 6803
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1157
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 766
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1973
+                            }
+                        ]
+                    },
+                    {
+                        "name": "9",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3839
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2693
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 7047
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1088
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 837
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1939
+                            }
+                        ]
+                    },
+                    {
+                        "name": "10",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 4212
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2894
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 8262
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1570
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1133
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2102
+                            }
+                        ]
+                    },
+                    {
+                        "name": "11",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3555
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2985
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 8805
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1824
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 971
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1903
+                            }
+                        ]
+                    },
+                    {
+                        "name": "12",
+                        "children": [
+                            {
+                                "name": "Battles",
                                 "value": 3486
                             },
                             {
-                                "name": "2020",
-                                "value": 2532
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Explosions/Remote violence",
-                        "children": [
-                            {
-                                "name": "2018",
-                                "value": 2354
-                            },
-                            {
-                                "name": "2019",
+                                "name": "Explosions/Remote violence",
                                 "value": 2633
                             },
                             {
-                                "name": "2020",
-                                "value": 1554
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Protests",
-                        "children": [
-                            {
-                                "name": "2018",
-                                "value": 5838
-                            },
-                            {
-                                "name": "2019",
+                                "name": "Protests",
                                 "value": 7442
                             },
                             {
-                                "name": "2020",
-                                "value": 12055
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Riots",
-                        "children": [
-                            {
-                                "name": "2018",
-                                "value": 1333
-                            },
-                            {
-                                "name": "2019",
+                                "name": "Riots",
                                 "value": 1080
                             },
                             {
-                                "name": "2020",
-                                "value": 999
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Strategic developments",
-                        "children": [
-                            {
-                                "name": "2018",
-                                "value": 727
-                            },
-                            {
-                                "name": "2019",
+                                "name": "Strategic developments",
                                 "value": 771
                             },
                             {
-                                "name": "2020",
-                                "value": 998
+                                "name": "Violence against civilians",
+                                "value": 1790
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "2020",
+                "children": [
+                    {
+                        "name": "1",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3345
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2538
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 10560
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1324
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 812
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2122
                             }
                         ]
                     },
                     {
-                        "name": "Violence against civilians",
+                        "name": "2",
                         "children": [
                             {
-                                "name": "2018",
-                                "value": 2040
+                                "name": "Battles",
+                                "value": 3210
                             },
                             {
-                                "name": "2019",
-                                "value": 1790
+                                "name": "Explosions/Remote violence",
+                                "value": 2701
                             },
                             {
-                                "name": "2020",
+                                "name": "Protests",
+                                "value": 9401
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1123
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 805
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1897
+                            }
+                        ]
+                    },
+                    {
+                        "name": "3",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3276
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2455
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 6594
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1182
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1122
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1980
+                            }
+                        ]
+                    },
+                    {
+                        "name": "4",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3112
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2116
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 4383
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1161
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1030
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2098
+                            }
+                        ]
+                    },
+                    {
+                        "name": "5",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3150
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2211
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 9504
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1356
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1033
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2180
+                            }
+                        ]
+                    },
+                    {
+                        "name": "6",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2854
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1894
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 17730
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1208
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1148
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1934
+                            }
+                        ]
+                    },
+                    {
+                        "name": "7",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 3140
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1796
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 12358
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1267
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 980
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2012
+                            }
+                        ]
+                    },
+                    {
+                        "name": "8",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2783
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1550
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 12323
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1182
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 945
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1845
+                            }
+                        ]
+                    },
+                    {
+                        "name": "9",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2749
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1630
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 14354
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1186
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 994
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1854
+                            }
+                        ]
+                    },
+                    {
+                        "name": "10",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2698
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 2071
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 17276
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1476
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1058
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1921
+                            }
+                        ]
+                    },
+                    {
+                        "name": "11",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2410
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1714
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 13586
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1109
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 952
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1966
+                            }
+                        ]
+                    },
+                    {
+                        "name": "12",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2532
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1554
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 12055
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 999
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 998
+                            },
+                            {
+                                "name": "Violence against civilians",
                                 "value": 1919
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "2021",
+                "children": [
+                    {
+                        "name": "1",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 2412
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1600
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 12608
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 1147
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 1038
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 2101
+                            }
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "children": [
+                            {
+                                "name": "Battles",
+                                "value": 1538
+                            },
+                            {
+                                "name": "Explosions/Remote violence",
+                                "value": 1123
+                            },
+                            {
+                                "name": "Protests",
+                                "value": 9076
+                            },
+                            {
+                                "name": "Riots",
+                                "value": 749
+                            },
+                            {
+                                "name": "Strategic developments",
+                                "value": 611
+                            },
+                            {
+                                "name": "Violence against civilians",
+                                "value": 1194
                             }
                         ]
                     }

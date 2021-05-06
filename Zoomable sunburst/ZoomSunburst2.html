@@ -100,7 +100,8 @@
 
             newSlice.append('path')
                 .attr('class', 'main-arc')
-                .style('fill', d => { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name); })
+                .attr("display", function (d) { return d.depth ? null : "none"; })
+                .style('fill', function(d){ while (d.depth > 1) d = d.parent; return color((d.children ? d : d.children).data.name); })
                 .attr('d', arc);
 
             newSlice.append('path')

@@ -1,0 +1,39 @@
+#chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  /*stroke: #fff;*/
+  shape-rendering: crispEdges;
+}
+
+body {
+  /*background: #1a1a1a;*/
+  color: #eaeaea;
+  padding: 10px;
+}
+
+path {
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+#demo {
+  background: #d0e4f5
+    url("https://multiplayer.net-cdn.it/thumbs/images/2019/02/17/sanji-germa-66-stealth-black-1_png_800x0_crop_upscale_q85.jpg")
+    no-repeat scroll 0 0;
+}
+
+.year {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}

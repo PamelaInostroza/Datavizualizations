@@ -32,7 +32,7 @@
             .clamp(true);
 
         var y = d3.scalePow()
-            .exponent(0.8)
+            .exponent(1)
             .range([maxRadius*.1, maxRadius]);
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
@@ -79,6 +79,7 @@
         
             root = d3.hierarchy(root);
             root.sum(d => d.value);
+<<<<<<< HEAD
             //console.log(root)
             var slice = svg.selectAll('g.slice')
                 .data(partition(root).descendants()) 
@@ -90,6 +91,16 @@
                 ;
                 console.log(partition(root).descendants())
            // slice.exit().remove();
+=======
+
+            var slice = svg.selectAll('g.slice')
+                .data(partition(root).descendants())
+                .attr("fill",  d => color(d.data.name))
+                ;
+            console.log(partition(root).descendants())
+
+            slice.exit().remove();
+>>>>>>> starting
 
             var newSlice = slice.enter()
                 .append('g').attr('class', 'slice')
@@ -103,8 +114,13 @@
 
             newSlice.append('path')
                 .attr('class', 'main-arc')
+<<<<<<< HEAD
         
                 .style('fill',  d => color(d.data.name) )
+=======
+                .attr("fill", d => {if (d.depth < 3) { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name);}
+                                    else { while (d.depth > 4) d = d.parent; return color((d.children ? d : d.parent).data.name);} })
+>>>>>>> starting
                 .attr('d', arc);
 
             newSlice.append('path')

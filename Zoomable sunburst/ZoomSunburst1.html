@@ -79,14 +79,16 @@
         
             root = d3.hierarchy(root);
             root.sum(d => d.value);
-console.log(root)
+            //console.log(root)
             var slice = svg.selectAll('g.slice')
-                .data(partition(root).descendants())
-                .attr("fill",  d => { while (d.depth > 2) d = d.parent; return color(d.data.name); })
+                .data(partition(root).descendants()) 
+                
+                .attr("fill",  d => color(d.data.name))
+                //d => { while (d.depth > 2) d = d.parent; return color(d.data.name); })
                 //.attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
                 //.attr("d", d => arc(d.current))
                 ;
-
+                console.log(partition(root).descendants())
            // slice.exit().remove();
 
             var newSlice = slice.enter()
@@ -101,7 +103,8 @@ console.log(root)
 
             newSlice.append('path')
                 .attr('class', 'main-arc')
-                .style('fill', d => { while (d.depth > 1) d = d.parent; return color(d.data.name); })
+        
+                .style('fill',  d => color(d.data.name) )
                 .attr('d', arc);
 
             newSlice.append('path')

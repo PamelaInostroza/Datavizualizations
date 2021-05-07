@@ -1,0 +1,4120 @@
+[
+    {
+        "name": "Conflicts",
+        "children": [
+            {
+                "name": "Battles",
+                "children": [
+                    {
+                        "name": "Caribbean",
+                        "children": [
+                            {
+                                "name": "Bahamas",
+                                "size": 2
+                            },
+                            {
+                                "name": "Barbados",
+                                "size": 1
+                            },
+                            {
+                                "name": "Dominican Republic",
+                                "size": 8
+                            },
+                            {
+                                "name": "Haiti",
+                                "size": 182
+                            },
+                            {
+                                "name": "Jamaica",
+                                "size": 109
+                            },
+                            {
+                                "name": "Puerto Rico",
+                                "size": 72
+                            },
+                            {
+                                "name": "Saint Vincent and Grenadines",
+                                "size": 1
+                            },
+                            {
+                                "name": "Trinidad and Tobago",
+                                "size": 152
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caucasus and Central Asia",
+                        "children": [
+                            {
+                                "name": "Afghanistan",
+                                "size": 23088
+                            },
+                            {
+                                "name": "Armenia",
+                                "size": 3528
+                            },
+                            {
+                                "name": "Azerbaijan",
+                                "size": 14824
+                            },
+                            {
+                                "name": "Georgia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Kazakhstan",
+                                "size": 5
+                            },
+                            {
+                                "name": "Kyrgyzstan",
+                                "size": 11
+                            },
+                            {
+                                "name": "Tajikistan",
+                                "size": 3
+                            },
+                            {
+                                "name": "Turkmenistan",
+                                "size": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Central America",
+                        "children": [
+                            {
+                                "name": "Belize",
+                                "size": 45
+                            },
+                            {
+                                "name": "Costa Rica",
+                                "size": 3
+                            },
+                            {
+                                "name": "El Salvador",
+                                "size": 772
+                            },
+                            {
+                                "name": "Guatemala",
+                                "size": 1255
+                            },
+                            {
+                                "name": "Honduras",
+                                "size": 276
+                            },
+                            {
+                                "name": "Nicaragua",
+                                "size": 2
+                            },
+                            {
+                                "name": "Panama",
+                                "size": 2
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Asia",
+                        "children": [
+                            {
+                                "name": "China",
+                                "size": 3
+                            },
+                            {
+                                "name": "South Korea",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eastern Africa",
+                        "children": [
+                            {
+                                "name": "Burundi",
+                                "size": 188
+                            },
+                            {
+                                "name": "Djibouti",
+                                "size": 2
+                            },
+                            {
+                                "name": "Ethiopia",
+                                "size": 326
+                            },
+                            {
+                                "name": "Kenya",
+                                "size": 191
+                            },
+                            {
+                                "name": "Madagascar",
+                                "size": 278
+                            },
+                            {
+                                "name": "Malawi",
+                                "size": 1
+                            },
+                            {
+                                "name": "Mozambique",
+                                "size": 205
+                            },
+                            {
+                                "name": "Rwanda",
+                                "size": 11
+                            },
+                            {
+                                "name": "Somalia",
+                                "size": 3810
+                            },
+                            {
+                                "name": "South Sudan",
+                                "size": 982
+                            },
+                            {
+                                "name": "Tanzania",
+                                "size": 10
+                            },
+                            {
+                                "name": "Uganda",
+                                "size": 122
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Europe",
+                        "children": [
+                            {
+                                "name": "Albania",
+                                "size": 1
+                            },
+                            {
+                                "name": "Belarus",
+                                "size": 1
+                            },
+                            {
+                                "name": "Bosnia and Herzegovina",
+                                "size": 1
+                            },
+                            {
+                                "name": "Czech Republic",
+                                "size": 1
+                            },
+                            {
+                                "name": "Denmark",
+                                "size": 4
+                            },
+                            {
+                                "name": "France",
+                                "size": 1
+                            },
+                            {
+                                "name": "Germany",
+                                "size": 2
+                            },
+                            {
+                                "name": "Greece",
+                                "size": 5
+                            },
+                            {
+                                "name": "Ireland",
+                                "size": 1
+                            },
+                            {
+                                "name": "Italy",
+                                "size": 1
+                            },
+                            {
+                                "name": "Kosovo",
+                                "size": 2
+                            },
+                            {
+                                "name": "Moldova",
+                                "size": 1
+                            },
+                            {
+                                "name": "North Macedonia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Russia",
+                                "size": 101
+                            },
+                            {
+                                "name": "Serbia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Sweden",
+                                "size": 1
+                            },
+                            {
+                                "name": "Ukraine",
+                                "size": 18876
+                            },
+                            {
+                                "name": "United Kingdom",
+                                "size": 2
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle Africa",
+                        "children": [
+                            {
+                                "name": "Angola",
+                                "size": 7
+                            },
+                            {
+                                "name": "Cameroon",
+                                "size": 916
+                            },
+                            {
+                                "name": "Central African Republic",
+                                "size": 411
+                            },
+                            {
+                                "name": "Chad",
+                                "size": 143
+                            },
+                            {
+                                "name": "Democratic Republic of Congo",
+                                "size": 2614
+                            },
+                            {
+                                "name": "Gabon",
+                                "size": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle East",
+                        "children": [
+                            {
+                                "name": "Iran",
+                                "size": 76
+                            },
+                            {
+                                "name": "Iraq",
+                                "size": 2475
+                            },
+                            {
+                                "name": "Israel",
+                                "size": 20
+                            },
+                            {
+                                "name": "Jordan",
+                                "size": 6
+                            },
+                            {
+                                "name": "Lebanon",
+                                "size": 113
+                            },
+                            {
+                                "name": "Palestine",
+                                "size": 155
+                            },
+                            {
+                                "name": "Saudi Arabia",
+                                "size": 239
+                            },
+                            {
+                                "name": "Syria",
+                                "size": 8787
+                            },
+                            {
+                                "name": "Turkey",
+                                "size": 1307
+                            },
+                            {
+                                "name": "Yemen",
+                                "size": 11161
+                            }
+                        ]
+                    },
+                    {
+                        "name": "North America",
+                        "children": [
+                            {
+                                "name": "Mexico",
+                                "size": 4382
+                            },
+                            {
+                                "name": "United States",
+                                "size": 10
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Northern Africa",
+                        "children": [
+                            {
+                                "name": "Algeria",
+                                "size": 37
+                            },
+                            {
+                                "name": "Egypt",
+                                "size": 423
+                            },
+                            {
+                                "name": "Libya",
+                                "size": 1041
+                            },
+                            {
+                                "name": "Morocco",
+                                "size": 13
+                            },
+                            {
+                                "name": "Sudan",
+                                "size": 416
+                            },
+                            {
+                                "name": "Tunisia",
+                                "size": 46
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South America",
+                        "children": [
+                            {
+                                "name": "Argentina",
+                                "size": 3
+                            },
+                            {
+                                "name": "Bolivia",
+                                "size": 8
+                            },
+                            {
+                                "name": "Brazil",
+                                "size": 12480
+                            },
+                            {
+                                "name": "Chile",
+                                "size": 64
+                            },
+                            {
+                                "name": "Colombia",
+                                "size": 690
+                            },
+                            {
+                                "name": "Ecuador",
+                                "size": 1
+                            },
+                            {
+                                "name": "Guyana",
+                                "size": 5
+                            },
+                            {
+                                "name": "Paraguay",
+                                "size": 10
+                            },
+                            {
+                                "name": "Peru",
+                                "size": 17
+                            },
+                            {
+                                "name": "Venezuela",
+                                "size": 281
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South Asia",
+                        "children": [
+                            {
+                                "name": "Bangladesh",
+                                "size": 188
+                            },
+                            {
+                                "name": "India",
+                                "size": 3108
+                            },
+                            {
+                                "name": "Nepal",
+                                "size": 21
+                            },
+                            {
+                                "name": "Pakistan",
+                                "size": 962
+                            },
+                            {
+                                "name": "Sri Lanka",
+                                "size": 16
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southeast Asia",
+                        "children": [
+                            {
+                                "name": "Cambodia",
+                                "size": 3
+                            },
+                            {
+                                "name": "Indonesia",
+                                "size": 173
+                            },
+                            {
+                                "name": "Laos",
+                                "size": 1
+                            },
+                            {
+                                "name": "Malaysia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Myanmar",
+                                "size": 1628
+                            },
+                            {
+                                "name": "Philippines",
+                                "size": 1300
+                            },
+                            {
+                                "name": "Thailand",
+                                "size": 256
+                            },
+                            {
+                                "name": "Vietnam",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southern Africa",
+                        "children": [
+                            {
+                                "name": "eSwatini",
+                                "size": 1
+                            },
+                            {
+                                "name": "Lesotho",
+                                "size": 1
+                            },
+                            {
+                                "name": "South Africa",
+                                "size": 14
+                            },
+                            {
+                                "name": "Zambia",
+                                "size": 5
+                            },
+                            {
+                                "name": "Zimbabwe",
+                                "size": 16
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Africa",
+                        "children": [
+                            {
+                                "name": "Benin",
+                                "size": 21
+                            },
+                            {
+                                "name": "Burkina Faso",
+                                "size": 558
+                            },
+                            {
+                                "name": "Gambia",
+                                "size": 5
+                            },
+                            {
+                                "name": "Ghana",
+                                "size": 63
+                            },
+                            {
+                                "name": "Guinea",
+                                "size": 31
+                            },
+                            {
+                                "name": "Guinea-Bissau",
+                                "size": 3
+                            },
+                            {
+                                "name": "Ivory Coast",
+                                "size": 59
+                            },
+                            {
+                                "name": "Liberia",
+                                "size": 5
+                            },
+                            {
+                                "name": "Mali",
+                                "size": 815
+                            },
+                            {
+                                "name": "Mauritania",
+                                "size": 5
+                            },
+                            {
+                                "name": "Niger",
+                                "size": 197
+                            },
+                            {
+                                "name": "Nigeria",
+                                "size": 1956
+                            },
+                            {
+                                "name": "Senegal",
+                                "size": 13
+                            },
+                            {
+                                "name": "Sierra Leone",
+                                "size": 22
+                            },
+                            {
+                                "name": "Togo",
+                                "size": 12
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Explosions/Remote violence",
+                "children": [
+                    {
+                        "name": "Caribbean",
+                        "children": [
+                            {
+                                "name": "Haiti",
+                                "size": 1
+                            },
+                            {
+                                "name": "Trinidad and Tobago",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caucasus and Central Asia",
+                        "children": [
+                            {
+                                "name": "Afghanistan",
+                                "size": 9667
+                            },
+                            {
+                                "name": "Armenia",
+                                "size": 254
+                            },
+                            {
+                                "name": "Azerbaijan",
+                                "size": 435
+                            },
+                            {
+                                "name": "Georgia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Kyrgyzstan",
+                                "size": 1
+                            },
+                            {
+                                "name": "Tajikistan",
+                                "size": 2
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Central America",
+                        "children": [
+                            {
+                                "name": "Costa Rica",
+                                "size": 3
+                            },
+                            {
+                                "name": "El Salvador",
+                                "size": 8
+                            },
+                            {
+                                "name": "Guatemala",
+                                "size": 5
+                            },
+                            {
+                                "name": "Honduras",
+                                "size": 6
+                            },
+                            {
+                                "name": "Nicaragua",
+                                "size": 7
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Asia",
+                        "children": [
+                            {
+                                "name": "China",
+                                "size": 7
+                            },
+                            {
+                                "name": "North Korea",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eastern Africa",
+                        "children": [
+                            {
+                                "name": "Burundi",
+                                "size": 89
+                            },
+                            {
+                                "name": "Djibouti",
+                                "size": 1
+                            },
+                            {
+                                "name": "Eritrea",
+                                "size": 4
+                            },
+                            {
+                                "name": "Ethiopia",
+                                "size": 35
+                            },
+                            {
+                                "name": "Kenya",
+                                "size": 38
+                            },
+                            {
+                                "name": "Mozambique",
+                                "size": 39
+                            },
+                            {
+                                "name": "Rwanda",
+                                "size": 3
+                            },
+                            {
+                                "name": "Somalia",
+                                "size": 1801
+                            },
+                            {
+                                "name": "South Sudan",
+                                "size": 33
+                            },
+                            {
+                                "name": "Tanzania",
+                                "size": 1
+                            },
+                            {
+                                "name": "Uganda",
+                                "size": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Europe",
+                        "children": [
+                            {
+                                "name": "Albania",
+                                "size": 3
+                            },
+                            {
+                                "name": "Bosnia and Herzegovina",
+                                "size": 24
+                            },
+                            {
+                                "name": "Croatia",
+                                "size": 15
+                            },
+                            {
+                                "name": "Cyprus",
+                                "size": 6
+                            },
+                            {
+                                "name": "Finland",
+                                "size": 1
+                            },
+                            {
+                                "name": "Germany",
+                                "size": 6
+                            },
+                            {
+                                "name": "Greece",
+                                "size": 39
+                            },
+                            {
+                                "name": "Italy",
+                                "size": 12
+                            },
+                            {
+                                "name": "Kosovo",
+                                "size": 7
+                            },
+                            {
+                                "name": "Montenegro",
+                                "size": 25
+                            },
+                            {
+                                "name": "Russia",
+                                "size": 14
+                            },
+                            {
+                                "name": "Serbia",
+                                "size": 27
+                            },
+                            {
+                                "name": "Sweden",
+                                "size": 2
+                            },
+                            {
+                                "name": "Ukraine",
+                                "size": 16510
+                            },
+                            {
+                                "name": "United Kingdom",
+                                "size": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle Africa",
+                        "children": [
+                            {
+                                "name": "Angola",
+                                "size": 4
+                            },
+                            {
+                                "name": "Cameroon",
+                                "size": 80
+                            },
+                            {
+                                "name": "Central African Republic",
+                                "size": 11
+                            },
+                            {
+                                "name": "Chad",
+                                "size": 39
+                            },
+                            {
+                                "name": "Democratic Republic of Congo",
+                                "size": 23
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle East",
+                        "children": [
+                            {
+                                "name": "Iran",
+                                "size": 26
+                            },
+                            {
+                                "name": "Iraq",
+                                "size": 4773
+                            },
+                            {
+                                "name": "Israel",
+                                "size": 651
+                            },
+                            {
+                                "name": "Jordan",
+                                "size": 4
+                            },
+                            {
+                                "name": "Lebanon",
+                                "size": 45
+                            },
+                            {
+                                "name": "Palestine",
+                                "size": 692
+                            },
+                            {
+                                "name": "Saudi Arabia",
+                                "size": 661
+                            },
+                            {
+                                "name": "Syria",
+                                "size": 30543
+                            },
+                            {
+                                "name": "Turkey",
+                                "size": 624
+                            },
+                            {
+                                "name": "United Arab Emirates",
+                                "size": 2
+                            },
+                            {
+                                "name": "Yemen",
+                                "size": 17823
+                            }
+                        ]
+                    },
+                    {
+                        "name": "North America",
+                        "children": [
+                            {
+                                "name": "Mexico",
+                                "size": 37
+                            },
+                            {
+                                "name": "United States",
+                                "size": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Northern Africa",
+                        "children": [
+                            {
+                                "name": "Algeria",
+                                "size": 12
+                            },
+                            {
+                                "name": "Egypt",
+                                "size": 773
+                            },
+                            {
+                                "name": "Libya",
+                                "size": 1452
+                            },
+                            {
+                                "name": "Morocco",
+                                "size": 2
+                            },
+                            {
+                                "name": "Sudan",
+                                "size": 45
+                            },
+                            {
+                                "name": "Tunisia",
+                                "size": 52
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South America",
+                        "children": [
+                            {
+                                "name": "Argentina",
+                                "size": 9
+                            },
+                            {
+                                "name": "Bolivia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Brazil",
+                                "size": 392
+                            },
+                            {
+                                "name": "Chile",
+                                "size": 18
+                            },
+                            {
+                                "name": "Colombia",
+                                "size": 307
+                            },
+                            {
+                                "name": "Ecuador",
+                                "size": 5
+                            },
+                            {
+                                "name": "Paraguay",
+                                "size": 2
+                            },
+                            {
+                                "name": "Peru",
+                                "size": 5
+                            },
+                            {
+                                "name": "Uruguay",
+                                "size": 1
+                            },
+                            {
+                                "name": "Venezuela",
+                                "size": 30
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South Asia",
+                        "children": [
+                            {
+                                "name": "Bangladesh",
+                                "size": 14
+                            },
+                            {
+                                "name": "India",
+                                "size": 619
+                            },
+                            {
+                                "name": "Nepal",
+                                "size": 64
+                            },
+                            {
+                                "name": "Pakistan",
+                                "size": 462
+                            },
+                            {
+                                "name": "Sri Lanka",
+                                "size": 23
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southeast Asia",
+                        "children": [
+                            {
+                                "name": "Indonesia",
+                                "size": 18
+                            },
+                            {
+                                "name": "Myanmar",
+                                "size": 718
+                            },
+                            {
+                                "name": "Philippines",
+                                "size": 173
+                            },
+                            {
+                                "name": "Thailand",
+                                "size": 176
+                            },
+                            {
+                                "name": "Vietnam",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southern Africa",
+                        "children": [
+                            {
+                                "name": "Namibia",
+                                "size": 2
+                            },
+                            {
+                                "name": "South Africa",
+                                "size": 2
+                            },
+                            {
+                                "name": "Zimbabwe",
+                                "size": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Africa",
+                        "children": [
+                            {
+                                "name": "Burkina Faso",
+                                "size": 151
+                            },
+                            {
+                                "name": "Ivory Coast",
+                                "size": 1
+                            },
+                            {
+                                "name": "Mali",
+                                "size": 372
+                            },
+                            {
+                                "name": "Mauritania",
+                                "size": 2
+                            },
+                            {
+                                "name": "Niger",
+                                "size": 80
+                            },
+                            {
+                                "name": "Nigeria",
+                                "size": 452
+                            },
+                            {
+                                "name": "Senegal",
+                                "size": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Protests",
+                "children": [
+                    {
+                        "name": "Caribbean",
+                        "children": [
+                            {
+                                "name": "Anguilla",
+                                "size": 2
+                            },
+                            {
+                                "name": "Antigua and Barbuda",
+                                "size": 37
+                            },
+                            {
+                                "name": "Aruba",
+                                "size": 8
+                            },
+                            {
+                                "name": "Bahamas",
+                                "size": 35
+                            },
+                            {
+                                "name": "Barbados",
+                                "size": 9
+                            },
+                            {
+                                "name": "Caribbean Netherlands",
+                                "size": 6
+                            },
+                            {
+                                "name": "Cayman Islands",
+                                "size": 3
+                            },
+                            {
+                                "name": "Cuba",
+                                "size": 79
+                            },
+                            {
+                                "name": "Curacao",
+                                "size": 26
+                            },
+                            {
+                                "name": "Dominica",
+                                "size": 27
+                            },
+                            {
+                                "name": "Dominican Republic",
+                                "size": 112
+                            },
+                            {
+                                "name": "Grenada",
+                                "size": 11
+                            },
+                            {
+                                "name": "Guadeloupe",
+                                "size": 69
+                            },
+                            {
+                                "name": "Haiti",
+                                "size": 372
+                            },
+                            {
+                                "name": "Jamaica",
+                                "size": 17
+                            },
+                            {
+                                "name": "Martinique",
+                                "size": 91
+                            },
+                            {
+                                "name": "Puerto Rico",
+                                "size": 168
+                            },
+                            {
+                                "name": "Saint Kitts and Nevis",
+                                "size": 3
+                            },
+                            {
+                                "name": "Saint Lucia",
+                                "size": 11
+                            },
+                            {
+                                "name": "Saint-Martin",
+                                "size": 11
+                            },
+                            {
+                                "name": "Sint Maarten",
+                                "size": 11
+                            },
+                            {
+                                "name": "Trinidad and Tobago",
+                                "size": 224
+                            },
+                            {
+                                "name": "Turks and Caicos Islands",
+                                "size": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caucasus and Central Asia",
+                        "children": [
+                            {
+                                "name": "Afghanistan",
+                                "size": 420
+                            },
+                            {
+                                "name": "Armenia",
+                                "size": 1005
+                            },
+                            {
+                                "name": "Azerbaijan",
+                                "size": 194
+                            },
+                            {
+                                "name": "Georgia",
+                                "size": 2405
+                            },
+                            {
+                                "name": "Kazakhstan",
+                                "size": 1576
+                            },
+                            {
+                                "name": "Kyrgyzstan",
+                                "size": 689
+                            },
+                            {
+                                "name": "Tajikistan",
+                                "size": 26
+                            },
+                            {
+                                "name": "Turkmenistan",
+                                "size": 9
+                            },
+                            {
+                                "name": "Uzbekistan",
+                                "size": 294
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Central America",
+                        "children": [
+                            {
+                                "name": "Belize",
+                                "size": 34
+                            },
+                            {
+                                "name": "Costa Rica",
+                                "size": 850
+                            },
+                            {
+                                "name": "El Salvador",
+                                "size": 478
+                            },
+                            {
+                                "name": "Guatemala",
+                                "size": 600
+                            },
+                            {
+                                "name": "Honduras",
+                                "size": 897
+                            },
+                            {
+                                "name": "Nicaragua",
+                                "size": 402
+                            },
+                            {
+                                "name": "Panama",
+                                "size": 1241
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Asia",
+                        "children": [
+                            {
+                                "name": "China",
+                                "size": 5972
+                            },
+                            {
+                                "name": "Japan",
+                                "size": 4417
+                            },
+                            {
+                                "name": "Mongolia",
+                                "size": 211
+                            },
+                            {
+                                "name": "North Korea",
+                                "size": 1
+                            },
+                            {
+                                "name": "South Korea",
+                                "size": 14366
+                            },
+                            {
+                                "name": "Taiwan",
+                                "size": 1996
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eastern Africa",
+                        "children": [
+                            {
+                                "name": "Burundi",
+                                "size": 143
+                            },
+                            {
+                                "name": "Djibouti",
+                                "size": 43
+                            },
+                            {
+                                "name": "Eritrea",
+                                "size": 1
+                            },
+                            {
+                                "name": "Ethiopia",
+                                "size": 496
+                            },
+                            {
+                                "name": "Kenya",
+                                "size": 369
+                            },
+                            {
+                                "name": "Madagascar",
+                                "size": 84
+                            },
+                            {
+                                "name": "Malawi",
+                                "size": 169
+                            },
+                            {
+                                "name": "Mozambique",
+                                "size": 55
+                            },
+                            {
+                                "name": "Rwanda",
+                                "size": 6
+                            },
+                            {
+                                "name": "Somalia",
+                                "size": 300
+                            },
+                            {
+                                "name": "South Sudan",
+                                "size": 71
+                            },
+                            {
+                                "name": "Tanzania",
+                                "size": 15
+                            },
+                            {
+                                "name": "Uganda",
+                                "size": 320
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Europe",
+                        "children": [
+                            {
+                                "name": "Albania",
+                                "size": 652
+                            },
+                            {
+                                "name": "Andorra",
+                                "size": 7
+                            },
+                            {
+                                "name": "Austria",
+                                "size": 487
+                            },
+                            {
+                                "name": "Bailiwick of Guernsey",
+                                "size": 6
+                            },
+                            {
+                                "name": "Bailiwick of Jersey",
+                                "size": 5
+                            },
+                            {
+                                "name": "Belarus",
+                                "size": 2535
+                            },
+                            {
+                                "name": "Belgium",
+                                "size": 887
+                            },
+                            {
+                                "name": "Bosnia and Herzegovina",
+                                "size": 498
+                            },
+                            {
+                                "name": "Bulgaria",
+                                "size": 1620
+                            },
+                            {
+                                "name": "Croatia",
+                                "size": 498
+                            },
+                            {
+                                "name": "Cyprus",
+                                "size": 512
+                            },
+                            {
+                                "name": "Czech Republic",
+                                "size": 249
+                            },
+                            {
+                                "name": "Denmark",
+                                "size": 609
+                            },
+                            {
+                                "name": "Estonia",
+                                "size": 164
+                            },
+                            {
+                                "name": "Faroe Islands",
+                                "size": 1
+                            },
+                            {
+                                "name": "Finland",
+                                "size": 236
+                            },
+                            {
+                                "name": "France",
+                                "size": 6045
+                            },
+                            {
+                                "name": "Germany",
+                                "size": 4721
+                            },
+                            {
+                                "name": "Gibraltar",
+                                "size": 1
+                            },
+                            {
+                                "name": "Greece",
+                                "size": 1388
+                            },
+                            {
+                                "name": "Greenland",
+                                "size": 4
+                            },
+                            {
+                                "name": "Hungary",
+                                "size": 205
+                            },
+                            {
+                                "name": "Iceland",
+                                "size": 35
+                            },
+                            {
+                                "name": "Ireland",
+                                "size": 299
+                            },
+                            {
+                                "name": "Isle of Man",
+                                "size": 7
+                            },
+                            {
+                                "name": "Italy",
+                                "size": 6318
+                            },
+                            {
+                                "name": "Kosovo",
+                                "size": 312
+                            },
+                            {
+                                "name": "Latvia",
+                                "size": 73
+                            },
+                            {
+                                "name": "Liechtenstein",
+                                "size": 2
+                            },
+                            {
+                                "name": "Lithuania",
+                                "size": 66
+                            },
+                            {
+                                "name": "Luxembourg",
+                                "size": 40
+                            },
+                            {
+                                "name": "Malta",
+                                "size": 43
+                            },
+                            {
+                                "name": "Moldova",
+                                "size": 655
+                            },
+                            {
+                                "name": "Monaco",
+                                "size": 3
+                            },
+                            {
+                                "name": "Montenegro",
+                                "size": 547
+                            },
+                            {
+                                "name": "Netherlands",
+                                "size": 713
+                            },
+                            {
+                                "name": "North Macedonia",
+                                "size": 501
+                            },
+                            {
+                                "name": "Norway",
+                                "size": 310
+                            },
+                            {
+                                "name": "Poland",
+                                "size": 2106
+                            },
+                            {
+                                "name": "Portugal",
+                                "size": 398
+                            },
+                            {
+                                "name": "Romania",
+                                "size": 1327
+                            },
+                            {
+                                "name": "Russia",
+                                "size": 5209
+                            },
+                            {
+                                "name": "San Marino",
+                                "size": 2
+                            },
+                            {
+                                "name": "Serbia",
+                                "size": 1608
+                            },
+                            {
+                                "name": "Slovakia",
+                                "size": 143
+                            },
+                            {
+                                "name": "Slovenia",
+                                "size": 166
+                            },
+                            {
+                                "name": "Spain",
+                                "size": 3942
+                            },
+                            {
+                                "name": "Sweden",
+                                "size": 988
+                            },
+                            {
+                                "name": "Switzerland",
+                                "size": 171
+                            },
+                            {
+                                "name": "Ukraine",
+                                "size": 4181
+                            },
+                            {
+                                "name": "United Kingdom",
+                                "size": 2272
+                            },
+                            {
+                                "name": "Vatican City",
+                                "size": 2
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle Africa",
+                        "children": [
+                            {
+                                "name": "Angola",
+                                "size": 142
+                            },
+                            {
+                                "name": "Cameroon",
+                                "size": 215
+                            },
+                            {
+                                "name": "Central African Republic",
+                                "size": 97
+                            },
+                            {
+                                "name": "Chad",
+                                "size": 72
+                            },
+                            {
+                                "name": "Democratic Republic of Congo",
+                                "size": 1175
+                            },
+                            {
+                                "name": "Equatorial Guinea",
+                                "size": 2
+                            },
+                            {
+                                "name": "Gabon",
+                                "size": 66
+                            },
+                            {
+                                "name": "Republic of Congo",
+                                "size": 21
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle East",
+                        "children": [
+                            {
+                                "name": "Bahrain",
+                                "size": 1142
+                            },
+                            {
+                                "name": "Iran",
+                                "size": 6591
+                            },
+                            {
+                                "name": "Iraq",
+                                "size": 3218
+                            },
+                            {
+                                "name": "Israel",
+                                "size": 7006
+                            },
+                            {
+                                "name": "Jordan",
+                                "size": 333
+                            },
+                            {
+                                "name": "Kuwait",
+                                "size": 40
+                            },
+                            {
+                                "name": "Lebanon",
+                                "size": 4774
+                            },
+                            {
+                                "name": "Oman",
+                                "size": 4
+                            },
+                            {
+                                "name": "Palestine",
+                                "size": 841
+                            },
+                            {
+                                "name": "Qatar",
+                                "size": 3
+                            },
+                            {
+                                "name": "Saudi Arabia",
+                                "size": 7
+                            },
+                            {
+                                "name": "Syria",
+                                "size": 1344
+                            },
+                            {
+                                "name": "Turkey",
+                                "size": 5046
+                            },
+                            {
+                                "name": "United Arab Emirates",
+                                "size": 2
+                            },
+                            {
+                                "name": "Yemen",
+                                "size": 1599
+                            }
+                        ]
+                    },
+                    {
+                        "name": "North America",
+                        "children": [
+                            {
+                                "name": "Mexico",
+                                "size": 15037
+                            },
+                            {
+                                "name": "United States",
+                                "size": 23042
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Northern Africa",
+                        "children": [
+                            {
+                                "name": "Algeria",
+                                "size": 4819
+                            },
+                            {
+                                "name": "Egypt",
+                                "size": 329
+                            },
+                            {
+                                "name": "Libya",
+                                "size": 364
+                            },
+                            {
+                                "name": "Morocco",
+                                "size": 2499
+                            },
+                            {
+                                "name": "Sudan",
+                                "size": 1791
+                            },
+                            {
+                                "name": "Tunisia",
+                                "size": 3250
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South America",
+                        "children": [
+                            {
+                                "name": "Argentina",
+                                "size": 5977
+                            },
+                            {
+                                "name": "Bolivia",
+                                "size": 1453
+                            },
+                            {
+                                "name": "Brazil",
+                                "size": 12250
+                            },
+                            {
+                                "name": "Chile",
+                                "size": 3718
+                            },
+                            {
+                                "name": "Colombia",
+                                "size": 1862
+                            },
+                            {
+                                "name": "Ecuador",
+                                "size": 893
+                            },
+                            {
+                                "name": "French Guiana",
+                                "size": 43
+                            },
+                            {
+                                "name": "Guyana",
+                                "size": 174
+                            },
+                            {
+                                "name": "Paraguay",
+                                "size": 1517
+                            },
+                            {
+                                "name": "Peru",
+                                "size": 1875
+                            },
+                            {
+                                "name": "Suriname",
+                                "size": 62
+                            },
+                            {
+                                "name": "Uruguay",
+                                "size": 89
+                            },
+                            {
+                                "name": "Venezuela",
+                                "size": 6788
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South Asia",
+                        "children": [
+                            {
+                                "name": "Bangladesh",
+                                "size": 2541
+                            },
+                            {
+                                "name": "India",
+                                "size": 44238
+                            },
+                            {
+                                "name": "Nepal",
+                                "size": 2327
+                            },
+                            {
+                                "name": "Pakistan",
+                                "size": 19809
+                            },
+                            {
+                                "name": "Sri Lanka",
+                                "size": 1621
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southeast Asia",
+                        "children": [
+                            {
+                                "name": "Cambodia",
+                                "size": 234
+                            },
+                            {
+                                "name": "Indonesia",
+                                "size": 2833
+                            },
+                            {
+                                "name": "Laos",
+                                "size": 2
+                            },
+                            {
+                                "name": "Malaysia",
+                                "size": 326
+                            },
+                            {
+                                "name": "Myanmar",
+                                "size": 1905
+                            },
+                            {
+                                "name": "Philippines",
+                                "size": 775
+                            },
+                            {
+                                "name": "Thailand",
+                                "size": 1114
+                            },
+                            {
+                                "name": "Vietnam",
+                                "size": 59
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southern Africa",
+                        "children": [
+                            {
+                                "name": "Botswana",
+                                "size": 19
+                            },
+                            {
+                                "name": "eSwatini",
+                                "size": 28
+                            },
+                            {
+                                "name": "Lesotho",
+                                "size": 13
+                            },
+                            {
+                                "name": "Namibia",
+                                "size": 179
+                            },
+                            {
+                                "name": "South Africa",
+                                "size": 2453
+                            },
+                            {
+                                "name": "Zambia",
+                                "size": 26
+                            },
+                            {
+                                "name": "Zimbabwe",
+                                "size": 168
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Africa",
+                        "children": [
+                            {
+                                "name": "Benin",
+                                "size": 41
+                            },
+                            {
+                                "name": "Burkina Faso",
+                                "size": 298
+                            },
+                            {
+                                "name": "Gambia",
+                                "size": 21
+                            },
+                            {
+                                "name": "Ghana",
+                                "size": 220
+                            },
+                            {
+                                "name": "Guinea",
+                                "size": 425
+                            },
+                            {
+                                "name": "Guinea-Bissau",
+                                "size": 27
+                            },
+                            {
+                                "name": "Ivory Coast",
+                                "size": 257
+                            },
+                            {
+                                "name": "Liberia",
+                                "size": 115
+                            },
+                            {
+                                "name": "Mali",
+                                "size": 289
+                            },
+                            {
+                                "name": "Mauritania",
+                                "size": 532
+                            },
+                            {
+                                "name": "Niger",
+                                "size": 61
+                            },
+                            {
+                                "name": "Nigeria",
+                                "size": 1945
+                            },
+                            {
+                                "name": "Senegal",
+                                "size": 131
+                            },
+                            {
+                                "name": "Sierra Leone",
+                                "size": 68
+                            },
+                            {
+                                "name": "Togo",
+                                "size": 60
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Riots",
+                "children": [
+                    {
+                        "name": "Caribbean",
+                        "children": [
+                            {
+                                "name": "Bahamas",
+                                "size": 1
+                            },
+                            {
+                                "name": "Barbados",
+                                "size": 1
+                            },
+                            {
+                                "name": "Cuba",
+                                "size": 11
+                            },
+                            {
+                                "name": "Curacao",
+                                "size": 6
+                            },
+                            {
+                                "name": "Dominica",
+                                "size": 6
+                            },
+                            {
+                                "name": "Dominican Republic",
+                                "size": 36
+                            },
+                            {
+                                "name": "Grenada",
+                                "size": 1
+                            },
+                            {
+                                "name": "Guadeloupe",
+                                "size": 13
+                            },
+                            {
+                                "name": "Haiti",
+                                "size": 429
+                            },
+                            {
+                                "name": "Jamaica",
+                                "size": 31
+                            },
+                            {
+                                "name": "Martinique",
+                                "size": 17
+                            },
+                            {
+                                "name": "Puerto Rico",
+                                "size": 10
+                            },
+                            {
+                                "name": "Trinidad and Tobago",
+                                "size": 54
+                            },
+                            {
+                                "name": "Turks and Caicos Islands",
+                                "size": 1
+                            },
+                            {
+                                "name": "Virgin Islands, U.S.",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caucasus and Central Asia",
+                        "children": [
+                            {
+                                "name": "Afghanistan",
+                                "size": 19
+                            },
+                            {
+                                "name": "Armenia",
+                                "size": 55
+                            },
+                            {
+                                "name": "Azerbaijan",
+                                "size": 8
+                            },
+                            {
+                                "name": "Georgia",
+                                "size": 142
+                            },
+                            {
+                                "name": "Kazakhstan",
+                                "size": 48
+                            },
+                            {
+                                "name": "Kyrgyzstan",
+                                "size": 90
+                            },
+                            {
+                                "name": "Tajikistan",
+                                "size": 14
+                            },
+                            {
+                                "name": "Turkmenistan",
+                                "size": 7
+                            },
+                            {
+                                "name": "Uzbekistan",
+                                "size": 31
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Central America",
+                        "children": [
+                            {
+                                "name": "Belize",
+                                "size": 9
+                            },
+                            {
+                                "name": "Costa Rica",
+                                "size": 93
+                            },
+                            {
+                                "name": "El Salvador",
+                                "size": 29
+                            },
+                            {
+                                "name": "Guatemala",
+                                "size": 243
+                            },
+                            {
+                                "name": "Honduras",
+                                "size": 303
+                            },
+                            {
+                                "name": "Nicaragua",
+                                "size": 54
+                            },
+                            {
+                                "name": "Panama",
+                                "size": 66
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Asia",
+                        "children": [
+                            {
+                                "name": "China",
+                                "size": 486
+                            },
+                            {
+                                "name": "Japan",
+                                "size": 4
+                            },
+                            {
+                                "name": "Mongolia",
+                                "size": 4
+                            },
+                            {
+                                "name": "North Korea",
+                                "size": 1
+                            },
+                            {
+                                "name": "South Korea",
+                                "size": 169
+                            },
+                            {
+                                "name": "Taiwan",
+                                "size": 40
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eastern Africa",
+                        "children": [
+                            {
+                                "name": "Burundi",
+                                "size": 150
+                            },
+                            {
+                                "name": "Djibouti",
+                                "size": 5
+                            },
+                            {
+                                "name": "Ethiopia",
+                                "size": 178
+                            },
+                            {
+                                "name": "Kenya",
+                                "size": 312
+                            },
+                            {
+                                "name": "Madagascar",
+                                "size": 126
+                            },
+                            {
+                                "name": "Malawi",
+                                "size": 227
+                            },
+                            {
+                                "name": "Mozambique",
+                                "size": 75
+                            },
+                            {
+                                "name": "Rwanda",
+                                "size": 2
+                            },
+                            {
+                                "name": "Somalia",
+                                "size": 73
+                            },
+                            {
+                                "name": "South Sudan",
+                                "size": 47
+                            },
+                            {
+                                "name": "Tanzania",
+                                "size": 27
+                            },
+                            {
+                                "name": "Uganda",
+                                "size": 558
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Europe",
+                        "children": [
+                            {
+                                "name": "Albania",
+                                "size": 132
+                            },
+                            {
+                                "name": "Austria",
+                                "size": 12
+                            },
+                            {
+                                "name": "Belarus",
+                                "size": 20
+                            },
+                            {
+                                "name": "Belgium",
+                                "size": 29
+                            },
+                            {
+                                "name": "Bosnia and Herzegovina",
+                                "size": 22
+                            },
+                            {
+                                "name": "Bulgaria",
+                                "size": 48
+                            },
+                            {
+                                "name": "Croatia",
+                                "size": 10
+                            },
+                            {
+                                "name": "Cyprus",
+                                "size": 35
+                            },
+                            {
+                                "name": "Czech Republic",
+                                "size": 5
+                            },
+                            {
+                                "name": "Denmark",
+                                "size": 29
+                            },
+                            {
+                                "name": "Estonia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Faroe Islands",
+                                "size": 1
+                            },
+                            {
+                                "name": "Finland",
+                                "size": 6
+                            },
+                            {
+                                "name": "France",
+                                "size": 356
+                            },
+                            {
+                                "name": "Germany",
+                                "size": 203
+                            },
+                            {
+                                "name": "Greece",
+                                "size": 568
+                            },
+                            {
+                                "name": "Hungary",
+                                "size": 2
+                            },
+                            {
+                                "name": "Iceland",
+                                "size": 1
+                            },
+                            {
+                                "name": "Ireland",
+                                "size": 12
+                            },
+                            {
+                                "name": "Italy",
+                                "size": 243
+                            },
+                            {
+                                "name": "Kosovo",
+                                "size": 16
+                            },
+                            {
+                                "name": "Latvia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Luxembourg",
+                                "size": 1
+                            },
+                            {
+                                "name": "Malta",
+                                "size": 7
+                            },
+                            {
+                                "name": "Moldova",
+                                "size": 17
+                            },
+                            {
+                                "name": "Montenegro",
+                                "size": 12
+                            },
+                            {
+                                "name": "Netherlands",
+                                "size": 103
+                            },
+                            {
+                                "name": "North Macedonia",
+                                "size": 8
+                            },
+                            {
+                                "name": "Norway",
+                                "size": 10
+                            },
+                            {
+                                "name": "Poland",
+                                "size": 14
+                            },
+                            {
+                                "name": "Portugal",
+                                "size": 10
+                            },
+                            {
+                                "name": "Romania",
+                                "size": 19
+                            },
+                            {
+                                "name": "Russia",
+                                "size": 50
+                            },
+                            {
+                                "name": "Serbia",
+                                "size": 36
+                            },
+                            {
+                                "name": "Slovakia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Slovenia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Spain",
+                                "size": 194
+                            },
+                            {
+                                "name": "Sweden",
+                                "size": 27
+                            },
+                            {
+                                "name": "Switzerland",
+                                "size": 3
+                            },
+                            {
+                                "name": "Ukraine",
+                                "size": 358
+                            },
+                            {
+                                "name": "United Kingdom",
+                                "size": 117
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle Africa",
+                        "children": [
+                            {
+                                "name": "Angola",
+                                "size": 49
+                            },
+                            {
+                                "name": "Cameroon",
+                                "size": 104
+                            },
+                            {
+                                "name": "Central African Republic",
+                                "size": 68
+                            },
+                            {
+                                "name": "Chad",
+                                "size": 47
+                            },
+                            {
+                                "name": "Democratic Republic of Congo",
+                                "size": 739
+                            },
+                            {
+                                "name": "Gabon",
+                                "size": 29
+                            },
+                            {
+                                "name": "Republic of Congo",
+                                "size": 9
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle East",
+                        "children": [
+                            {
+                                "name": "Bahrain",
+                                "size": 1015
+                            },
+                            {
+                                "name": "Iran",
+                                "size": 323
+                            },
+                            {
+                                "name": "Iraq",
+                                "size": 787
+                            },
+                            {
+                                "name": "Israel",
+                                "size": 164
+                            },
+                            {
+                                "name": "Jordan",
+                                "size": 50
+                            },
+                            {
+                                "name": "Kuwait",
+                                "size": 3
+                            },
+                            {
+                                "name": "Lebanon",
+                                "size": 1054
+                            },
+                            {
+                                "name": "Palestine",
+                                "size": 2038
+                            },
+                            {
+                                "name": "Qatar",
+                                "size": 1
+                            },
+                            {
+                                "name": "Saudi Arabia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Syria",
+                                "size": 98
+                            },
+                            {
+                                "name": "Turkey",
+                                "size": 163
+                            },
+                            {
+                                "name": "Yemen",
+                                "size": 165
+                            }
+                        ]
+                    },
+                    {
+                        "name": "North America",
+                        "children": [
+                            {
+                                "name": "Mexico",
+                                "size": 2438
+                            },
+                            {
+                                "name": "United States",
+                                "size": 856
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Northern Africa",
+                        "children": [
+                            {
+                                "name": "Algeria",
+                                "size": 199
+                            },
+                            {
+                                "name": "Egypt",
+                                "size": 34
+                            },
+                            {
+                                "name": "Libya",
+                                "size": 54
+                            },
+                            {
+                                "name": "Morocco",
+                                "size": 68
+                            },
+                            {
+                                "name": "Sudan",
+                                "size": 220
+                            },
+                            {
+                                "name": "Tunisia",
+                                "size": 655
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South America",
+                        "children": [
+                            {
+                                "name": "Argentina",
+                                "size": 366
+                            },
+                            {
+                                "name": "Bolivia",
+                                "size": 339
+                            },
+                            {
+                                "name": "Brazil",
+                                "size": 1968
+                            },
+                            {
+                                "name": "Chile",
+                                "size": 2185
+                            },
+                            {
+                                "name": "Colombia",
+                                "size": 473
+                            },
+                            {
+                                "name": "Ecuador",
+                                "size": 166
+                            },
+                            {
+                                "name": "French Guiana",
+                                "size": 11
+                            },
+                            {
+                                "name": "Guyana",
+                                "size": 70
+                            },
+                            {
+                                "name": "Paraguay",
+                                "size": 123
+                            },
+                            {
+                                "name": "Peru",
+                                "size": 540
+                            },
+                            {
+                                "name": "Suriname",
+                                "size": 11
+                            },
+                            {
+                                "name": "Uruguay",
+                                "size": 17
+                            },
+                            {
+                                "name": "Venezuela",
+                                "size": 506
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South Asia",
+                        "children": [
+                            {
+                                "name": "Bangladesh",
+                                "size": 1231
+                            },
+                            {
+                                "name": "India",
+                                "size": 9242
+                            },
+                            {
+                                "name": "Nepal",
+                                "size": 395
+                            },
+                            {
+                                "name": "Pakistan",
+                                "size": 1095
+                            },
+                            {
+                                "name": "Sri Lanka",
+                                "size": 273
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southeast Asia",
+                        "children": [
+                            {
+                                "name": "Cambodia",
+                                "size": 17
+                            },
+                            {
+                                "name": "Indonesia",
+                                "size": 613
+                            },
+                            {
+                                "name": "Malaysia",
+                                "size": 37
+                            },
+                            {
+                                "name": "Myanmar",
+                                "size": 61
+                            },
+                            {
+                                "name": "Philippines",
+                                "size": 22
+                            },
+                            {
+                                "name": "Thailand",
+                                "size": 30
+                            },
+                            {
+                                "name": "Vietnam",
+                                "size": 21
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southern Africa",
+                        "children": [
+                            {
+                                "name": "Botswana",
+                                "size": 9
+                            },
+                            {
+                                "name": "eSwatini",
+                                "size": 24
+                            },
+                            {
+                                "name": "Lesotho",
+                                "size": 7
+                            },
+                            {
+                                "name": "Namibia",
+                                "size": 9
+                            },
+                            {
+                                "name": "South Africa",
+                                "size": 1818
+                            },
+                            {
+                                "name": "Zambia",
+                                "size": 114
+                            },
+                            {
+                                "name": "Zimbabwe",
+                                "size": 165
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Africa",
+                        "children": [
+                            {
+                                "name": "Benin",
+                                "size": 57
+                            },
+                            {
+                                "name": "Burkina Faso",
+                                "size": 74
+                            },
+                            {
+                                "name": "Gambia",
+                                "size": 21
+                            },
+                            {
+                                "name": "Ghana",
+                                "size": 161
+                            },
+                            {
+                                "name": "Guinea",
+                                "size": 463
+                            },
+                            {
+                                "name": "Guinea-Bissau",
+                                "size": 3
+                            },
+                            {
+                                "name": "Ivory Coast",
+                                "size": 361
+                            },
+                            {
+                                "name": "Liberia",
+                                "size": 79
+                            },
+                            {
+                                "name": "Mali",
+                                "size": 132
+                            },
+                            {
+                                "name": "Mauritania",
+                                "size": 27
+                            },
+                            {
+                                "name": "Niger",
+                                "size": 44
+                            },
+                            {
+                                "name": "Nigeria",
+                                "size": 703
+                            },
+                            {
+                                "name": "Senegal",
+                                "size": 65
+                            },
+                            {
+                                "name": "Sierra Leone",
+                                "size": 127
+                            },
+                            {
+                                "name": "Togo",
+                                "size": 45
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Strategic developments",
+                "children": [
+                    {
+                        "name": "Caribbean",
+                        "children": [
+                            {
+                                "name": "Anguilla",
+                                "size": 1
+                            },
+                            {
+                                "name": "Antigua and Barbuda",
+                                "size": 1
+                            },
+                            {
+                                "name": "Aruba",
+                                "size": 2
+                            },
+                            {
+                                "name": "Bahamas",
+                                "size": 2
+                            },
+                            {
+                                "name": "Barbados",
+                                "size": 1
+                            },
+                            {
+                                "name": "Caribbean Netherlands",
+                                "size": 1
+                            },
+                            {
+                                "name": "Cayman Islands",
+                                "size": 1
+                            },
+                            {
+                                "name": "Cuba",
+                                "size": 22
+                            },
+                            {
+                                "name": "Curacao",
+                                "size": 5
+                            },
+                            {
+                                "name": "Dominica",
+                                "size": 1
+                            },
+                            {
+                                "name": "Dominican Republic",
+                                "size": 27
+                            },
+                            {
+                                "name": "Grenada",
+                                "size": 2
+                            },
+                            {
+                                "name": "Haiti",
+                                "size": 44
+                            },
+                            {
+                                "name": "Jamaica",
+                                "size": 21
+                            },
+                            {
+                                "name": "Montserrat",
+                                "size": 1
+                            },
+                            {
+                                "name": "Puerto Rico",
+                                "size": 20
+                            },
+                            {
+                                "name": "Saint Kitts and Nevis",
+                                "size": 1
+                            },
+                            {
+                                "name": "Saint Lucia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Saint-Martin",
+                                "size": 1
+                            },
+                            {
+                                "name": "Sint Maarten",
+                                "size": 3
+                            },
+                            {
+                                "name": "Trinidad and Tobago",
+                                "size": 53
+                            },
+                            {
+                                "name": "Turks and Caicos Islands",
+                                "size": 10
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caucasus and Central Asia",
+                        "children": [
+                            {
+                                "name": "Afghanistan",
+                                "size": 800
+                            },
+                            {
+                                "name": "Armenia",
+                                "size": 30
+                            },
+                            {
+                                "name": "Azerbaijan",
+                                "size": 90
+                            },
+                            {
+                                "name": "Georgia",
+                                "size": 39
+                            },
+                            {
+                                "name": "Kazakhstan",
+                                "size": 27
+                            },
+                            {
+                                "name": "Kyrgyzstan",
+                                "size": 25
+                            },
+                            {
+                                "name": "Tajikistan",
+                                "size": 22
+                            },
+                            {
+                                "name": "Turkmenistan",
+                                "size": 9
+                            },
+                            {
+                                "name": "Uzbekistan",
+                                "size": 18
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Central America",
+                        "children": [
+                            {
+                                "name": "Belize",
+                                "size": 32
+                            },
+                            {
+                                "name": "Costa Rica",
+                                "size": 14
+                            },
+                            {
+                                "name": "El Salvador",
+                                "size": 115
+                            },
+                            {
+                                "name": "Guatemala",
+                                "size": 119
+                            },
+                            {
+                                "name": "Honduras",
+                                "size": 208
+                            },
+                            {
+                                "name": "Nicaragua",
+                                "size": 31
+                            },
+                            {
+                                "name": "Panama",
+                                "size": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Asia",
+                        "children": [
+                            {
+                                "name": "China",
+                                "size": 1344
+                            },
+                            {
+                                "name": "Japan",
+                                "size": 27
+                            },
+                            {
+                                "name": "Mongolia",
+                                "size": 26
+                            },
+                            {
+                                "name": "North Korea",
+                                "size": 107
+                            },
+                            {
+                                "name": "South Korea",
+                                "size": 14
+                            },
+                            {
+                                "name": "Taiwan",
+                                "size": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eastern Africa",
+                        "children": [
+                            {
+                                "name": "Burundi",
+                                "size": 235
+                            },
+                            {
+                                "name": "Djibouti",
+                                "size": 8
+                            },
+                            {
+                                "name": "Eritrea",
+                                "size": 11
+                            },
+                            {
+                                "name": "Ethiopia",
+                                "size": 126
+                            },
+                            {
+                                "name": "Kenya",
+                                "size": 50
+                            },
+                            {
+                                "name": "Madagascar",
+                                "size": 59
+                            },
+                            {
+                                "name": "Malawi",
+                                "size": 12
+                            },
+                            {
+                                "name": "Mozambique",
+                                "size": 123
+                            },
+                            {
+                                "name": "Rwanda",
+                                "size": 14
+                            },
+                            {
+                                "name": "Somalia",
+                                "size": 387
+                            },
+                            {
+                                "name": "South Sudan",
+                                "size": 121
+                            },
+                            {
+                                "name": "Tanzania",
+                                "size": 24
+                            },
+                            {
+                                "name": "Uganda",
+                                "size": 84
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Europe",
+                        "children": [
+                            {
+                                "name": "Albania",
+                                "size": 18
+                            },
+                            {
+                                "name": "Andorra",
+                                "size": 1
+                            },
+                            {
+                                "name": "Austria",
+                                "size": 10
+                            },
+                            {
+                                "name": "Belarus",
+                                "size": 50
+                            },
+                            {
+                                "name": "Belgium",
+                                "size": 6
+                            },
+                            {
+                                "name": "Bosnia and Herzegovina",
+                                "size": 36
+                            },
+                            {
+                                "name": "Bulgaria",
+                                "size": 16
+                            },
+                            {
+                                "name": "Croatia",
+                                "size": 4
+                            },
+                            {
+                                "name": "Cyprus",
+                                "size": 53
+                            },
+                            {
+                                "name": "Czech Republic",
+                                "size": 3
+                            },
+                            {
+                                "name": "Denmark",
+                                "size": 9
+                            },
+                            {
+                                "name": "Finland",
+                                "size": 19
+                            },
+                            {
+                                "name": "France",
+                                "size": 53
+                            },
+                            {
+                                "name": "Germany",
+                                "size": 300
+                            },
+                            {
+                                "name": "Greece",
+                                "size": 155
+                            },
+                            {
+                                "name": "Hungary",
+                                "size": 6
+                            },
+                            {
+                                "name": "Iceland",
+                                "size": 4
+                            },
+                            {
+                                "name": "Ireland",
+                                "size": 4
+                            },
+                            {
+                                "name": "Italy",
+                                "size": 77
+                            },
+                            {
+                                "name": "Kosovo",
+                                "size": 30
+                            },
+                            {
+                                "name": "Latvia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Lithuania",
+                                "size": 2
+                            },
+                            {
+                                "name": "Luxembourg",
+                                "size": 1
+                            },
+                            {
+                                "name": "Malta",
+                                "size": 7
+                            },
+                            {
+                                "name": "Moldova",
+                                "size": 79
+                            },
+                            {
+                                "name": "Monaco",
+                                "size": 1
+                            },
+                            {
+                                "name": "Montenegro",
+                                "size": 7
+                            },
+                            {
+                                "name": "Netherlands",
+                                "size": 41
+                            },
+                            {
+                                "name": "North Macedonia",
+                                "size": 20
+                            },
+                            {
+                                "name": "Norway",
+                                "size": 13
+                            },
+                            {
+                                "name": "Poland",
+                                "size": 6
+                            },
+                            {
+                                "name": "Portugal",
+                                "size": 2
+                            },
+                            {
+                                "name": "Romania",
+                                "size": 31
+                            },
+                            {
+                                "name": "Russia",
+                                "size": 223
+                            },
+                            {
+                                "name": "San Marino",
+                                "size": 3
+                            },
+                            {
+                                "name": "Serbia",
+                                "size": 24
+                            },
+                            {
+                                "name": "Slovakia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Slovenia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Spain",
+                                "size": 11
+                            },
+                            {
+                                "name": "Sweden",
+                                "size": 34
+                            },
+                            {
+                                "name": "Switzerland",
+                                "size": 2
+                            },
+                            {
+                                "name": "Ukraine",
+                                "size": 689
+                            },
+                            {
+                                "name": "United Kingdom",
+                                "size": 42
+                            },
+                            {
+                                "name": "Vatican City",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle Africa",
+                        "children": [
+                            {
+                                "name": "Angola",
+                                "size": 15
+                            },
+                            {
+                                "name": "Cameroon",
+                                "size": 428
+                            },
+                            {
+                                "name": "Central African Republic",
+                                "size": 357
+                            },
+                            {
+                                "name": "Chad",
+                                "size": 58
+                            },
+                            {
+                                "name": "Democratic Republic of Congo",
+                                "size": 707
+                            },
+                            {
+                                "name": "Equatorial Guinea",
+                                "size": 5
+                            },
+                            {
+                                "name": "Gabon",
+                                "size": 12
+                            },
+                            {
+                                "name": "Republic of Congo",
+                                "size": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle East",
+                        "children": [
+                            {
+                                "name": "Bahrain",
+                                "size": 46
+                            },
+                            {
+                                "name": "Iran",
+                                "size": 225
+                            },
+                            {
+                                "name": "Iraq",
+                                "size": 980
+                            },
+                            {
+                                "name": "Israel",
+                                "size": 192
+                            },
+                            {
+                                "name": "Jordan",
+                                "size": 65
+                            },
+                            {
+                                "name": "Kuwait",
+                                "size": 5
+                            },
+                            {
+                                "name": "Lebanon",
+                                "size": 191
+                            },
+                            {
+                                "name": "Oman",
+                                "size": 8
+                            },
+                            {
+                                "name": "Palestine",
+                                "size": 913
+                            },
+                            {
+                                "name": "Qatar",
+                                "size": 4
+                            },
+                            {
+                                "name": "Saudi Arabia",
+                                "size": 184
+                            },
+                            {
+                                "name": "Syria",
+                                "size": 4736
+                            },
+                            {
+                                "name": "Turkey",
+                                "size": 2239
+                            },
+                            {
+                                "name": "United Arab Emirates",
+                                "size": 3
+                            },
+                            {
+                                "name": "Yemen",
+                                "size": 2406
+                            }
+                        ]
+                    },
+                    {
+                        "name": "North America",
+                        "children": [
+                            {
+                                "name": "Mexico",
+                                "size": 1229
+                            },
+                            {
+                                "name": "United States",
+                                "size": 1021
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Northern Africa",
+                        "children": [
+                            {
+                                "name": "Algeria",
+                                "size": 142
+                            },
+                            {
+                                "name": "Egypt",
+                                "size": 98
+                            },
+                            {
+                                "name": "Libya",
+                                "size": 251
+                            },
+                            {
+                                "name": "Morocco",
+                                "size": 33
+                            },
+                            {
+                                "name": "Sudan",
+                                "size": 132
+                            },
+                            {
+                                "name": "Tunisia",
+                                "size": 60
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South America",
+                        "children": [
+                            {
+                                "name": "Argentina",
+                                "size": 32
+                            },
+                            {
+                                "name": "Bolivia",
+                                "size": 5
+                            },
+                            {
+                                "name": "Brazil",
+                                "size": 1557
+                            },
+                            {
+                                "name": "Chile",
+                                "size": 468
+                            },
+                            {
+                                "name": "Colombia",
+                                "size": 568
+                            },
+                            {
+                                "name": "Ecuador",
+                                "size": 7
+                            },
+                            {
+                                "name": "Falkland Islands",
+                                "size": 1
+                            },
+                            {
+                                "name": "French Guiana",
+                                "size": 2
+                            },
+                            {
+                                "name": "Guyana",
+                                "size": 11
+                            },
+                            {
+                                "name": "Paraguay",
+                                "size": 16
+                            },
+                            {
+                                "name": "Peru",
+                                "size": 15
+                            },
+                            {
+                                "name": "Suriname",
+                                "size": 6
+                            },
+                            {
+                                "name": "Uruguay",
+                                "size": 4
+                            },
+                            {
+                                "name": "Venezuela",
+                                "size": 217
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South Asia",
+                        "children": [
+                            {
+                                "name": "Bangladesh",
+                                "size": 40
+                            },
+                            {
+                                "name": "India",
+                                "size": 767
+                            },
+                            {
+                                "name": "Nepal",
+                                "size": 128
+                            },
+                            {
+                                "name": "Pakistan",
+                                "size": 279
+                            },
+                            {
+                                "name": "Sri Lanka",
+                                "size": 110
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southeast Asia",
+                        "children": [
+                            {
+                                "name": "Cambodia",
+                                "size": 33
+                            },
+                            {
+                                "name": "Indonesia",
+                                "size": 183
+                            },
+                            {
+                                "name": "Laos",
+                                "size": 4
+                            },
+                            {
+                                "name": "Malaysia",
+                                "size": 68
+                            },
+                            {
+                                "name": "Myanmar",
+                                "size": 383
+                            },
+                            {
+                                "name": "Philippines",
+                                "size": 338
+                            },
+                            {
+                                "name": "Thailand",
+                                "size": 234
+                            },
+                            {
+                                "name": "Vietnam",
+                                "size": 11
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southern Africa",
+                        "children": [
+                            {
+                                "name": "Lesotho",
+                                "size": 5
+                            },
+                            {
+                                "name": "Namibia",
+                                "size": 1
+                            },
+                            {
+                                "name": "South Africa",
+                                "size": 31
+                            },
+                            {
+                                "name": "Zambia",
+                                "size": 7
+                            },
+                            {
+                                "name": "Zimbabwe",
+                                "size": 41
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Africa",
+                        "children": [
+                            {
+                                "name": "Benin",
+                                "size": 9
+                            },
+                            {
+                                "name": "Burkina Faso",
+                                "size": 305
+                            },
+                            {
+                                "name": "Gambia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Ghana",
+                                "size": 20
+                            },
+                            {
+                                "name": "Guinea",
+                                "size": 40
+                            },
+                            {
+                                "name": "Guinea-Bissau",
+                                "size": 10
+                            },
+                            {
+                                "name": "Ivory Coast",
+                                "size": 27
+                            },
+                            {
+                                "name": "Liberia",
+                                "size": 9
+                            },
+                            {
+                                "name": "Mali",
+                                "size": 285
+                            },
+                            {
+                                "name": "Mauritania",
+                                "size": 9
+                            },
+                            {
+                                "name": "Niger",
+                                "size": 198
+                            },
+                            {
+                                "name": "Nigeria",
+                                "size": 313
+                            },
+                            {
+                                "name": "Senegal",
+                                "size": 12
+                            },
+                            {
+                                "name": "Sierra Leone",
+                                "size": 23
+                            },
+                            {
+                                "name": "Togo",
+                                "size": 11
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Violence against civilians",
+                "children": [
+                    {
+                        "name": "Caribbean",
+                        "children": [
+                            {
+                                "name": "Antigua and Barbuda",
+                                "size": 5
+                            },
+                            {
+                                "name": "Bahamas",
+                                "size": 3
+                            },
+                            {
+                                "name": "Barbados",
+                                "size": 1
+                            },
+                            {
+                                "name": "Cuba",
+                                "size": 71
+                            },
+                            {
+                                "name": "Dominica",
+                                "size": 1
+                            },
+                            {
+                                "name": "Dominican Republic",
+                                "size": 18
+                            },
+                            {
+                                "name": "Haiti",
+                                "size": 316
+                            },
+                            {
+                                "name": "Jamaica",
+                                "size": 272
+                            },
+                            {
+                                "name": "Puerto Rico",
+                                "size": 349
+                            },
+                            {
+                                "name": "Saint Kitts and Nevis",
+                                "size": 2
+                            },
+                            {
+                                "name": "Saint Lucia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Sint Maarten",
+                                "size": 1
+                            },
+                            {
+                                "name": "Trinidad and Tobago",
+                                "size": 497
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caucasus and Central Asia",
+                        "children": [
+                            {
+                                "name": "Afghanistan",
+                                "size": 1194
+                            },
+                            {
+                                "name": "Armenia",
+                                "size": 19
+                            },
+                            {
+                                "name": "Azerbaijan",
+                                "size": 29
+                            },
+                            {
+                                "name": "Georgia",
+                                "size": 46
+                            },
+                            {
+                                "name": "Kazakhstan",
+                                "size": 48
+                            },
+                            {
+                                "name": "Kyrgyzstan",
+                                "size": 57
+                            },
+                            {
+                                "name": "Tajikistan",
+                                "size": 26
+                            },
+                            {
+                                "name": "Turkmenistan",
+                                "size": 9
+                            },
+                            {
+                                "name": "Uzbekistan",
+                                "size": 43
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Central America",
+                        "children": [
+                            {
+                                "name": "Belize",
+                                "size": 130
+                            },
+                            {
+                                "name": "Costa Rica",
+                                "size": 18
+                            },
+                            {
+                                "name": "El Salvador",
+                                "size": 879
+                            },
+                            {
+                                "name": "Guatemala",
+                                "size": 1056
+                            },
+                            {
+                                "name": "Honduras",
+                                "size": 1501
+                            },
+                            {
+                                "name": "Nicaragua",
+                                "size": 146
+                            },
+                            {
+                                "name": "Panama",
+                                "size": 18
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Asia",
+                        "children": [
+                            {
+                                "name": "China",
+                                "size": 1194
+                            },
+                            {
+                                "name": "Japan",
+                                "size": 1
+                            },
+                            {
+                                "name": "Mongolia",
+                                "size": 3
+                            },
+                            {
+                                "name": "North Korea",
+                                "size": 13
+                            },
+                            {
+                                "name": "South Korea",
+                                "size": 5
+                            },
+                            {
+                                "name": "Taiwan",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eastern Africa",
+                        "children": [
+                            {
+                                "name": "Burundi",
+                                "size": 1528
+                            },
+                            {
+                                "name": "Djibouti",
+                                "size": 8
+                            },
+                            {
+                                "name": "Eritrea",
+                                "size": 3
+                            },
+                            {
+                                "name": "Ethiopia",
+                                "size": 487
+                            },
+                            {
+                                "name": "Kenya",
+                                "size": 316
+                            },
+                            {
+                                "name": "Madagascar",
+                                "size": 209
+                            },
+                            {
+                                "name": "Malawi",
+                                "size": 26
+                            },
+                            {
+                                "name": "Mozambique",
+                                "size": 696
+                            },
+                            {
+                                "name": "Rwanda",
+                                "size": 24
+                            },
+                            {
+                                "name": "Somalia",
+                                "size": 1569
+                            },
+                            {
+                                "name": "South Sudan",
+                                "size": 1065
+                            },
+                            {
+                                "name": "Tanzania",
+                                "size": 59
+                            },
+                            {
+                                "name": "Uganda",
+                                "size": 420
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Europe",
+                        "children": [
+                            {
+                                "name": "Albania",
+                                "size": 8
+                            },
+                            {
+                                "name": "Andorra",
+                                "size": 1
+                            },
+                            {
+                                "name": "Austria",
+                                "size": 5
+                            },
+                            {
+                                "name": "Belarus",
+                                "size": 38
+                            },
+                            {
+                                "name": "Belgium",
+                                "size": 2
+                            },
+                            {
+                                "name": "Bosnia and Herzegovina",
+                                "size": 27
+                            },
+                            {
+                                "name": "Bulgaria",
+                                "size": 7
+                            },
+                            {
+                                "name": "Croatia",
+                                "size": 21
+                            },
+                            {
+                                "name": "Cyprus",
+                                "size": 8
+                            },
+                            {
+                                "name": "Czech Republic",
+                                "size": 1
+                            },
+                            {
+                                "name": "Denmark",
+                                "size": 4
+                            },
+                            {
+                                "name": "Finland",
+                                "size": 6
+                            },
+                            {
+                                "name": "France",
+                                "size": 12
+                            },
+                            {
+                                "name": "Germany",
+                                "size": 28
+                            },
+                            {
+                                "name": "Greece",
+                                "size": 82
+                            },
+                            {
+                                "name": "Ireland",
+                                "size": 2
+                            },
+                            {
+                                "name": "Italy",
+                                "size": 16
+                            },
+                            {
+                                "name": "Kosovo",
+                                "size": 30
+                            },
+                            {
+                                "name": "Latvia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Malta",
+                                "size": 1
+                            },
+                            {
+                                "name": "Moldova",
+                                "size": 16
+                            },
+                            {
+                                "name": "Montenegro",
+                                "size": 12
+                            },
+                            {
+                                "name": "Netherlands",
+                                "size": 2
+                            },
+                            {
+                                "name": "North Macedonia",
+                                "size": 8
+                            },
+                            {
+                                "name": "Norway",
+                                "size": 5
+                            },
+                            {
+                                "name": "Poland",
+                                "size": 3
+                            },
+                            {
+                                "name": "Portugal",
+                                "size": 3
+                            },
+                            {
+                                "name": "Romania",
+                                "size": 7
+                            },
+                            {
+                                "name": "Russia",
+                                "size": 178
+                            },
+                            {
+                                "name": "Serbia",
+                                "size": 28
+                            },
+                            {
+                                "name": "Spain",
+                                "size": 5
+                            },
+                            {
+                                "name": "Sweden",
+                                "size": 5
+                            },
+                            {
+                                "name": "Ukraine",
+                                "size": 309
+                            },
+                            {
+                                "name": "United Kingdom",
+                                "size": 14
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle Africa",
+                        "children": [
+                            {
+                                "name": "Angola",
+                                "size": 65
+                            },
+                            {
+                                "name": "Cameroon",
+                                "size": 1312
+                            },
+                            {
+                                "name": "Central African Republic",
+                                "size": 520
+                            },
+                            {
+                                "name": "Chad",
+                                "size": 106
+                            },
+                            {
+                                "name": "Democratic Republic of Congo",
+                                "size": 2832
+                            },
+                            {
+                                "name": "Equatorial Guinea",
+                                "size": 8
+                            },
+                            {
+                                "name": "Gabon",
+                                "size": 5
+                            },
+                            {
+                                "name": "Republic of Congo",
+                                "size": 8
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Middle East",
+                        "children": [
+                            {
+                                "name": "Bahrain",
+                                "size": 10
+                            },
+                            {
+                                "name": "Iran",
+                                "size": 100
+                            },
+                            {
+                                "name": "Iraq",
+                                "size": 782
+                            },
+                            {
+                                "name": "Israel",
+                                "size": 34
+                            },
+                            {
+                                "name": "Jordan",
+                                "size": 8
+                            },
+                            {
+                                "name": "Lebanon",
+                                "size": 73
+                            },
+                            {
+                                "name": "Palestine",
+                                "size": 746
+                            },
+                            {
+                                "name": "Saudi Arabia",
+                                "size": 9
+                            },
+                            {
+                                "name": "Syria",
+                                "size": 3941
+                            },
+                            {
+                                "name": "Turkey",
+                                "size": 426
+                            },
+                            {
+                                "name": "United Arab Emirates",
+                                "size": 1
+                            },
+                            {
+                                "name": "Yemen",
+                                "size": 1729
+                            }
+                        ]
+                    },
+                    {
+                        "name": "North America",
+                        "children": [
+                            {
+                                "name": "Mexico",
+                                "size": 17339
+                            },
+                            {
+                                "name": "United States",
+                                "size": 97
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Northern Africa",
+                        "children": [
+                            {
+                                "name": "Algeria",
+                                "size": 35
+                            },
+                            {
+                                "name": "Egypt",
+                                "size": 227
+                            },
+                            {
+                                "name": "Libya",
+                                "size": 211
+                            },
+                            {
+                                "name": "Morocco",
+                                "size": 27
+                            },
+                            {
+                                "name": "Sudan",
+                                "size": 842
+                            },
+                            {
+                                "name": "Tunisia",
+                                "size": 29
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South America",
+                        "children": [
+                            {
+                                "name": "Argentina",
+                                "size": 111
+                            },
+                            {
+                                "name": "Bolivia",
+                                "size": 10
+                            },
+                            {
+                                "name": "Brazil",
+                                "size": 8107
+                            },
+                            {
+                                "name": "Chile",
+                                "size": 191
+                            },
+                            {
+                                "name": "Colombia",
+                                "size": 1467
+                            },
+                            {
+                                "name": "Ecuador",
+                                "size": 15
+                            },
+                            {
+                                "name": "French Guiana",
+                                "size": 2
+                            },
+                            {
+                                "name": "Guyana",
+                                "size": 10
+                            },
+                            {
+                                "name": "Paraguay",
+                                "size": 37
+                            },
+                            {
+                                "name": "Peru",
+                                "size": 43
+                            },
+                            {
+                                "name": "Suriname",
+                                "size": 8
+                            },
+                            {
+                                "name": "Uruguay",
+                                "size": 4
+                            },
+                            {
+                                "name": "Venezuela",
+                                "size": 973
+                            }
+                        ]
+                    },
+                    {
+                        "name": "South Asia",
+                        "children": [
+                            {
+                                "name": "Bangladesh",
+                                "size": 648
+                            },
+                            {
+                                "name": "India",
+                                "size": 2658
+                            },
+                            {
+                                "name": "Nepal",
+                                "size": 88
+                            },
+                            {
+                                "name": "Pakistan",
+                                "size": 839
+                            },
+                            {
+                                "name": "Sri Lanka",
+                                "size": 129
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southeast Asia",
+                        "children": [
+                            {
+                                "name": "Cambodia",
+                                "size": 33
+                            },
+                            {
+                                "name": "Indonesia",
+                                "size": 276
+                            },
+                            {
+                                "name": "Laos",
+                                "size": 4
+                            },
+                            {
+                                "name": "Malaysia",
+                                "size": 35
+                            },
+                            {
+                                "name": "Myanmar",
+                                "size": 664
+                            },
+                            {
+                                "name": "Philippines",
+                                "size": 2741
+                            },
+                            {
+                                "name": "Thailand",
+                                "size": 323
+                            },
+                            {
+                                "name": "Vietnam",
+                                "size": 30
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Southern Africa",
+                        "children": [
+                            {
+                                "name": "Botswana",
+                                "size": 5
+                            },
+                            {
+                                "name": "eSwatini",
+                                "size": 24
+                            },
+                            {
+                                "name": "Lesotho",
+                                "size": 9
+                            },
+                            {
+                                "name": "Namibia",
+                                "size": 7
+                            },
+                            {
+                                "name": "South Africa",
+                                "size": 182
+                            },
+                            {
+                                "name": "Zambia",
+                                "size": 37
+                            },
+                            {
+                                "name": "Zimbabwe",
+                                "size": 250
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Western Africa",
+                        "children": [
+                            {
+                                "name": "Benin",
+                                "size": 38
+                            },
+                            {
+                                "name": "Burkina Faso",
+                                "size": 844
+                            },
+                            {
+                                "name": "Gambia",
+                                "size": 5
+                            },
+                            {
+                                "name": "Ghana",
+                                "size": 109
+                            },
+                            {
+                                "name": "Guinea",
+                                "size": 73
+                            },
+                            {
+                                "name": "Guinea-Bissau",
+                                "size": 3
+                            },
+                            {
+                                "name": "Ivory Coast",
+                                "size": 57
+                            },
+                            {
+                                "name": "Liberia",
+                                "size": 22
+                            },
+                            {
+                                "name": "Mali",
+                                "size": 1025
+                            },
+                            {
+                                "name": "Mauritania",
+                                "size": 8
+                            },
+                            {
+                                "name": "Niger",
+                                "size": 524
+                            },
+                            {
+                                "name": "Nigeria",
+                                "size": 2434
+                            },
+                            {
+                                "name": "Senegal",
+                                "size": 12
+                            },
+                            {
+                                "name": "Sierra Leone",
+                                "size": 57
+                            },
+                            {
+                                "name": "Togo",
+                                "size": 23
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+

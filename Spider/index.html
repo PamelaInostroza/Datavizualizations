@@ -54,6 +54,14 @@
 			////////////////////////// Data ////////////////////////////// 
 			////////////////////////////////////////////////////////////// 
 
+			var request = new XMLHttpRequest();
+			request.open("GET", "./assets/Spider2.json", false);
+			request.send(null)
+			var data = JSON.parse(request.responseText);
+			console.log(data);
+
+
+/*
 			var data = [
 					  [//iPhone
 						{axis:"Battery Life",value:0.22},
@@ -83,13 +91,13 @@
 						{axis:"Price Of Device",value:0.41},
 						{axis:"To Be A Smartphone",value:0.30}
 					  ]
-					];
+					];*/
 			////////////////////////////////////////////////////////////// 
 			//////////////////// Draw the Chart ////////////////////////// 
 			////////////////////////////////////////////////////////////// 
 
 			var color = d3.scale.ordinal()
-				.range(["#EDC951","#CC333F","#00A0B0"]);
+				.range(["#EDC951","#CC333F","#00A0B0", "#FF0000", "#995300","#995384", "#999384", "#649384"]);
 				
 			var radarChartOptions = {
 			  w: width,

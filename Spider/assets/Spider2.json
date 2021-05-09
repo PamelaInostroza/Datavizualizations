@@ -1,0 +1,403 @@
+[ [
+            {
+                "axis": "Battles",
+                "value": 0.0036
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0084
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0078
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0178
+            }
+        ]
+    ,
+   [
+            {
+                "axis": "Battles",
+                "value": 0.3055
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.3018
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0126
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0156
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.3549
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0169
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0074
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0001
+            },
+            {
+                "axis": "Protests",
+                "value": 0
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0053
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0367
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0001
+            },
+            {
+                "axis": "Protests",
+                "value": 0
+            },
+            {
+                "axis": "Riots",
+                "value": 0
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0144
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0004
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0966
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0495
+            },
+            {
+                "axis": "Protests",
+                "value": 0.3682
+            },
+            {
+                "axis": "Riots",
+                "value": 0.1941
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0767
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.1308
+            }
+        ]
+    ,
+   [
+            {
+                "axis": "Battles",
+                "value": 0.0013
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0034
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0126
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0053
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0024
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0016
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0715
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0061
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0544
+            },
+            {
+                "axis": "Riots",
+                "value": 0.1065
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0384
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.1135
+            }
+        ]
+   ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.3001
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.4412
+            },
+            {
+                "axis": "Protests",
+                "value": 0.1841
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0596
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.2782
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0717
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0219
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0001
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0167
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0329
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.1631
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.2433
+            }
+        ]
+    ,
+     [
+            {
+                "axis": "Battles",
+                "value": 0.0248
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0449
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0879
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0095
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0183
+            }
+        ]
+    ,
+     [
+            {
+                "axis": "Battles",
+                "value": 0.0378
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0009
+            },
+            {
+                "axis": "Protests",
+                "value": 0.046
+            },
+            {
+                "axis": "Riots",
+                "value": 0.1016
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.1221
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0172
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0099
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0126
+            },
+            {
+                "axis": "Riots",
+                "value": 0.2023
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0072
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0197
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0147
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.009
+            },
+            {
+                "axis": "Protests",
+                "value": 0
+            },
+            {
+                "axis": "Riots",
+                "value": 0.014
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0432
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0389
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0001
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.0001
+            },
+            {
+                "axis": "Protests",
+                "value": 0.0167
+            },
+            {
+                "axis": "Riots",
+                "value": 0.0609
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.0027
+            }
+        ]
+    ,
+    [
+            {
+                "axis": "Battles",
+                "value": 0.0974
+            },
+            {
+                "axis": "Explosions/Remote violence",
+                "value": 0.133
+            },
+            {
+                "axis": "Protests",
+                "value": 0.1799
+            },
+            {
+                "axis": "Riots",
+                "value": 0.1846
+            },
+            {
+                "axis": "Strategic developments",
+                "value": 0.0216
+            },
+            {
+                "axis": "Violence against civilians",
+                "value": 0.1656
+            }
+        ]
+    
+]
+

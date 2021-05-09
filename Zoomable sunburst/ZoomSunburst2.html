@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <H1>Word conflicts, event and subevent types geographical variables</H1> 
+        <H1>Word conflicts events by year and month</H1> 
         <h3>  Number of conflicts
         </h3>
 
@@ -33,11 +33,17 @@
             .clamp(true);
 
         var y = d3.scalePow()
-            .exponent(0.8)
+            .exponent(1.5)
             .range([maxRadius*.1, maxRadius]);
 
-        var color = d3.scaleOrdinal(d3.schemeCategory20);
-
+        var color = d3.scaleOrdinal()
+                .range(["#4e79a7","#59a14f","#9c755f","#f28e2b","#edc948","#bab0ac","#e15759","#b07aa1","#76b7b2","#ff9da7"]); //d3.schemeTableau10
+        
+        // scale to transform month number to month name
+        const monthScale = d3.scaleOrdinal()
+            .domain([1,2,3,4,5,6,7,8,9,10,11,12])
+            .range(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]);
+        
         var partition = d3.partition();
         
         var arc = d3.arc()
@@ -58,17 +64,18 @@
             var path = d3.path();
             path.arc(0, 0, r, angles[0], angles[1], invertDirection);
             return path.toString();
+            console.log(path)
         };
 
         var textFits = d => {
-            var CHAR_SPACE = 4;
+            var CHAR_SPACE = 6;
 
             var deltaAngle = x(d.x1) - x(d.x0);
             var r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
             var perimeter = r * deltaAngle;
-
             
-            return d.data.name.length * CHAR_SPACE < perimeter;
+            let value = d.depth === 2 ? monthScale(d.data.name) : d.data.name;
+            return value.length * CHAR_SPACE < perimeter;
         };
 
         var svg = d3.select('body').append('svg')
@@ -78,14 +85,15 @@
             .on('click', () => focusOn()); // Reset zoom on canvas click
 
         d3.json('./assets/ZoomSunburst2.json', (error, root) => {
-        
             root = d3.hierarchy(root);
             root.sum(d => d.value);
             var slice = svg.selectAll('g.slice')
                 .data(partition(root).descendants())
-                .attr("fill", d => { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name); })
+                .attr("fill", d => { d = d.parent; return color((d.children ? d : d.parent).data.name)})
                 ;
 
+
+            console.log(partition(root).descendants())
             slice.exit().remove();
 
             var newSlice = slice.enter()
@@ -101,7 +109,8 @@
             newSlice.append('path')
                 .attr('class', 'main-arc')
                 .attr("display", function (d) { return d.depth ? null : "none"; })
-                .style('fill', function(d){ while (d.depth > 1) d = d.parent; return color((d.children ? d : d.children).data.name); })
+                .attr("fill", d => {if (d.depth != 3) { while (d.depth > 1) d = d.parent; return color((d.children ? d : d.parent).data.name);}
+                                    else {return  color(d.data.name)} })
                 .attr('d', arc);
 
             newSlice.append('path')
@@ -116,7 +125,7 @@
             text.append('textPath')
                 .attr('startOffset','50%')
                 .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
-                .text(d => d.data.name)
+                .text(d => d.depth === 2 ? monthScale(d.data.name) : d.data.name)
                 .style('fill', 'none')
                 .style('stroke', '#fff')
                 .style('stroke-width', 5)
@@ -125,11 +134,10 @@
             text.append('textPath')
                 .attr('startOffset','50%')
                 .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
-                .text(d => d.data.name);
+                .text(d => d.depth === 2 ? monthScale(d.data.name) : d.data.name);
         });
 
         function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
-            // Reset to top-level if no data point specified
 
             var transition = svg.transition()
                 .duration(750)
@@ -149,8 +157,6 @@
                 .attrTween('display', d => () => textFits(d) ? null : 'none');
 
             moveStackToFront(d);
-
-            //
 
             function moveStackToFront(elD) {
                 svg.selectAll('.slice').filter(d => d === elD)

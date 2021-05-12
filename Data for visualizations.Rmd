@@ -1,0 +1,487 @@
+---
+title: "Data for d3 visualizations"
+author: "Pamela Inostroza"
+date: "10/05/2021"
+output: 
+  html_document:
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(stringr)
+library(jsonlite)
+```
+
+```{r}
+print_json_lines <- function(json, lines) {
+  json_lines <- strsplit(json, "\n")[[1]]
+  json_lines <- json_lines[lines]
+  cat(paste(json_lines, collapse = "\n"))
+  invisible(json_lines)
+}
+```
+
+# World conflicts, development and governance indicators
+
+```{r data}
+GovernData <- read.csv("Data/Governance indicators2018-2020.csv")
+str(GovernData)
+GovernData %>% select(Series.Name, Series.Code) %>% unique()
+GovernData <- GovernData %>% filter(!is.na(Time)) %>% mutate(Series.Name = str_remove(Series.Name, ": Estimate")) %>% 
+  reshape2::dcast(Country.Name + Country.Code + Series.Code ~ Time, value.var = "Value") %>% 
+  mutate(`2020` = `2019`, `2021` = `2019`) %>% 
+  reshape2::melt(variable.name = "Time") %>% 
+  reshape2::dcast(Country.Name + Country.Code + Time ~ Series.Code, value.var = "value") 
+
+WDIndicData <- read.csv("Data/World development indicators 2018-2020.csv")
+str(WDIndicData)
+WDIndicData %>% select(Series.Name, Series.Code) %>% unique()
+WDIndicData <- WDIndicData %>% filter(!is.na(Time)) %>%  mutate(Series.Name = str_remove(Series.Name, ": Estimate")) %>% 
+  reshape2::dcast(Country.Name + Country.Code + Series.Code ~ Time, value.var = "Value") %>% 
+  mutate(`2020` = `2019`, `2021` = `2019`) %>% 
+  reshape2::melt(variable.name = "Time") %>% 
+  reshape2::dcast(Country.Name + Country.Code + Time ~ Series.Code, value.var = "value")
+
+Indicators <- full_join(GovernData, WDIndicData, by = c("Country.Name", "Country.Code", "Time")) %>% 
+  mutate(Time = as.numeric(as.character(Time))) 
+str(Indicators)
+
+Conflicts <- read.csv("Data/Worldconflicts2018-2021.csv")
+str(Conflicts)
+ConflictsData <- Conflicts %>% mutate(Gactor1 = case_when(inter1 == 1 ~ "Government or mutinous force",
+                                         inter1 == 2 ~ "Rebel force",
+                                         inter1 == 3 ~ "Political militia",
+                                         inter1 == 4 ~ "Ethnic militia",
+                                         inter1 == 5 ~ "Rioters",
+                                         inter1 == 6 ~ "Protesters",
+                                         inter1 == 7 ~ "Civilians",
+                                         inter1 == 8 ~ "Outside/external force"),
+                     Gactor2 = case_when(inter2 == 1 ~ "Government or mutinous force",
+                                         inter2 == 2 ~ "Rebel force",
+                                         inter2 == 3 ~ "Political militia",
+                                         inter2 == 4 ~ "Ethnic militia",
+                                         inter2 == 5 ~ "Rioters",
+                                         inter2 == 6 ~ "Protesters",
+                                         inter2 == 7 ~ "Civilians",
+                                         inter2 == 8 ~ "Outside/external force"),
+                     actor2 = case_when(actor2 == "" ~ "Single actor event",
+                                        TRUE ~ actor2),
+                     Gactor2 = case_when(Gactor2 == "" ~ "Single actor event",
+                                        TRUE ~ Gactor2)) %>% 
+  mutate(continent = case_when(region %in% c("South Asia", "Southeast Asia", "East Asia" , 
+                                             "Caucasus and Central Asia", "Middle East") ~ "Asia",
+                               region %in% c("North America", "South America", "Central America", "Caribbean") ~ "America",
+                               region %in% c("Europe") ~ "Europe",
+                               region %in% c("Middle Africa", "Eastern Africa", "Southern Africa", 
+                                             "Northern Africa", "Western Africa") ~ "Africa" )) %>% 
+  
+  mutate(source_scale2 = case_when(source_scale %in% c("International", "National-International",
+                                                       "Subnational-International",
+                                                      "Local partner-International", "Regional-International", 
+                                                      "New media-International") ~ "International",
+                                  source_scale %in% c("National", "National-Regional", "Other-National",
+                                                      "Local partner-National","New media-National") ~ "National",
+                                  source_scale %in% c("New media", "Local partner-New media", "Other-New media",
+                                                      "New media-Subnational", "New media-Regional") ~ "New media",
+                                  source_scale %in% c("Subnational", "Regional", "Other-Subnational", 
+                                                      "Subnational-National", "Subnational-Regional", "Local partner-Regional") ~ "Regional",
+                                  TRUE ~ "Other")) %>% 
+  mutate(region2 = case_when(region == "Europe" & country %in% c("Austria","Belgium","France","Germany","Ireland","Liechtenstein","Luxembourg",
+                                            "Monaco","Netherlands","Switzerland","United Kingdom","Vatican City","Bailiwick of Jersey",
+                                            "Isle of Man","Bailiwick of Guernsey") ~ "Western Europe",
+                             region == "Europe" & country %in% c("Belarus", "Bulgaria", "Czech Republic", "Hungary", "Moldova", "Poland", "Romania", 
+                                            "Slovakia",  "Ukraine","Russia","Serbia","Kosovo","Montenegro") ~ "Eastern Europe",
+                             region == "Europe" & country %in% c("Estonia", "Latvia", "Lithuania", "Denmark","Finland","Iceland",
+                                            "Norway","Sweden","Faroe Islands","Greenland") ~ "Northern Europe",
+                             region == "Europe" & country %in% c("Albania", "Andorra", "Bosnia and Herzegovina", "Bulgaria", "Croatia","Cyprus", 
+                                            "Greece", "Italy", "Malta", "Portugal", "Romania", "San Marino", "Slovenia", 
+                                            "Spain", "North Macedonia", "Yugoslavia","Gibraltar") ~ "Southern Europe",
+         TRUE ~ region))
+head(ConflictsData)
+ConflictsData %>% select(source_scale2,source_scale) %>% unique() %>% arrange(source_scale2)
+SummaryConflicts <- ConflictsData %>% group_by(year, continent, region2, iso3, country) %>% 
+  summarise(Conflicts = n(),
+            Fatalities = sum(fatalities, na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  left_join(Indicators, by = c("iso3"="Country.Code", "year"="Time"))
+head(SummaryConflicts)
+```
+
+## Parallel coordinates
+
+```{r }
+SummaryConflictsMean <- SummaryConflicts  %>%
+  group_by(year, continent) %>% 
+  summarise_if(is.numeric, mean, na.rm = TRUE)
+
+cor <- cor(SummaryConflicts[-c(1:5,8),-c(1:5,8)], use = "pairwise.complete.obs")
+cor[1:2,]
+
+
+
+# For parallel coordinates
+Ind <- c("Conflicts", "Fatalities", "IT.NET.USER.ZS", "IT.CEL.SETS", "ST.INT.ARVL","ST.INT.DPRT", "SH.DYN.MORT", "SP.POP.GROW")
+ParallelCoordinatesVis <- SummaryConflicts  %>% 
+  mutate(Fatalities = Fatalities/ SP.POP.TOTL*100*1000,
+         Conflicts = Conflicts / sum(Conflicts, na.rm = TRUE) *100 *10) %>% 
+  select(year, continent, region2, all_of(Ind)) %>% 
+  arrange(year, continent, region2) %>% 
+  mutate(IT.CEL.SETS = IT.CEL.SETS/10000000,
+         ST.INT.ARVL = ST.INT.ARVL/10000000,
+         ST.INT.DPRT = ST.INT.DPRT/10000000) %>% 
+  group_by(year, continent, region2) %>% 
+  summarise_if(is.numeric, mean, na.rm = TRUE) %>% 
+  mutate_if(is.numeric, round, 1) %>% 
+  mutate_if(~any(is.na(.)),~if_else(is.na(.),0,.)) %>% 
+  rename(region = region2,
+         `Conflicts (% of world total per 10)` = Conflicts,
+         `Fatalities (% of population per 1000)` = Fatalities,
+         `Individuals using the Internet (% of population)` = IT.NET.USER.ZS, 
+  `Mobile cellular subscriptions (per 10 million)` = IT.CEL.SETS, 
+  `International tourism, number of arrivals (per 10 million)` = ST.INT.ARVL,
+  `International tourism, number of departures (per 10 million)` = ST.INT.DPRT, 
+  `Mortality rate, under-5 (per 1,000 live births)` = SH.DYN.MORT, 
+  `Population growth (annual %)` = SP.POP.GROW
+  )
+
+#write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates2.csv", na = "")
+
+ParallelCoordinatesVis <-  SummaryConflicts %>% 
+  mutate(Fatalities = Fatalities/ SP.POP.TOTL*100*1000,
+         Conflicts = Conflicts / sum(Conflicts, na.rm = TRUE) *100 *10) %>% 
+  select(year, continent, region2, country, Conflicts, Fatalities,
+         CC.EST, GE.EST, PV.EST, RL.EST, RQ.EST, VA.EST
+         ) %>% 
+  group_by(year, continent, region2) %>% 
+  summarise(Conflicts = sum(Conflicts), 
+            Fatalities= sum(Fatalities),
+            CC.EST = mean(CC.EST, na.rm = TRUE),
+            GE.EST = mean(GE.EST,na.rm = TRUE),
+            PV.EST = mean(PV.EST,na.rm = TRUE),
+            RL.EST = mean(RL.EST,na.rm = TRUE),
+            RQ.EST = mean(RQ.EST,na.rm = TRUE),
+            VA.EST = mean(VA.EST,na.rm = TRUE)) %>% 
+  mutate_if(is.numeric, round, 1) %>% 
+  rename(region = region2,
+         `Conflicts (% of world total per 10)` = Conflicts,
+         `Fatalities (% of population per 1000)` = Fatalities,
+         `Control of Corruption` = CC.EST, 
+         `Government Effectiveness` = GE.EST, 
+         `Political Stability and Absence of Violence/Terrorism` = PV.EST, 
+         `Rule of Law` = RL.EST, 
+         `Regulatory Quality` = RQ.EST, 
+         `Voice and Accountability` = VA.EST)
+
+#write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates1.csv", na = "")
+
+```
+
+## Sunburst 
+
+```{r}
+
+ToJsonData1 <- ConflictsData %>% 
+  arrange(country, event_date) %>% 
+  select(year,  event_type, sub_event_type, country, fatalities) %>% 
+  group_by(year, event_type, sub_event_type, country) %>% 
+  summarise(fatalities = sum(fatalities)) %>% ungroup() 
+
+sunburst1 <- ToJsonData1 %>% 
+  select(year, event_type, sub_event_type, country, fatalities) %>%
+  group_by(year, event_type, sub_event_type) %>%
+  tidyr::nest() %>%
+  rename(name = sub_event_type, 
+    children = data) %>%
+  group_by(year, event_type) %>% 
+  tidyr::nest() %>% 
+  rename(name = event_type, 
+    children = data) %>% 
+  group_by(year) %>% 
+  tidyr::nest() %>% 
+  rename(name = year, 
+    children = data) %>% 
+  mutate(conf = "Conflicts") %>% 
+  group_by(conf) %>% 
+  tidyr::nest() %>% 
+  rename(name = conf, children = data)
+
+Dsunburst1 <- jsonlite::toJSON(sunburst1, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(sunburst1, pretty = TRUE), 1:30)
+
+validate(Dsunburst1)
+write(prettify(Dsunburst1), file = "Data/forvis/Sunburst1.json")
+
+
+ToJsonData2 <- ConflictsData %>% 
+  arrange(country, event_date) %>% 
+  select(year, source_scale2,  sub_event_type) %>% 
+  group_by(year, source_scale2, sub_event_type) %>% 
+  summarise(valor = n()) %>% ungroup() %>% 
+  group_by(year) %>% 
+  mutate(valor = valor/ sum(valor))
+
+sunburst2 <- ToJsonData2 %>% 
+  rename(name1 = sub_event_type) %>% 
+  group_by(year, source_scale2) %>%
+  tidyr::nest() %>% 
+  rename(name = source_scale2, 
+    children = data) %>% 
+  group_by(year) %>% 
+  tidyr::nest() %>% 
+  rename(name = year, 
+    children = data) %>% 
+  mutate(conf = "Conflicts") %>% 
+  group_by(conf) %>% 
+  tidyr::nest() %>% 
+  rename(name = conf, children = data)
+
+Dsunburst2 <- jsonlite::toJSON(sunburst2, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(sunburst2, pretty = TRUE), 1:30)
+
+validate(Dsunburst2)
+write(prettify(Dsunburst2), file = "Data/forvis/Sunburst2.json")
+
+```
+
+## Zoom sunburst
+
+```{r}
+ToJsonData3 <- ConflictsData %>% 
+  mutate(event_month = lubridate::month(lubridate::dmy(event_date))) %>% 
+  select(event_type, sub_event_type, region2, country, admin1) %>% 
+  group_by(event_type, sub_event_type, region2, country, admin1) %>% 
+  count(name = "value") %>% ungroup()
+
+zoom1 <- ToJsonData3 %>% 
+  select(sub_event_type, country, value) %>% 
+  group_by(sub_event_type, country) %>%
+  summarise(value = sum(value)) %>% 
+  rename(name = country) %>% 
+  group_by(sub_event_type) %>%
+  tidyr::nest() %>%
+  rename(children = data) %>%
+  mutate(conf = "Conflicts") %>% 
+  group_by(conf) %>% 
+  tidyr::nest() %>% 
+  rename(name = conf, children = data)
+
+Dzoom1 <- jsonlite::toJSON(zoom1, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(zoom1, pretty = TRUE), 1:30)
+
+validate(Dzoom1)
+write(prettify(Dzoom1), file = "Data/forvis/ZoomSunburst1.json")
+```
+
+
+```{r}
+
+ToJsonData4 <- ConflictsData %>% 
+  mutate(event_month = lubridate::month(lubridate::dmy(event_date))) %>% 
+  select(event_month, year, event_type) %>% 
+  group_by(event_month, year, event_type) %>% 
+  count(name = "value") %>% ungroup()
+
+zoom2 <- ToJsonData4 %>%
+  mutate(year = as.character(year),
+         event_month = as.character(event_month)) %>% 
+  group_by(event_month,year) %>%
+  rename(name = event_type) %>% 
+  tidyr::nest() %>%
+  rename(name = year, 
+         children = data) %>% 
+  group_by(event_month) %>% 
+  tidyr::nest() %>% 
+  rename(name = event_month, 
+         children = data) %>% 
+  # group_by(event_type) %>% 
+  # tidyr::nest() %>% 
+  # rename(name = event_type, 
+  #        children = data) %>% 
+  mutate(conf = "Conflicts") %>% 
+  group_by(conf) %>% 
+  tidyr::nest() %>% 
+  rename(name = conf, children = data)
+
+
+Dzoom2 <- jsonlite::toJSON(zoom2, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(zoom2, pretty = TRUE), 1:30)
+
+validate(Dzoom2)
+write(prettify(Dzoom2), file = "Data/forvis/ZoomSunburst2.json")
+```
+
+## Spider  
+
+```{r}
+spider2 <- ConflictsData %>% filter(year == 2020)  %>% 
+  group_by(event_type, continent) %>% 
+  summarise(value = sum(fatalities))  %>% 
+  mutate(value = value / sum(value)) %>%
+  rename(axis = event_type) %>% 
+  group_by(continent) %>% 
+  tidyr::nest() %>% ungroup() %>% select(-continent) 
+
+Dspider2 <- jsonlite::toJSON(spider2, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(spider2, pretty = TRUE), 1:30)
+
+validate(Dspider2)
+write(prettify(Dspider2), file = "Data/forvis/Spider2.json")
+
+##2
+spider3 <- ConflictsData %>% filter(year == 2020)  %>% 
+  group_by(continent,event_type) %>% 
+  summarise(value = sum(fatalities))  %>% 
+  mutate(value = value / sum(value)) %>%
+  rename(className = continent,
+         axis = event_type) %>% 
+  group_by(className) %>% 
+  tidyr::nest()
+
+Dspider3 <- jsonlite::toJSON(spider3, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(spider3, pretty = TRUE), 1:30)
+
+validate(Dspider3)
+write(prettify(Dspider3), file = "Data/forvis/Spider3.json")
+```
+
+## Map 
+
+```{r}
+map <- ConflictsData %>% 
+  select(country, longitude, latitude, event_type) %>% 
+  group_by(country, longitude, latitude, event_type) %>% 
+  count() %>% 
+  rename(long = longitude,
+         lat = latitude)
+
+data8 <- jsonlite::toJSON(map, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(map, pretty = TRUE), 1:30)
+
+validate(data8)
+write(prettify(data8), file = "Data/forvis/map1.json")
+```
+
+## Dependency chord diagram
+
+```{r}
+ToJsonData5 <- ConflictsData %>% filter(year == 2020) %>% 
+  select(country, Gactor1, Gactor2) %>% 
+  mutate(Gactor2 = ifelse(is.na(Gactor2), "Single actor", Gactor2), 
+         name = paste0(paste0(paste0("Conflicts.", Gactor1),"."),gsub("\\.","",gsub(",","",gsub(" ","",country)))), 
+         Gactor2 = paste0(paste0(paste0("Conflicts.", Gactor2),"."),gsub("\\.","",gsub(",","",gsub(" ","",country))))) %>% 
+  group_by(name, Gactor2) %>% 
+  summarise(size = n()) %>% 
+  group_by(name) %>% 
+  summarise(size = sum(size),
+    imports = list(Gactor2)) %>% 
+  ungroup() %>% 
+  select(name, size, imports)
+  
+
+data5 <- jsonlite::toJSON(ToJsonData5, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(ToJsonData5, pretty = TRUE), 1:30)
+
+
+validate(data5)
+write(prettify(data5), file = "Data/forvis/DependencyDiagram2.json")
+```
+
+## Multiple categories chord diagram
+```{r}
+ToJsonDataMC <- ConflictsData %>% 
+  arrange(year, Gactor1, Gactor2, region2) %>%
+  group_by(year, Gactor1, Gactor2, region2) %>%
+  mutate(Gactor2 = ifelse(is.na(Gactor2), "Single Actor", Gactor2)) %>%
+  summarise(#fatalities = sum(fatalities),
+            conflicts = n()
+            ) %>%
+  mutate(#fatalities = ifelse(is.na(fatalities), 0, fatalities),
+         conflicts = ifelse(is.na(conflicts), 0, conflicts)
+         ) %>%
+  reshape2::dcast(year  + Gactor1 + Gactor2~ region2) %>%
+  reshape2::melt(id.vars = c("year", "Gactor1","Gactor2"), variable.name = "region2") %>%
+  mutate(value = ifelse(is.na(value), 0, value)) %>%
+  reshape2::dcast(year + Gactor1 + region2 ~ Gactor2) %>%
+  mutate(`Single Actor` = 0) %>% replace(is.na(.), 0)
+
+dataforJson <- ToJsonDataMC %>% 
+  group_by(year , Gactor1) %>%
+  summarise(delete = list(Civilians),
+            delete1= list(`Ethnic militia`),
+            delete2= list(`Government or mutinous force`),
+            delete3= list(`Outside/external force`),
+            delete4= list(`Political militia`),
+            delete5= list(`Protesters`),
+            delete6= list(`Rebel force`),
+            delete7= list(`Rioters`),
+            delete8= list(`Single Actor`)) %>% 
+  select(-Gactor1) %>% ungroup()
+
+#2018
+dataforJson18 <- dataforJson %>% filter(year == 2018) %>% select(-year)
+
+name<- colnames(ToJsonDataMC %>% filter(year == 2018))[!colnames(ToJsonDataMC %>% filter(year == 2018)) %in% c("year","Gactor1","region2")]
+color <- c("#4e79a7","#59a14f","#9c755f","#f28e2b","#edc948","#bab0ac","#e15759","#b07aa1","#76b7b2")#,"#ff9da7")
+nodes = data.frame(name, color) %>% tidyr::nest(data = everything()) %>% rename(nodes = data) %>% jsonlite::toJSON()
+
+categories <- ToJsonDataMC %>% filter(year == 2018) %>% select(region2) %>% unique() %>% as.data.frame() %>% 
+  rename(name = region2) %>% tidyr::nest(data = everything()) %>% rename(categories=data) %>% jsonlite::toJSON()
+
+links18 = dataforJson18 %>% tidyr::nest(data = everything()) %>% rename(links = data) %>% jsonlite::toJSON(pretty = TRUE)
+
+print_json_lines(jsonlite::toJSON(links18, pretty = TRUE), 1:30)
+validate(links18)
+write(prettify(links), file = "Data/forvis/MultipleCatChordDiag18.json")
+
+#2019
+dataforJson19 <- dataforJson %>% filter(year == 2019) %>% select(-year)
+
+name<- colnames(ToJsonDataMC %>% filter(year == 2019))[!colnames(ToJsonDataMC %>% filter(year == 2019)) %in% c("year","Gactor1","region2")]
+color <- c("#4e79a7","#59a14f","#9c755f","#f28e2b","#edc948","#bab0ac","#e15759","#b07aa1","#76b7b2")#,"#ff9da7")
+nodes = data.frame(name, color) %>% tidyr::nest(data = everything()) %>% rename(nodes = data) %>% jsonlite::toJSON()
+
+categories <- ToJsonDataMC %>% filter(year == 2019) %>% select(region2) %>% unique() %>% as.data.frame() %>% 
+  rename(name = region2) %>% tidyr::nest(data = everything()) %>% rename(categories=data) %>% jsonlite::toJSON()
+
+links19 = dataforJson19 %>% tidyr::nest(data = everything()) %>% rename(links = data) %>% jsonlite::toJSON(pretty = TRUE)
+
+print_json_lines(jsonlite::toJSON(links19, pretty = TRUE), 1:30)
+validate(links19)
+write(prettify(links19), file = "Data/forvis/MultipleCatChordDiag19.json")
+
+#2020
+dataforJson20 <- dataforJson %>% filter(year == 2020) %>% select(-year)
+
+name<- colnames(ToJsonDataMC %>% filter(year == 2020))[!colnames(ToJsonDataMC %>% filter(year == 2020)) %in% c("year","Gactor1","region2")]
+color <- c("#4e79a7","#59a14f","#9c755f","#f28e2b","#edc948","#bab0ac","#e15759","#b07aa1","#76b7b2")#,"#ff9da7")
+nodes = data.frame(name, color) %>% tidyr::nest(data = everything()) %>% rename(nodes = data) %>% jsonlite::toJSON()
+
+categories <- ToJsonDataMC %>% filter(year == 2020) %>% select(region2) %>% unique() %>% as.data.frame() %>% 
+  rename(name = region2) %>% tidyr::nest(data = everything()) %>% rename(categories=data) %>% jsonlite::toJSON()
+
+links20 = dataforJson20 %>% tidyr::nest(data = everything()) %>% rename(links = data) %>% jsonlite::toJSON(pretty = TRUE)
+
+print_json_lines(jsonlite::toJSON(links20, pretty = TRUE), 1:30)
+validate(links20)
+write(prettify(links20), file = "Data/forvis/MultipleCatChordDiag20.json")
+
+#2021
+dataforJson21 <- dataforJson %>% filter(year == 2021) %>% select(-year)
+
+name<- colnames(ToJsonDataMC %>% filter(year == 2021))[!colnames(ToJsonDataMC %>% filter(year == 2021)) %in% c("year","Gactor1","region2")]
+color <- c("#4e79a7","#59a14f","#9c755f","#f28e2b","#edc948","#bab0ac","#e15759","#b07aa1","#76b7b2")#,"#ff9da7")
+nodes = data.frame(name, color) %>% tidyr::nest(data = everything()) %>% rename(nodes = data) %>% jsonlite::toJSON()
+
+categories <- ToJsonDataMC %>% filter(year == 2021) %>% select(region2) %>% unique() %>% as.data.frame() %>% 
+  rename(name = region2) %>% tidyr::nest(data = everything()) %>% rename(categories=data) %>% jsonlite::toJSON()
+
+links21 = dataforJson21 %>% tidyr::nest(data = everything()) %>% rename(links = data) %>% jsonlite::toJSON(pretty = TRUE)
+
+print_json_lines(jsonlite::toJSON(links21, pretty = TRUE), 1:30)
+validate(links21)
+write(prettify(links21), file = "Data/forvis/MultipleCatChordDiag21.json")
+```

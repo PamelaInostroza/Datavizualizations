@@ -1,0 +1,47 @@
+
+.vis1 {
+  width: 310px;
+  height: 310px;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+}
+
+.vis2 {
+  width: 410px;
+  height: 310px;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+}
+.vis3 {
+  width: 410px;
+  height: 310px;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+}
+.vis4 {
+  width: 410px;
+  height: 310px;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+}
+
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  stroke: #000;
+  stroke-width: .25px;
+  fill-opacity: 0.9;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+  fill-opacity: 0.9;
+}
+
+path.fade {
+  display: none;
+}

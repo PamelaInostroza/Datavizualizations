@@ -1,0 +1,73 @@
+.indicators-lines1 {
+    width: 410px;
+    height: 510px;
+    border: solid #ddd 1px;
+    border-radius: 5px;
+}
+.indicators-lines2 {
+  width: 410px;
+  height: 510px;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+}
+body { font: 11px Arial;
+    width: 810px}
+
+ul.checkbox  { 
+    margin: 0; 
+    padding: 1; 
+    margin-left: 0px; 
+    list-style: none; 
+  } 
+
+ul.checkbox li { 
+    border: 1px transparent solid; 
+    display:inline-block;
+    width: 6em;
+  }
+  
+
+  fieldset.group  { 
+    margin: 0; 
+    padding: 0; 
+    margin-bottom: 1.25em; 
+    padding: .125em; 
+  } 
+  fieldset.group legend { 
+    margin: 0; 
+    padding: 0; 
+    font-weight: bold; 
+    margin-left: 10px; 
+    font-size: 100%; 
+    color: black; 
+  } 
+
+  /* Tooltip */
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;	
+    /* width: 60px;					
+    height: 28px;					 */
+    padding: 5px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+  .axis {
+    opacity: 0.4;
+  }
+  .axis:hover {
+    opacity: 1;
+  }
+
+  .d3-tip {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    padding: 12px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="https://d3js.org/d3.v2.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="chart" style="height: 600px; width: 1000px">
+      <div class="innerCont" />
+    </div>
+    <script src="./example2.js"></script>
+    <input
+      id="dot_01"
+      class="myBtn"
+      type="button"
+      onclick="Plot(chartData_2018); dot_01(this); "
+      value="2018"
+    />
+    <input
+      id="dot_02"
+      type="button"
+      onclick="Plot(chartData_2019 ) ; dot_02(this)"
+      value="2019"
+    />
+    <input
+      id="dot_03"
+      type="button"
+      onclick="Plot(chartData_2020 ); dot_03(this)"
+      value="2020"
+    />
+    <span class="year">Year</span>
+  </body>
+</html>

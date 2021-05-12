@@ -1,0 +1,2038 @@
+  {
+        "name": "Conflicts",
+        "children": [
+            {
+                "name": 2018,
+                "children": [
+                    {
+                        "name": "International",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.007
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0042
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 5.9134e-06
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.013
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.001
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0027
+                            }
+                        ]
+                    },
+                    {
+                        "name": "National",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0032
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0227
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0724
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0025
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0583
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0021
+                            },
+                            {
+                                "name1": "Chemical weapon",
+                                "valor": 5.9134e-06
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0032
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0015
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0045
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0064
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0181
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.1997
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0106
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.012
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0268
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0202
+                            }
+                        ]
+                    },
+                    {
+                        "name": "New media",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0029
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0224
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0028
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0022
+                            },
+                            {
+                                "name1": "Chemical weapon",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0016
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0069
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.005
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0065
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0011
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Other",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0037
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0172
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.1252
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0207
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0036
+                            },
+                            {
+                                "name1": "Chemical weapon",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0033
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0183
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0033
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0142
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0432
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.003
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Regional",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0016
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0271
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0266
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0024
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0076
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.079
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0035
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0017
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0067
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0062
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": 2019,
+                "children": [
+                    {
+                        "name": "International",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0056
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0021
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0094
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0022
+                            }
+                        ]
+                    },
+                    {
+                        "name": "National",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0041
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0164
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0589
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.004
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.056
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0043
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0037
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0023
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0068
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0227
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0026
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.2433
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0122
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0085
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0291
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0244
+                            }
+                        ]
+                    },
+                    {
+                        "name": "New media",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0101
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0178
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0049
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0015
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.008
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0036
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0119
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0012
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Other",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0034
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0183
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.1084
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0139
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0026
+                            },
+                            {
+                                "name1": "Chemical weapon",
+                                "valor": 9.3492e-06
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0038
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0196
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0035
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0105
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0514
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.002
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Regional",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0012
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0016
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0151
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0233
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0022
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0093
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0841
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0037
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0016
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0091
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": 2020,
+                "children": [
+                    {
+                        "name": "International",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0052
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0022
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 4.0033e-06
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.003
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0082
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.001
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0018
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0012
+                            }
+                        ]
+                    },
+                    {
+                        "name": "National",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0039
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0122
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0473
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0027
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0434
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0057
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0031
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0026
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0077
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0181
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0022
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.3182
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0143
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0064
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.016
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0227
+                            }
+                        ]
+                    },
+                    {
+                        "name": "New media",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0015
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0034
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0141
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0047
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0022
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.001
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0379
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.003
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0064
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0009
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Other",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0029
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0053
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0542
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0109
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0023
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.001
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0039
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0236
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.002
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0047
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0306
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0011
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Regional",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0142
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0231
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.003
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0053
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 4.0033e-06
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0015
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.1474
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0058
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.001
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 8.0067e-06
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0071
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": 2021,
+                "children": [
+                    {
+                        "name": "International",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0043
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0019
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0042
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0108
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0014
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0016
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0009
+                            }
+                        ]
+                    },
+                    {
+                        "name": "National",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0052
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0089
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.044
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0033
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0437
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0038
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0041
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0013
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0074
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0186
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0029
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.3676
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0185
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0105
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0086
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0233
+                            }
+                        ]
+                    },
+                    {
+                        "name": "New media",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.003
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0028
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0162
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0039
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0025
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0021
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0674
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0007
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0045
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0067
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0008
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Other",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.0022
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0033
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0338
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0003
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.0077
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0023
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0005
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0006
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0017
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Non-state actor overtakes territory",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Non-violent transfer of territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.0211
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0009
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0055
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0197
+                            },
+                            {
+                                "name1": "Suicide bomb",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0009
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Regional",
+                        "children": [
+                            {
+                                "name1": "Abduction/forced disappearance",
+                                "valor": 0.001
+                            },
+                            {
+                                "name1": "Agreement",
+                                "valor": 0
+                            },
+                            {
+                                "name1": "Air/drone strike",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Armed clash",
+                                "valor": 0.0116
+                            },
+                            {
+                                "name1": "Arrests",
+                                "valor": 0.0008
+                            },
+                            {
+                                "name1": "Attack",
+                                "valor": 0.024
+                            },
+                            {
+                                "name1": "Change to group/activity",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Disrupted weapons use",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Excessive force against protesters",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Government regains territory",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Grenade",
+                                "valor": 0.0002
+                            },
+                            {
+                                "name1": "Headquarters or base established",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Looting/property destruction",
+                                "valor": 0.0026
+                            },
+                            {
+                                "name1": "Mob violence",
+                                "valor": 0.0048
+                            },
+                            {
+                                "name1": "Other",
+                                "valor": 0.0019
+                            },
+                            {
+                                "name1": "Peaceful protest",
+                                "valor": 0.1223
+                            },
+                            {
+                                "name1": "Protest with intervention",
+                                "valor": 0.0044
+                            },
+                            {
+                                "name1": "Remote explosive/landmine/IED",
+                                "valor": 0.0011
+                            },
+                            {
+                                "name1": "Sexual violence",
+                                "valor": 0.0001
+                            },
+                            {
+                                "name1": "Shelling/artillery/missile attack",
+                                "valor": 0.0004
+                            },
+                            {
+                                "name1": "Violent demonstration",
+                                "valor": 0.0035
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+

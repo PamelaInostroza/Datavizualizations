@@ -247,7 +247,7 @@ write(prettify(Dsunburst2), file = "Data/forvis/Sunburst2.json")
 
 ```
 
-## Zoom sunburst
+## Zoom sunburst/bubble
 
 ```{r}
 ToJsonData3 <- ConflictsData %>% 

@@ -1,0 +1,1645 @@
+ {
+        "name": "Conflicts",
+        "children": [
+            {
+                "name": "Battles",
+                "children": [
+                    {
+                        "name": "Armed clash",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 527
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 40570
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 2355
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 4
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 5897
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 18979
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 3784
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 21287
+                            },
+                            {
+                                "name": "North America",
+                                "size": 4392
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 1870
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 5
+                            },
+                            {
+                                "name": "South America",
+                                "size": 13558
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 4295
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 3363
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 37
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 9
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 3674
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 6
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Government regains territory",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 500
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 144
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 4
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 220
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 2130
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 93
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 4
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 66
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Non-state actor overtakes territory",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 400
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 85
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 90
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 922
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 13
+                            },
+                            {
+                                "name": "South America",
+                                "size": 1
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Explosions/Remote violence",
+                "children": [
+                    {
+                        "name": "Air/drone strike",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 3999
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 314
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 28
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 17
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 18308
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 983
+                            },
+                            {
+                                "name": "South America",
+                                "size": 17
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 4
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 70
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 447
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Chemical weapon",
+                        "children": [
+                            {
+                                "name": "Middle East",
+                                "size": 13
+                            },
+                            {
+                                "name": "South America",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Grenade",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 1
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 65
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 13
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 331
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 95
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 20
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 498
+                            },
+                            {
+                                "name": "North America",
+                                "size": 17
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 3
+                            },
+                            {
+                                "name": "South America",
+                                "size": 117
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 269
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 58
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 1
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 12
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 6
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Remote explosive/landmine/IED",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 1
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 4242
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 16
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 1124
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 286
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 93
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 7383
+                            },
+                            {
+                                "name": "North America",
+                                "size": 22
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 503
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 3
+                            },
+                            {
+                                "name": "South America",
+                                "size": 628
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 772
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 574
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 6
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 86
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 464
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 6
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelling/artillery/missile attack",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 1911
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 237
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 16167
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 13
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 29557
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 829
+                            },
+                            {
+                                "name": "South America",
+                                "size": 6
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 111
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 373
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 1
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 106
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Suicide bomb",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 144
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 41
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 7
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 14
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 85
+                            },
+                            {
+                                "name": "North America",
+                                "size": 1
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 18
+                            },
+                            {
+                                "name": "South America",
+                                "size": 1
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 26
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 11
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 39
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Protests",
+                "children": [
+                    {
+                        "name": "Excessive force against protesters",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 25
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 16
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 183
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 35
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 141
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 62
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 68
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 268
+                            },
+                            {
+                                "name": "North America",
+                                "size": 135
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 134
+                            },
+                            {
+                                "name": "South America",
+                                "size": 176
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 61
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 32
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 17
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 3
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 87
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Peaceful protest",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 1196
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 6160
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 4113
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 26146
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 1627
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 19302
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 1336
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 29190
+                            },
+                            {
+                                "name": "North America",
+                                "size": 36863
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 12060
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 2415
+                            },
+                            {
+                                "name": "South America",
+                                "size": 35134
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 67146
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 6827
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 2675
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 14703
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 3973
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 15121
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Protest with intervention",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 116
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 442
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 206
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 782
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 304
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 1333
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 386
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 2492
+                            },
+                            {
+                                "name": "North America",
+                                "size": 1081
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 858
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 71
+                            },
+                            {
+                                "name": "South America",
+                                "size": 1391
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 3329
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 389
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 194
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 220
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 430
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 539
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Riots",
+                "children": [
+                    {
+                        "name": "Mob violence",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 129
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 215
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 302
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 97
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 1067
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 225
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 522
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 2079
+                            },
+                            {
+                                "name": "North America",
+                                "size": 1721
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 134
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 49
+                            },
+                            {
+                                "name": "South America",
+                                "size": 2187
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 8100
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 292
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 587
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 478
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 1058
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 398
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Violent demonstration",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 489
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 199
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 495
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 607
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 713
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 378
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 523
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 3784
+                            },
+                            {
+                                "name": "North America",
+                                "size": 1573
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 1096
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 27
+                            },
+                            {
+                                "name": "South America",
+                                "size": 4588
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 4136
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 509
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 1559
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 752
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 1304
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 438
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Strategic developments",
+                "children": [
+                    {
+                        "name": "Agreement",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 1
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 116
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 1
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 6
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 77
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 18
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 140
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 302
+                            },
+                            {
+                                "name": "North America",
+                                "size": 1
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 41
+                            },
+                            {
+                                "name": "South America",
+                                "size": 5
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 37
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 69
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 2
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 7
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 42
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Arrests",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 83
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 51
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 125
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 78
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 215
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 139
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 124
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 1190
+                            },
+                            {
+                                "name": "North America",
+                                "size": 352
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 96
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 2
+                            },
+                            {
+                                "name": "South America",
+                                "size": 314
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 249
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 257
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 22
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 38
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 106
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Change to group/activity",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 50
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 148
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 54
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 407
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 178
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 332
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 177
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 4362
+                            },
+                            {
+                                "name": "North America",
+                                "size": 534
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 72
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 11
+                            },
+                            {
+                                "name": "South America",
+                                "size": 250
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 75
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 218
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 8
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 80
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 99
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 14
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Disrupted weapons use",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 3
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 422
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 8
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 14
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 161
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 238
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 61
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 1402
+                            },
+                            {
+                                "name": "North America",
+                                "size": 39
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 246
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 23
+                            },
+                            {
+                                "name": "South America",
+                                "size": 223
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 645
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 197
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 5
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 24
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 93
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 21
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Headquarters or base established",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 2
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 14
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 1
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 47
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 192
+                            },
+                            {
+                                "name": "North America",
+                                "size": 3
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 3
+                            },
+                            {
+                                "name": "South America",
+                                "size": 2
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 2
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 7
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 6
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Looting/property destruction",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 79
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 160
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 301
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 903
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 422
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 286
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 827
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 3170
+                            },
+                            {
+                                "name": "North America",
+                                "size": 573
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 150
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 43
+                            },
+                            {
+                                "name": "South America",
+                                "size": 1847
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 260
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 292
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 38
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 185
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 784
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 410
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Non-violent transfer of territory",
+                        "children": [
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 52
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 63
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 2
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 59
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 362
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 24
+                            },
+                            {
+                                "name": "South America",
+                                "size": 4
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 1
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 9
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 44
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Other",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 6
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 109
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 35
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 113
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 124
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 154
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 152
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 1217
+                            },
+                            {
+                                "name": "North America",
+                                "size": 748
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 84
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 3
+                            },
+                            {
+                                "name": "South America",
+                                "size": 264
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 55
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 205
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 10
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 55
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 103
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 10
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Violence against civilians",
+                "children": [
+                    {
+                        "name": "Abduction/forced disappearance",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 63
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 55
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 74
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 712
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 565
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 20
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 1176
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 1516
+                            },
+                            {
+                                "name": "North America",
+                                "size": 610
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 193
+                            },
+                            {
+                                "name": "South America",
+                                "size": 262
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 162
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 203
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 14
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 12
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 904
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Attack",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 1451
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 1405
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 3661
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 492
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 5598
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 593
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 3466
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 6310
+                            },
+                            {
+                                "name": "North America",
+                                "size": 16734
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 1111
+                            },
+                            {
+                                "name": "Northern Europe",
+                                "size": 21
+                            },
+                            {
+                                "name": "South America",
+                                "size": 10619
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 4098
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 3869
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 472
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 164
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 4288
+                            },
+                            {
+                                "name": "Western Europe",
+                                "size": 64
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sexual violence",
+                        "children": [
+                            {
+                                "name": "Caribbean",
+                                "size": 23
+                            },
+                            {
+                                "name": "Caucasus and Central Asia",
+                                "size": 11
+                            },
+                            {
+                                "name": "Central America",
+                                "size": 13
+                            },
+                            {
+                                "name": "East Asia",
+                                "size": 13
+                            },
+                            {
+                                "name": "Eastern Africa",
+                                "size": 247
+                            },
+                            {
+                                "name": "Eastern Europe",
+                                "size": 16
+                            },
+                            {
+                                "name": "Middle Africa",
+                                "size": 214
+                            },
+                            {
+                                "name": "Middle East",
+                                "size": 33
+                            },
+                            {
+                                "name": "North America",
+                                "size": 92
+                            },
+                            {
+                                "name": "Northern Africa",
+                                "size": 67
+                            },
+                            {
+                                "name": "South America",
+                                "size": 97
+                            },
+                            {
+                                "name": "South Asia",
+                                "size": 102
+                            },
+                            {
+                                "name": "Southeast Asia",
+                                "size": 34
+                            },
+                            {
+                                "name": "Southern Africa",
+                                "size": 28
+                            },
+                            {
+                                "name": "Southern Europe",
+                                "size": 4
+                            },
+                            {
+                                "name": "Western Africa",
+                                "size": 42
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+

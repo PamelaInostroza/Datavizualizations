@@ -100,7 +100,16 @@ ConflictsData <- Conflicts %>% mutate(Gactor1 = case_when(inter1 == 1 ~ "Governm
                              region == "Europe" & country %in% c("Albania", "Andorra", "Bosnia and Herzegovina", "Bulgaria", "Croatia","Cyprus", 
                                             "Greece", "Italy", "Malta", "Portugal", "Romania", "San Marino", "Slovenia", 
                                             "Spain", "North Macedonia", "Yugoslavia","Gibraltar") ~ "Southern Europe",
-         TRUE ~ region))
+         TRUE ~ region)) 
+
+ConflictsData %>% 
+  mutate(Motiv = case_when(str_detect(notes, "coronavirus") ~ "Covid",
+                           str_detect(notes, "politic") ~ "Political",
+                           str(detect(notes, "government") ~ "Government")
+                           TRUE ~ "Other")) %>% 
+  group_by(Motiv) %>% 
+  count()
+  
 head(ConflictsData)
 ConflictsData %>% select(source_scale2,source_scale) %>% unique() %>% arrange(source_scale2)
 SummaryConflicts <- ConflictsData %>% group_by(year, continent, region2, iso3, country) %>% 
@@ -251,19 +260,22 @@ write(prettify(Dsunburst2), file = "Data/forvis/Sunburst2.json")
 
 ```{r}
 ToJsonData3 <- ConflictsData %>% 
-  mutate(event_month = lubridate::month(lubridate::dmy(event_date))) %>% 
-  select(event_type, sub_event_type, region2, country, admin1) %>% 
-  group_by(event_type, sub_event_type, region2, country, admin1) %>% 
+  select(year, sub_event_type, continent, region2) %>% 
+  group_by(year, sub_event_type, continent, region2) %>% 
   count(name = "value") %>% ungroup()
 
 zoom1 <- ToJsonData3 %>% 
-  select(sub_event_type, country, value) %>% 
-  group_by(sub_event_type, country) %>%
+  group_by(year, sub_event_type, continent, region2) %>%
   summarise(value = sum(value)) %>% 
-  rename(name = country) %>% 
-  group_by(sub_event_type) %>%
+  rename(name = region2) %>% 
+  group_by(year, sub_event_type, continent) %>%
   tidyr::nest() %>%
-  rename(children = data) %>%
+  rename(name = continent,
+         children = data) %>%
+   group_by(year, sub_event_type) %>%
+  tidyr::nest() %>%
+  rename(name = sub_event_type,
+         children = data) %>% filter(year == 2020) %>% ungroup() %>% select(-year) %>% 
   mutate(conf = "Conflicts") %>% 
   group_by(conf) %>% 
   tidyr::nest() %>% 
@@ -276,7 +288,35 @@ validate(Dzoom1)
 write(prettify(Dzoom1), file = "Data/forvis/ZoomSunburst1.json")
 ```
 
+```{r}
+ToJsonData3 <- ConflictsData %>% 
+  group_by(event_type, sub_event_type, region2) %>% 
+  count(name = "value") %>% ungroup()
 
+bubble1 <- ToJsonData3 %>% 
+  select(event_type,sub_event_type, region2, value) %>% 
+  group_by(event_type,sub_event_type, region2) %>%
+  summarise(size = sum(value)) %>% 
+  rename(name = region2) %>% 
+  group_by(event_type,sub_event_type) %>%
+  tidyr::nest() %>%
+  rename(name=sub_event_type,
+         children = data) %>%
+  group_by(event_type) %>%
+  tidyr::nest() %>%
+  rename(name=event_type,
+         children = data) %>% 
+  mutate(conf = "Conflicts") %>% 
+  group_by(conf) %>% 
+  tidyr::nest() %>% 
+  rename(name = conf, children = data)
+
+Dbubble1 <- jsonlite::toJSON(bubble1, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(bubble1, pretty = TRUE), 1:30)
+
+validate(Dbubble1)
+write(prettify(Dbubble1), file = "Data/forvis/Bubble1.json")
+```
 ```{r}
 
 ToJsonData4 <- ConflictsData %>% 

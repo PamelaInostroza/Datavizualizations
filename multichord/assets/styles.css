@@ -1,29 +1,11 @@
 
-.vis1 {
-  width: 310px;
-  height: 310px;
-  border: solid #ddd 1px;
-  border-radius: 5px;
-}
-
-.vis2 {
+/* .chord  {
   width: 410px;
-  height: 310px;
+  height: 410px;
   border: solid #ddd 1px;
   border-radius: 5px;
-}
-.vis3 {
-  width: 410px;
-  height: 310px;
-  border: solid #ddd 1px;
-  border-radius: 5px;
-}
-.vis4 {
-  width: 410px;
-  height: 310px;
-  border: solid #ddd 1px;
-  border-radius: 5px;
-}
+  border-collapse: collapse;
+} */
 
 #circle circle {
   fill: none;
@@ -44,4 +26,26 @@ path.chord {
 
 path.fade {
   display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+th {
+  background-color:green;
+  Color:white;
+}
+th, td {
+  width:50px;
+  text-align:center;
+  border:1px solid black;
+  padding:5px
+
+}
+.geeks {
+  border-right:hidden;
+}
+.gfg {
+  border-collapse:separate;
+  border-spacing:0 1px;
 }

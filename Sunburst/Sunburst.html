@@ -12,23 +12,31 @@
     </head>
 
     <body>
-        <H1>Word conflicts source scale and subevent types by year</H1> 
+        <H1>Difference between number of conflicts and number of fatalities involved</H1> 
         <h3> 
         </h3>
 
+        <script>
+        // Variables
+        const width = 400;
+        const height = 400;
+        const radius = Math.min(width, height) / 2;
+        const color = d3.scaleOrdinal(d3.schemeTableau10);
+      </script>
   
-
     <table style="width: 100%">
         <tr>
-          <td>              
-            <div id="vis1">
-            <script src="Sunburst.js"></script> 
+          <td>       
+            <h2>Number of Conflicts</h2>
+            <div class=vis id="vis2">
+            <script src="Sunburst2.js"></script> 
             
         </div>
           </td>
-          <td>
-            <div id="vis2">
-                <script src="ZoomSunburst.js"></script>      
+          <td> 
+          <h2>Number of fatalities</h2>
+            <div class=vis id="vis1">
+                <script src="Sunburst1.js"></script>      
             </div>
           </td>
     

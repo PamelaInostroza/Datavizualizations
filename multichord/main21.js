@@ -1,14 +1,6 @@
 // Adapted from Mike Bostock's UberData Chord diagram example
 //   https://bost.ocks.org/mike/uberdata/
 
-
-// Overall page margins
-var HEIGHT = 300,
-    WIDTH = 460;
-
-outerRadius = Math.min(WIDTH, HEIGHT) / 2
-innerRadius = outerRadius - 0;
-
 // Formatting functions
 var formatPercent = d3.format(".1%");
 
@@ -45,7 +37,7 @@ var svg4 = d3.select("#vis4").append("svg")
 
 
 d3.queue()
-    .defer(d3.json, "MultipleCatChordDiag21.json")
+    .defer(d3.json, "./assets/MultipleCatChordDiag21.json")
     .await(ready);
 
 function ready(error, data) {

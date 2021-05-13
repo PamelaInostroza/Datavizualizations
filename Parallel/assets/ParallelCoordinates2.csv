@@ -1,69 +1,69 @@
-"","year","continent","region","Conflicts (% of world total per 10)","Fatalities (% of population per 1000)","Individuals using the Internet (% of population)","Mobile cellular subscriptions (per 10 million)","International tourism, number of arrivals (per 10 million)","International tourism, number of departures (per 10 million)","Mortality rate, under-5 (per 1,000 live births)","Population growth (annual %)"
-"1",2018,"Africa","Eastern Africa",0.7,4.1,16.2,1.7,0.1,0,60.2,2.6
-"2",2018,"Africa","Middle Africa",0.5,3.9,19.2,1,0,0,81.5,2.8
-"3",2018,"Africa","Northern Africa",0.7,2.9,48,4,0.7,0.3,26,1.7
-"4",2018,"Africa","Southern Africa",0.3,0.1,38.8,1.8,0.4,0.2,54.6,1.7
-"5",2018,"Africa","Western Africa",0.4,1,21.3,2.4,0,0,82.8,2.7
-"6",2018,"America","Caribbean",0.1,1.5,67,0.2,0.2,0.1,21,0.3
-"7",2018,"America","Central America",0.7,5.5,48.2,0.8,0.2,0.1,15.8,1.4
-"8",2018,"America","North America",17.4,6.6,65.8,11.7,9.6,8.6,14.7,1.1
-"9",2018,"America","South America",2.6,0.6,61,3.8,0.4,0.6,16.8,0.9
-"10",2018,"Asia","Caucasus and Central Asia",3.6,11.9,48.3,1.3,0.5,0.5,25.7,1.4
-"11",2018,"Asia","East Asia",2.1,0,64.6,37.9,5.1,6.6,9.8,0.6
-"12",2018,"Asia","Middle East",3.9,19.5,72.3,2.4,1.1,1,15.8,1.9
-"13",2018,"Asia","South Asia",7.2,0.2,26.6,31,0.5,1.4,35.5,1.4
-"14",2018,"Asia","Southeast Asia",0.8,0.3,50.5,10.4,1.5,0.6,26.5,1.1
-"15",2018,"Europe","Eastern Europe",2.8,0.3,74.3,4.5,1,1.7,6.9,-0.4
-"16",2018,"Europe","Southern Europe",0.3,0,75.2,0.4,1.7,0.4,5.8,-0.2
-"17",2019,"Africa","Eastern Africa",0.7,4.2,16.5,1.8,0.1,0,58.3,2.5
-"18",2019,"Africa","Middle Africa",0.8,3.2,19.2,1.1,0,0,78.8,2.8
-"19",2019,"Africa","Northern Africa",2,5.7,51.8,4,0.9,0.4,25.3,1.7
-"20",2019,"Africa","Southern Africa",0.4,0.2,38.8,2,0.4,0.2,52.9,1.7
-"21",2019,"Africa","Western Africa",0.5,1.9,20.6,2.5,0.1,0,80.2,2.7
-"22",2019,"America","Caribbean",0.1,1.6,68.5,0.2,0.3,0.1,22,0.6
-"23",2019,"America","Central America",1,6.2,50,0.8,0.2,0.1,15.3,1.3
-"24",2019,"America","North America",20.1,7.3,70.1,12.1,9.7,8.3,14.2,1.1
-"25",2019,"America","South America",2.8,0.8,62.8,3.8,0.4,0.5,16.3,0.9
-"26",2019,"Asia","Caucasus and Central Asia",3.6,12.3,49.1,1.4,0.6,0.6,24.9,1.4
-"27",2019,"Asia","East Asia",2.8,0,57.2,39.6,5.3,6.8,9.3,0.5
-"28",2019,"Asia","Middle East",4.8,13.6,76.2,2.5,1.1,1.1,14.8,1.9
-"29",2019,"Asia","South Asia",10.6,0.5,26.5,30.9,0.5,1.4,34,1.3
-"30",2019,"Asia","Southeast Asia",1.1,0.6,50.8,11.4,1.6,0.7,25.7,1.1
-"31",2019,"Europe","Eastern Europe",3.6,0.1,76.1,4.1,1,1.8,6.6,-0.5
-"32",2019,"Europe","Southern Europe",0.5,0,76.6,0.4,1.8,0.5,5.4,-0.2
-"33",2020,"Africa","Eastern Africa",0.8,4.7,16.5,1.8,0.1,0,58.3,2.5
-"34",2020,"Africa","Middle Africa",1.1,3.4,19.2,1.1,0,0,78.8,2.8
-"35",2020,"Africa","Northern Africa",2.1,4.2,51.8,4,0.9,0.4,25.3,1.7
-"36",2020,"Africa","Southern Africa",0.5,0.2,38.8,2,0.4,0.2,52.9,1.7
-"37",2020,"Africa","Western Africa",0.8,2.5,20.6,2.5,0.1,0,80.2,2.7
-"38",2020,"America","Caribbean",0.1,1.3,67.1,0.2,0.2,0.1,20.2,0.5
-"39",2020,"America","Central America",0.7,3.4,50,0.8,0.2,0.1,15.3,1.3
-"40",2020,"America","North America",27.5,3.3,78.7,26.3,13.2,8.3,10.3,0.8
-"41",2020,"America","South America",2.4,0.6,62.8,3.8,0.4,0.5,16.3,0.9
-"42",2020,"Asia","Caucasus and Central Asia",2.6,13.6,49.1,1.4,0.6,0.6,24.9,1.4
-"43",2020,"Asia","East Asia",2.4,0,57.2,39.6,5.3,6.8,9.3,0.5
-"44",2020,"Asia","Middle East",4.5,8.3,76.2,2.5,1.1,1.1,14.8,1.9
-"45",2020,"Asia","South Asia",8.9,0.2,26.5,30.9,0.5,1.4,34,1.3
-"46",2020,"Asia","Southeast Asia",1.1,0.4,50.8,11.4,1.6,0.7,25.7,1.1
-"47",2020,"Europe","Eastern Europe",2.1,0,78.1,3.4,2.4,2,5.7,-0.3
-"48",2020,"Europe","Northern Europe",0.4,0.1,90.3,0.4,0.9,0.7,2.9,0.4
-"49",2020,"Europe","Southern Europe",1.3,0,79.7,1.3,2.8,1.3,4.3,0.3
-"50",2020,"Europe","Western Europe",1.5,0,91.4,2.9,1.7,2.9,3.7,0.7
-"51",2021,"Africa","Eastern Africa",0.1,0.5,16.5,1.8,0.1,0,58.3,2.5
-"52",2021,"Africa","Middle Africa",0.2,0.7,18.2,1.3,0,0,78.4,2.7
-"53",2021,"Africa","Northern Africa",0.3,0.2,51.8,4,0.9,0.4,25.3,1.7
-"54",2021,"Africa","Southern Africa",0,0,37.4,2.2,0.4,0.2,54.8,1.6
-"55",2021,"Africa","Western Africa",0.1,0.2,20.6,2.5,0.1,0,80.2,2.7
-"56",2021,"America","Caribbean",0,0.4,65.3,0.4,0.4,0.1,23.3,0.7
-"57",2021,"America","Central America",0.1,0.5,50,0.8,0.2,0.1,15.3,1.3
-"58",2021,"America","North America",2.7,0.5,78.7,26.3,13.2,8.3,10.3,0.8
-"59",2021,"America","South America",0.4,0.1,61.5,4.1,0.4,0.5,17.1,0.9
-"60",2021,"Asia","Caucasus and Central Asia",0.4,1.4,52.5,1.5,0.6,0.6,23.8,1.2
-"61",2021,"Asia","East Asia",0.3,0,57.2,39.6,5.3,6.8,9.3,0.5
-"62",2021,"Asia","Middle East",1,1.3,68.4,3.1,1.2,1,17.2,1.8
-"63",2021,"Asia","South Asia",1.5,0,26.5,30.9,0.5,1.4,34,1.3
-"64",2021,"Asia","Southeast Asia",0.4,0.1,52,12.8,1.7,0.8,23.4,1
-"65",2021,"Europe","Eastern Europe",0.3,0,78.1,3.4,2.4,2,5.7,-0.3
-"66",2021,"Europe","Northern Europe",0,0,89.5,0.5,0.9,0.7,2.9,0.5
-"67",2021,"Europe","Southern Europe",0.2,0,80,1.5,3,1.3,4.6,0.3
-"68",2021,"Europe","Western Europe",0.3,0,90.7,3.2,1.8,2.9,3.7,0.7
+"","year","continent","region","Fatalities (Average % of country population per 1000)","Conflicts (Average % of country participation in the region)","Individuals using the Internet (Mean % of population)","Mobile cellular subscriptions (Mean per 10 million)","International tourism, number of arrivals (Mean per 10 million)","International tourism, number of departures (Mean per 10 million)","Mortality rate, under-5 (Mean per 1,000 live births)","Population growth (Mean annual %)"
+"1",2018,"Africa","Eastern Africa",4.1,7.7,16.2,1.7,0.1,0,60.2,2.6
+"2",2018,"Africa","Middle Africa",3.9,12.5,19.2,1,0,0,81.5,2.8
+"3",2018,"Africa","Northern Africa",2.9,16.7,48,4,0.7,0.3,26,1.7
+"4",2018,"Africa","Southern Africa",0.1,14.3,38.8,1.8,0.4,0.2,54.6,1.7
+"5",2018,"Africa","Western Africa",1,6.7,21.3,2.4,0,0,82.8,2.7
+"6",2018,"America","Caribbean",1.5,5.3,67,0.2,0.2,0.1,21,0.3
+"7",2018,"America","Central America",5.5,14.3,48.2,0.8,0.2,0.1,15.8,1.4
+"8",2018,"America","North America",6.6,100,65.8,11.7,9.6,8.6,14.7,1.1
+"9",2018,"America","South America",0.6,7.7,61,3.8,0.4,0.6,16.8,0.9
+"10",2018,"Asia","Caucasus and Central Asia",11.9,11.1,48.3,1.3,0.5,0.5,25.7,1.4
+"11",2018,"Asia","East Asia",0,16.7,64.6,37.9,5.1,6.6,9.8,0.6
+"12",2018,"Asia","Middle East",19.5,7.1,72.3,2.4,1.1,1,15.8,1.9
+"13",2018,"Asia","South Asia",0.2,20,26.6,31,0.5,1.4,35.5,1.4
+"14",2018,"Asia","Southeast Asia",0.3,12.5,50.5,10.4,1.5,0.6,26.5,1.1
+"15",2018,"Europe","Eastern Europe",0.3,11.1,74.3,4.5,1,1.7,6.9,-0.4
+"16",2018,"Europe","Southern Europe",0,16.7,75.2,0.4,1.7,0.4,5.8,-0.2
+"17",2019,"Africa","Eastern Africa",4.2,7.7,16.5,1.8,0.1,0,58.3,2.5
+"18",2019,"Africa","Middle Africa",3.2,12.5,19.2,1.1,0,0,78.8,2.8
+"19",2019,"Africa","Northern Africa",5.7,16.7,51.8,4,0.9,0.4,25.3,1.7
+"20",2019,"Africa","Southern Africa",0.2,14.3,38.8,2,0.4,0.2,52.9,1.7
+"21",2019,"Africa","Western Africa",1.9,6.7,20.6,2.5,0.1,0,80.2,2.7
+"22",2019,"America","Caribbean",1.6,5.3,68.5,0.2,0.3,0.1,22,0.6
+"23",2019,"America","Central America",6.2,14.3,50,0.8,0.2,0.1,15.3,1.3
+"24",2019,"America","North America",7.3,100,70.1,12.1,9.7,8.3,14.2,1.1
+"25",2019,"America","South America",0.8,8.3,62.8,3.8,0.4,0.5,16.3,0.9
+"26",2019,"Asia","Caucasus and Central Asia",12.3,11.1,49.1,1.4,0.6,0.6,24.9,1.4
+"27",2019,"Asia","East Asia",0,16.7,57.2,39.6,5.3,6.8,9.3,0.5
+"28",2019,"Asia","Middle East",13.6,6.7,76.2,2.5,1.1,1.1,14.8,1.9
+"29",2019,"Asia","South Asia",0.5,20,26.5,30.9,0.5,1.4,34,1.3
+"30",2019,"Asia","Southeast Asia",0.6,12.5,50.8,11.4,1.6,0.7,25.7,1.1
+"31",2019,"Europe","Eastern Europe",0.1,11.1,76.1,4.1,1,1.8,6.6,-0.5
+"32",2019,"Europe","Southern Europe",0,16.7,76.6,0.4,1.8,0.5,5.4,-0.2
+"33",2020,"Africa","Eastern Africa",4.7,7.7,16.5,1.8,0.1,0,58.3,2.5
+"34",2020,"Africa","Middle Africa",3.4,12.5,19.2,1.1,0,0,78.8,2.8
+"35",2020,"Africa","Northern Africa",4.2,16.7,51.8,4,0.9,0.4,25.3,1.7
+"36",2020,"Africa","Southern Africa",0.2,14.3,38.8,2,0.4,0.2,52.9,1.7
+"37",2020,"Africa","Western Africa",2.5,6.7,20.6,2.5,0.1,0,80.2,2.7
+"38",2020,"America","Caribbean",1.3,3.8,67.1,0.2,0.2,0.1,20.2,0.5
+"39",2020,"America","Central America",3.4,14.3,50,0.8,0.2,0.1,15.3,1.3
+"40",2020,"America","North America",3.3,50,78.7,26.3,13.2,8.3,10.3,0.8
+"41",2020,"America","South America",0.6,7.1,62.8,3.8,0.4,0.5,16.3,0.9
+"42",2020,"Asia","Caucasus and Central Asia",13.6,11.1,49.1,1.4,0.6,0.6,24.9,1.4
+"43",2020,"Asia","East Asia",0,16.7,57.2,39.6,5.3,6.8,9.3,0.5
+"44",2020,"Asia","Middle East",8.3,6.7,76.2,2.5,1.1,1.1,14.8,1.9
+"45",2020,"Asia","South Asia",0.2,20,26.5,30.9,0.5,1.4,34,1.3
+"46",2020,"Asia","Southeast Asia",0.4,12.5,50.8,11.4,1.6,0.7,25.7,1.1
+"47",2020,"Europe","Eastern Europe",0,7.7,78.1,3.4,2.4,2,5.7,-0.3
+"48",2020,"Europe","Northern Europe",0.1,10,90.3,0.4,0.9,0.7,2.9,0.4
+"49",2020,"Europe","Southern Europe",0,7.1,79.7,1.3,2.8,1.3,4.3,0.3
+"50",2020,"Europe","Western Europe",0,6.7,91.4,2.9,1.7,2.9,3.7,0.7
+"51",2021,"Africa","Eastern Africa",0.5,7.7,16.5,1.8,0.1,0,58.3,2.5
+"52",2021,"Africa","Middle Africa",0.7,14.3,18.2,1.3,0,0,78.4,2.7
+"53",2021,"Africa","Northern Africa",0.2,16.7,51.8,4,0.9,0.4,25.3,1.7
+"54",2021,"Africa","Southern Africa",0,16.7,37.4,2.2,0.4,0.2,54.8,1.6
+"55",2021,"Africa","Western Africa",0.2,6.7,20.6,2.5,0.1,0,80.2,2.7
+"56",2021,"America","Caribbean",0.4,8.3,65.3,0.4,0.4,0.1,23.3,0.7
+"57",2021,"America","Central America",0.5,14.3,50,0.8,0.2,0.1,15.3,1.3
+"58",2021,"America","North America",0.5,50,78.7,26.3,13.2,8.3,10.3,0.8
+"59",2021,"America","South America",0.1,8.3,61.5,4.1,0.4,0.5,17.1,0.9
+"60",2021,"Asia","Caucasus and Central Asia",1.4,12.5,52.5,1.5,0.6,0.6,23.8,1.2
+"61",2021,"Asia","East Asia",0,16.7,57.2,39.6,5.3,6.8,9.3,0.5
+"62",2021,"Asia","Middle East",1.3,9.1,68.4,3.1,1.2,1,17.2,1.8
+"63",2021,"Asia","South Asia",0,20,26.5,30.9,0.5,1.4,34,1.3
+"64",2021,"Asia","Southeast Asia",0.1,16.7,52,12.8,1.7,0.8,23.4,1
+"65",2021,"Europe","Eastern Europe",0,7.7,78.1,3.4,2.4,2,5.7,-0.3
+"66",2021,"Europe","Northern Europe",0,11.1,89.5,0.5,0.9,0.7,2.9,0.5
+"67",2021,"Europe","Southern Europe",0,8.3,80,1.5,3,1.3,4.6,0.3
+"68",2021,"Europe","Western Europe",0,10,90.7,3.2,1.8,2.9,3.7,0.7

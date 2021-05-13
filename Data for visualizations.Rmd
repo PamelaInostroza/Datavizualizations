@@ -440,6 +440,44 @@ print_json_lines(jsonlite::toJSON(spider3, pretty = TRUE), 1:30)
 
 validate(Dspider3)
 write(prettify(Dspider3), file = "Data/forvis/Spider3.json")
+
+
+
+##4
+spider4 <- ConflictsData %>% 
+  group_by(country, event_type, Gactor1) %>% 
+  summarise(fatalities = sum(fatalities),
+            conflicts = n()) %>% 
+  mutate(government = case_when(Gactor1 %in% c("Government or mutinous force") ~ conflicts),
+         protesters = case_when(Gactor1 == "Protesters" ~ conflicts)) %>% 
+  group_by(country, event_type) %>% 
+  summarise(fatalities = sum(fatalities),
+            conflicts = sum(conflicts),
+            government = max(government, na.rm = TRUE),
+            protesters = max(protesters, na.rm = TRUE)) %>% 
+  mutate(battles = case_when(event_type %in% c("Battles") ~ conflicts),
+         protest = case_when(event_type == "Protests" ~ conflicts)) %>% 
+  group_by(country) %>% 
+  summarise(fatalities = sum(fatalities),
+            conflicts = sum(conflicts),
+            battles = max(battles, na.rm = TRUE),
+            protests = max(protest, na.rm = TRUE),
+            government = max(government, na.rm = TRUE),
+            protesters = max(protesters, na.rm = TRUE))
+
+
+spider4 %>% 
+  mutate(value = value / sum(value)) %>%
+  rename(className = continent,
+         axis = event_type) %>% 
+  group_by(className) %>% 
+  tidyr::nest()
+
+Dspider3 <- jsonlite::toJSON(spider3, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(spider3, pretty = TRUE), 1:30)
+
+validate(Dspider3)
+write(prettify(Dspider3), file = "Data/forvis/Spider3.json")
 ```
 
 ## Map 

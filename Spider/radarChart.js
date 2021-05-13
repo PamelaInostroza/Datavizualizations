@@ -269,4 +269,20 @@ function RadarChart(id, data, options) {
 	  });
 	}//wrap	
 	
+
+// Handmade legend
+svg.append("circle").attr("cx",550).attr("cy",30).attr("r", 6).style("fill", "#EDC951")
+svg.append("circle").attr("cx",550).attr("cy",60).attr("r", 6).style("fill", "#CC333F")
+svg.append("circle").attr("cx",550).attr("cy",90).attr("r", 6).style("fill", "#00A0B0")
+svg.append("circle").attr("cx",550).attr("cy",120).attr("r", 6).style("fill", "#00CC00")
+svg.append("circle").attr("cx",550).attr("cy",150).attr("r", 6).style("fill", "#FF00FF")
+//svg.append("circle").attr("cx",200).attr("cy",270).attr("r", 6).style("fill", "#995384")
+svg.append("text").attr("x", 570).attr("y", 30).text("Afghanistan").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 60).text("India").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 90).text("Syria").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 120).text("Ukraine").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 150).text("United States").style("font-size", "15px").attr("alignment-baseline","middle")
+//svg.append("text").attr("x", 220).attr("y", 270).text("India").style("font-size", "15px").attr("alignment-baseline","middle")
+
+
 }//RadarChart

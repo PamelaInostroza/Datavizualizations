@@ -100,14 +100,24 @@ ConflictsData <- Conflicts %>% mutate(Gactor1 = case_when(inter1 == 1 ~ "Governm
                              region == "Europe" & country %in% c("Albania", "Andorra", "Bosnia and Herzegovina", "Bulgaria", "Croatia","Cyprus", 
                                             "Greece", "Italy", "Malta", "Portugal", "Romania", "San Marino", "Slovenia", 
                                             "Spain", "North Macedonia", "Yugoslavia","Gibraltar") ~ "Southern Europe",
-         TRUE ~ region)) 
-
-ConflictsData %>% 
-  mutate(Motiv = case_when(str_detect(notes, "coronavirus") ~ "Covid",
-                           str_detect(notes, "politic") ~ "Political",
-                           str(detect(notes, "government") ~ "Government")
-                           TRUE ~ "Other")) %>% 
-  group_by(Motiv) %>% 
+         TRUE ~ region)) %>% 
+  mutate(Motiv = case_when(grepl("coronavirus|pandemic", tolower(notes)) ~ "Covid",
+                           grepl("politic", tolower(notes)) ~ "Political",
+                           grepl("government|election|activist|leader|payment|authorities|corruption|resignation|price|disobedience|rebellion", 
+                                 tolower(notes)) ~ "Government",
+                           grepl("teacher|education|student|school", tolower(notes)) ~ "Education",
+                           grepl("women|femicide|gender|woman", tolower(notes)) ~ "Women rights",
+                           grepl("lgtb|gay|lesbian|same-sex|homophobi", tolower(notes)) ~ "Sexual minorities",
+                           grepl("security|murder|violence", tolower(notes)) ~ "Delinquency",
+                           grepl("employees|trade union|workers|farm|truck|working|job|employment|agriculture", 
+                                 tolower(notes)) ~ "Work",
+                           grepl("religious|church|catholic|abortion|jewish|orthodox", tolower(notes)) ~ "Religious",
+                           grepl("immigrants|racism|black|asian", tolower(notes)) ~ "Racism",
+                           grepl("climate|weather|pollution|nuclear|environment|ecolog", tolower(notes)) ~ "Environment",
+                           grepl("health|hospital|sanitary|medical", tolower(notes)) ~ "Health",
+                           TRUE ~ "Other"))
+ConflictsData %>% filter(year ==2020) %>% 
+  group_by(year,Motiv) %>% 
   count()
   
 head(ConflictsData)
@@ -115,9 +125,27 @@ ConflictsData %>% select(source_scale2,source_scale) %>% unique() %>% arrange(so
 SummaryConflicts <- ConflictsData %>% group_by(year, continent, region2, iso3, country) %>% 
   summarise(Conflicts = n(),
             Fatalities = sum(fatalities, na.rm = TRUE)) %>% 
-  ungroup() %>% 
-  left_join(Indicators, by = c("iso3"="Country.Code", "year"="Time"))
+  ungroup()  %>% 
+  left_join(Indicators, by = c("iso3"="Country.Code", "year"="Time")) %>% 
+  group_by(year, continent, region2) %>% 
+  mutate(Fatalities2 = Fatalities/ SP.POP.TOTL*100*1000,
+         Conflicts2 = Conflicts / sum(Conflicts, na.rm = TRUE) *100) %>% ungroup()
 head(SummaryConflicts)
+```
+
+## Maps
+```{r}
+SummaryConflicts %>% group_by(continent, region2, country) %>% 
+  filter(year != 2021) %>% 
+  arrange(continent, region2, country) %>% 
+  mutate(sumConf = cumsum(Conflicts),
+         Diff =  mean(Conflicts/lag(Conflicts),na.rm = TRUE),
+         Diff0 = sumConf/lag(sumConf)
+         ) %>% 
+  select(continent, region2, country, year, Conflicts, sumConf, Diff, Diff0) %>% 
+  #filter(Diff0 > 2 & Conflicts > 5000 & sumConf>3000)
+  filter(year == 2020) %>% filter(sumConf > 10000)
+
 ```
 
 ## Parallel coordinates
@@ -133,11 +161,9 @@ cor[1:2,]
 
 
 # For parallel coordinates
-Ind <- c("Conflicts", "Fatalities", "IT.NET.USER.ZS", "IT.CEL.SETS", "ST.INT.ARVL","ST.INT.DPRT", "SH.DYN.MORT", "SP.POP.GROW")
-ParallelCoordinatesVis <- SummaryConflicts  %>% 
-  mutate(Fatalities = Fatalities/ SP.POP.TOTL*100*1000,
-         Conflicts = Conflicts / sum(Conflicts, na.rm = TRUE) *100 *10) %>% 
-  select(year, continent, region2, all_of(Ind)) %>% 
+Ind <- c("Fatalities2", "Conflicts2", "IT.NET.USER.ZS", "IT.CEL.SETS", "ST.INT.ARVL","ST.INT.DPRT", "SH.DYN.MORT", "SP.POP.GROW")
+ParallelCoordinatesVis1 <- SummaryConflicts   %>% 
+  select(year, continent, region2, country, all_of(Ind)) %>% 
   arrange(year, continent, region2) %>% 
   mutate(IT.CEL.SETS = IT.CEL.SETS/10000000,
          ST.INT.ARVL = ST.INT.ARVL/10000000,
@@ -147,45 +173,49 @@ ParallelCoordinatesVis <- SummaryConflicts  %>%
   mutate_if(is.numeric, round, 1) %>% 
   mutate_if(~any(is.na(.)),~if_else(is.na(.),0,.)) %>% 
   rename(region = region2,
-         `Conflicts (% of world total per 10)` = Conflicts,
-         `Fatalities (% of population per 1000)` = Fatalities,
-         `Individuals using the Internet (% of population)` = IT.NET.USER.ZS, 
-  `Mobile cellular subscriptions (per 10 million)` = IT.CEL.SETS, 
-  `International tourism, number of arrivals (per 10 million)` = ST.INT.ARVL,
-  `International tourism, number of departures (per 10 million)` = ST.INT.DPRT, 
-  `Mortality rate, under-5 (per 1,000 live births)` = SH.DYN.MORT, 
-  `Population growth (annual %)` = SP.POP.GROW
+         `Conflicts (Average % of country participation in the region)` = Conflicts2,
+         `Fatalities (Average % of country population per 1000)` = Fatalities2,
+         `Individuals using the Internet (Mean % of population)` = IT.NET.USER.ZS, 
+  `Mobile cellular subscriptions (Mean per 10 million)` = IT.CEL.SETS, 
+  `International tourism, number of arrivals (Mean per 10 million)` = ST.INT.ARVL,
+  `International tourism, number of departures (Mean per 10 million)` = ST.INT.DPRT, 
+  `Mortality rate, under-5 (Mean per 1,000 live births)` = SH.DYN.MORT, 
+  `Population growth (Mean annual %)` = SP.POP.GROW
   )
 
-#write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates2.csv", na = "")
+#write.csv(ParallelCoordinatesVis1, file = "Data/forvis/ParallelCoordinates2.csv", na = "")
 
-ParallelCoordinatesVis <-  SummaryConflicts %>% 
-  mutate(Fatalities = Fatalities/ SP.POP.TOTL*100*1000,
-         Conflicts = Conflicts / sum(Conflicts, na.rm = TRUE) *100 *10) %>% 
-  select(year, continent, region2, country, Conflicts, Fatalities,
+ParallelCoordinatesVis2 <-  SummaryConflicts %>% 
+  select(year, continent, region2, country, Fatalities, Conflicts, 
          CC.EST, GE.EST, PV.EST, RL.EST, RQ.EST, VA.EST
          ) %>% 
   group_by(year, continent, region2) %>% 
-  summarise(Conflicts = sum(Conflicts), 
-            Fatalities= sum(Fatalities),
+  summarise(Fatalities= sum(Fatalities),
+            Conflicts = sum(Conflicts),
             CC.EST = mean(CC.EST, na.rm = TRUE),
             GE.EST = mean(GE.EST,na.rm = TRUE),
             PV.EST = mean(PV.EST,na.rm = TRUE),
             RL.EST = mean(RL.EST,na.rm = TRUE),
             RQ.EST = mean(RQ.EST,na.rm = TRUE),
-            VA.EST = mean(VA.EST,na.rm = TRUE)) %>% 
+            VA.EST = mean(VA.EST,na.rm = TRUE)) %>%
+  arrange() %>% 
+  ungroup() %>% 
+  group_by(year) %>% 
+  mutate(Fatalities= Fatalities/sum(Fatalities, na.rm = TRUE)*100,
+         Conflicts = Conflicts/sum(Conflicts, na.rm = TRUE)*100) %>% 
+  ungroup() %>% 
   mutate_if(is.numeric, round, 1) %>% 
   rename(region = region2,
-         `Conflicts (% of world total per 10)` = Conflicts,
-         `Fatalities (% of population per 1000)` = Fatalities,
-         `Control of Corruption` = CC.EST, 
-         `Government Effectiveness` = GE.EST, 
-         `Political Stability and Absence of Violence/Terrorism` = PV.EST, 
-         `Rule of Law` = RL.EST, 
-         `Regulatory Quality` = RQ.EST, 
-         `Voice and Accountability` = VA.EST)
+         `Conflicts (% of total)` = Conflicts,
+         `Fatalities (% of total)` = Fatalities,
+         `Control of Corruption (Mean)` = CC.EST, 
+         `Government Effectiveness (Mean)` = GE.EST, 
+         `Political Stability and Absence of Violence/Terrorism (Mean)` = PV.EST, 
+         `Rule of Law (Mean)` = RL.EST, 
+         `Regulatory Quality (Mean)` = RQ.EST, 
+         `Voice and Accountability (Mean)` = VA.EST)
 
-#write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates1.csv", na = "")
+#write.csv(ParallelCoordinatesVis2, file = "Data/forvis/ParallelCoordinates1.csv", na = "")
 
 ```
 
@@ -194,10 +224,13 @@ ParallelCoordinatesVis <-  SummaryConflicts %>%
 ```{r}
 
 ToJsonData1 <- ConflictsData %>% 
-  arrange(country, event_date) %>% 
   select(year,  event_type, sub_event_type, country, fatalities) %>% 
   group_by(year, event_type, sub_event_type, country) %>% 
-  summarise(fatalities = sum(fatalities)) %>% ungroup() 
+  summarise(fatalities = sum(fatalities, na.rm = TRUE),
+            conflicts = n()) %>% ungroup() %>% 
+  group_by(year) %>% 
+  mutate(fatalities = fatalities/sum(fatalities, na.rm = TRUE),
+         conflicts = conflicts/sum(conflicts, na.rm = TRUE)) %>% ungroup()
 
 sunburst1 <- ToJsonData1 %>% 
   select(year, event_type, sub_event_type, country, fatalities) %>%
@@ -222,22 +255,17 @@ Dsunburst1 <- jsonlite::toJSON(sunburst1, pretty = TRUE)
 print_json_lines(jsonlite::toJSON(sunburst1, pretty = TRUE), 1:30)
 
 validate(Dsunburst1)
-write(prettify(Dsunburst1), file = "Data/forvis/Sunburst1.json")
+write(prettify(Dsunburst1), file = "Data/forvis/Sunburst2.json")
 
-
-ToJsonData2 <- ConflictsData %>% 
-  arrange(country, event_date) %>% 
-  select(year, source_scale2,  sub_event_type) %>% 
-  group_by(year, source_scale2, sub_event_type) %>% 
-  summarise(valor = n()) %>% ungroup() %>% 
-  group_by(year) %>% 
-  mutate(valor = valor/ sum(valor))
-
-sunburst2 <- ToJsonData2 %>% 
-  rename(name1 = sub_event_type) %>% 
-  group_by(year, source_scale2) %>%
+sunburst2<- ToJsonData1 %>% 
+  select(year, event_type, sub_event_type, country,conflicts) %>%
+  group_by(year, event_type, sub_event_type) %>%
+  tidyr::nest() %>%
+  rename(name = sub_event_type, 
+    children = data) %>%
+  group_by(year, event_type) %>% 
   tidyr::nest() %>% 
-  rename(name = source_scale2, 
+  rename(name = event_type, 
     children = data) %>% 
   group_by(year) %>% 
   tidyr::nest() %>% 
@@ -248,11 +276,36 @@ sunburst2 <- ToJsonData2 %>%
   tidyr::nest() %>% 
   rename(name = conf, children = data)
 
+
+# ToJsonData2 <- ConflictsData %>% 
+#   arrange(country, event_date) %>% 
+#   select(year, source_scale2,  sub_event_type) %>% 
+#   group_by(year, source_scale2, sub_event_type) %>% 
+#   summarise(valor = n()) %>% ungroup() %>% 
+#   group_by(year) %>% 
+#   mutate(valor = valor/ sum(valor))
+
+# 
+# sunburst2 <- ToJsonData2 %>% 
+#   rename(name1 = sub_event_type) %>% 
+#   group_by(year, source_scale2) %>%
+#   tidyr::nest() %>% 
+#   rename(name = source_scale2, 
+#     children = data) %>% 
+#   group_by(year) %>% 
+#   tidyr::nest() %>% 
+#   rename(name = year, 
+#     children = data) %>% 
+#   mutate(conf = "Conflicts") %>% 
+#   group_by(conf) %>% 
+#   tidyr::nest() %>% 
+#   rename(name = conf, children = data)
+
 Dsunburst2 <- jsonlite::toJSON(sunburst2, pretty = TRUE)
 print_json_lines(jsonlite::toJSON(sunburst2, pretty = TRUE), 1:30)
 
 validate(Dsunburst2)
-write(prettify(Dsunburst2), file = "Data/forvis/Sunburst2.json")
+write(prettify(Dsunburst2), file = "Data/forvis/Sunburst1.json")
 
 ```
 
@@ -260,22 +313,22 @@ write(prettify(Dsunburst2), file = "Data/forvis/Sunburst2.json")
 
 ```{r}
 ToJsonData3 <- ConflictsData %>% 
-  select(year, sub_event_type, continent, region2) %>% 
-  group_by(year, sub_event_type, continent, region2) %>% 
+  select(year, event_type, sub_event_type, Motiv, region2) %>% 
+  group_by(year, event_type, sub_event_type, Motiv, region2) %>% 
   count(name = "value") %>% ungroup()
 
 zoom1 <- ToJsonData3 %>% 
-  group_by(year, sub_event_type, continent, region2) %>%
+  group_by(year, event_type, sub_event_type, Motiv, region2) %>%
   summarise(value = sum(value)) %>% 
   rename(name = region2) %>% 
-  group_by(year, sub_event_type, continent) %>%
+  group_by(year, event_type, sub_event_type, Motiv) %>%
   tidyr::nest() %>%
-  rename(name = continent,
+  rename(name = Motiv,
          children = data) %>%
-   group_by(year, sub_event_type) %>%
+   group_by(year,event_type, sub_event_type) %>%
   tidyr::nest() %>%
   rename(name = sub_event_type,
-         children = data) %>% filter(year == 2020) %>% ungroup() %>% select(-year) %>% 
+         children = data) %>% filter(year == 2020 & event_type == "Protests") %>% ungroup() %>% select(-year, -event_type) %>% 
   mutate(conf = "Conflicts") %>% 
   group_by(conf) %>% 
   tidyr::nest() %>% 
@@ -317,6 +370,7 @@ print_json_lines(jsonlite::toJSON(bubble1, pretty = TRUE), 1:30)
 validate(Dbubble1)
 write(prettify(Dbubble1), file = "Data/forvis/Bubble1.json")
 ```
+
 ```{r}
 
 ToJsonData4 <- ConflictsData %>% 
@@ -375,6 +429,44 @@ write(prettify(Dspider2), file = "Data/forvis/Spider2.json")
 spider3 <- ConflictsData %>% filter(year == 2020)  %>% 
   group_by(continent,event_type) %>% 
   summarise(value = sum(fatalities))  %>% 
+  mutate(value = value / sum(value)) %>%
+  rename(className = continent,
+         axis = event_type) %>% 
+  group_by(className) %>% 
+  tidyr::nest()
+
+Dspider3 <- jsonlite::toJSON(spider3, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(spider3, pretty = TRUE), 1:30)
+
+validate(Dspider3)
+write(prettify(Dspider3), file = "Data/forvis/Spider3.json")
+
+
+
+##4
+spider4 <- ConflictsData %>% 
+  group_by(country, event_type, Gactor1) %>% 
+  summarise(fatalities = sum(fatalities),
+            conflicts = n()) %>% 
+  mutate(government = case_when(Gactor1 %in% c("Government or mutinous force") ~ conflicts),
+         protesters = case_when(Gactor1 == "Protesters" ~ conflicts)) %>% 
+  group_by(country, event_type) %>% 
+  summarise(fatalities = sum(fatalities),
+            conflicts = sum(conflicts),
+            government = max(government, na.rm = TRUE),
+            protesters = max(protesters, na.rm = TRUE)) %>% 
+  mutate(battles = case_when(event_type %in% c("Battles") ~ conflicts),
+         protest = case_when(event_type == "Protests" ~ conflicts)) %>% 
+  group_by(country) %>% 
+  summarise(fatalities = sum(fatalities),
+            conflicts = sum(conflicts),
+            battles = max(battles, na.rm = TRUE),
+            protests = max(protest, na.rm = TRUE),
+            government = max(government, na.rm = TRUE),
+            protesters = max(protesters, na.rm = TRUE))
+
+
+spider4 %>% 
   mutate(value = value / sum(value)) %>%
   rename(className = continent,
          axis = event_type) %>% 

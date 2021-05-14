@@ -2,13 +2,6 @@
 //   https://bost.ocks.org/mike/uberdata/
 
 
-// Overall page margins
-var HEIGHT = 300,
-    WIDTH = 460;
-
-outerRadius = Math.min(WIDTH, HEIGHT) / 2 
-innerRadius = outerRadius - 20;
-
 // Formatting functions
 var formatPercent = d3.format(".1%");
 
@@ -45,7 +38,7 @@ var svg3 = d3.select("#vis3").append("svg")
 
 
 d3.queue()
-    .defer(d3.json, "MultipleCatChordDiag20.json")
+    .defer(d3.json, "./assets/MultipleCatChordDiag20.json")
     .await(ready);
 
 function ready(error, data) {

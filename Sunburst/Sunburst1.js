@@ -1,8 +1,8 @@
 // Variables
-const width = 350;
-const height = 350;
-const radius = Math.min(width, height) / 2;
-const color = d3.scaleOrdinal(d3.schemeTableau10);
+// const width = 350;
+// const height = 350;
+// const radius = Math.min(width, height) / 2;
+// const color = d3.scaleOrdinal(d3.schemeTableau10);
 
 // Create primary <g> element
 const g = d3.select("#vis1").append("svg")
@@ -21,45 +21,46 @@ const partition = d3.partition()
 
 
 //JSON data
-//d3.json('./assets/Sunburst2.json', (error, nodeData) => {
+//d3.json('./assets/Sunburst.json', (error, nodeData) => {
 d3.json("./assets/Sunburst2.json").then(nodeData => { 
 
     var textGroup = g.append("g");
         textGroup.append("text")
             .attr("id", "year")
-            .attr("y", -5)
+            .attr("y", -25)
             .attr("class", "year")
             .attr("text-anchor", "middle");
     
         textGroup.append("text")
-        .attr("id", "source_scale2")
-        .attr("y", 10)
-        .attr("class", "source_scale2")
+        .attr("id", "event_type")
+        .attr("y", -15)
+        .attr("class", "event_type")
         .attr("text-anchor", "middle");
 
-        // textGroup.append("text")
-        //     .attr("id", "event_type")
-        //     .attr("y", 5)
-        //     .attr("class", "event_type")
-        //     .attr("text-anchor", "middle");
 
         textGroup.append("text")
             .attr("id", "subevent_type")
-            .attr("y", 25)
+            .attr("y", 10)
             .attr("class", "subevent_type")
             .attr("text-anchor", "middle");
 
         textGroup.append("text")
-            .attr("id", "valor")
-            .attr("y", -20)
-            .attr("class", "valor")
+            .attr("id", "country")
+            .attr("y", 20)
+            .attr("class", "country")
+            .attr("text-anchor", "middle");
+
+        textGroup.append("text")
+            .attr("id", "fatalities")
+            .attr("y", 0)
+            .attr("class", "fatalities")
             .attr("text-anchor", "middle");
 
     console.log(textGroup)
 
     // Find data root
     const root = d3.hierarchy(nodeData)
-        .sum(function (d) { return d.valor})
+        .sum(function (d) { return d.fatalities})
         .sort(function(a, b) { return b.value - a.value; });
 
     // Size arcs
@@ -81,7 +82,7 @@ d3.json("./assets/Sunburst2.json").then(nodeData => {
         .attr("d", arc)
         .style('stroke', '#fff')
         .style("fill", function (d) { return color((d.children ? d : d.parent).data.name);})
-        .on("mouseover", mouseover);
+        .on("mouseover", mouseover1);
 
     slice.filter(function(node) {
             return ((node.x1 - node.x0) > Math.PI/4);
@@ -94,7 +95,7 @@ d3.json("./assets/Sunburst2.json").then(nodeData => {
 
     
 
-    d3.select("#chart-container").on("mouseleave", mouseleave);   
+    d3.select("#chart-container").on("mouseleave", mouseleave1);   
 });
 
 
@@ -106,8 +107,8 @@ function computeTextRotation(d) {
     //return (angle < 180) ? angle - 90 : angle + 90;  // labels as spokes
 }
 
-function mouseover(e, d) {
-    d3.select("#valor")
+function mouseover1(e, d) {
+    d3.select("#fatalities")
         .text(d.value.toLocaleString('en-IN', { maximumSignificantDigits: 3, style:"percent" }));
         console.log(d.value)
     var sequenceArray = d.ancestors().reverse();
@@ -115,34 +116,30 @@ function mouseover(e, d) {
     sequenceArray.shift(); 
 
     d3.select("#year").text("");
-    d3.select("#source_scale2").text("");
     d3.select("#event_type").text("");
-    d3.select("#subevent_type").text("");
+    d3.select("#subevent_type2").text("");
+    d3.select("#country").text("");
     d3.select("#name").text("");
 
     sequenceArray.forEach(d => {
       
         if (d.depth === 1) {
             d3.select("#year")
-                .text(d.data.name)
-                
+                .text(d.data.name)                
                 ;
         } else if (d.depth === 2) {
 
-            d3.select("#source_scale2")
+            d3.select("#event_type")
                 .text(d.data.name)
-            // d3.select("#event_type")
-            //     .text(d.data.name)
                 ;
         } else if (d.depth === 3) {
             d3.select("#subevent_type")
-                .text(d.data.name1)
+                .text(d.data.name)
                 ;
-        } //else if (d.depth === 4) {
-                
-        //     d3.select("#source_scale2")
-        //         .text(d.data.source_scale2);
-        // }
+        } else if (d.depth === 4) {                
+            d3.select("#country")
+                .text(d.data.country);
+        }
     });
 
 
@@ -154,7 +151,7 @@ function mouseover(e, d) {
     .style("opacity", 1);
 }
 
-function mouseleave(d) {
+function mouseleave1(d) {
     d3.selectAll("path").on("mouseover", null);
 
    d3.selectAll("path")
@@ -162,6 +159,6 @@ function mouseleave(d) {
         .duration(1000)
         .style("opacity", 1)
         .on("end", function() {
-            d3.select(this).on("mouseover", mouseover);
+            d3.select(this).on("mouseover", mouseover1);
         });
 }

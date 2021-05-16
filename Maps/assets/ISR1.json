@@ -1,0 +1,866 @@
+ [
+            {
+                "admin1": "HaDarom",
+                "long": 34.4097,
+                "lat": 31.3745,
+                "group": "y2018",
+                "color": "Battles",
+                "size": 6,
+                "fatalities": 3
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5124,
+                "lat": 31.4575,
+                "group": "y2018",
+                "color": "Explosions/Remote violence",
+                "size": 317,
+                "fatalities": 1
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5891,
+                "lat": 31.2819,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 18,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5592,
+                "lat": 31.4164,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 11,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.6557,
+                "lat": 31.4473,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 23,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.3912,
+                "lat": 31.2184,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 4,
+                "fatalities": 2
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.4907,
+                "lat": 31.4218,
+                "group": "y2019",
+                "color": "Battles",
+                "size": 5,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5193,
+                "lat": 31.4289,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 210,
+                "fatalities": 5
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.7319,
+                "lat": 31.2579,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 17,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.7467,
+                "lat": 31.2189,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5837,
+                "lat": 31.4123,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 62,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.7988,
+                "lat": 30.9352,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.7187,
+                "lat": 31.3642,
+                "group": "y2020",
+                "color": "Battles",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5239,
+                "lat": 31.4591,
+                "group": "y2020",
+                "color": "Explosions/Remote violence",
+                "size": 109,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.8585,
+                "lat": 30.9424,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 843,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.7331,
+                "lat": 31.3861,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 5,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.5958,
+                "lat": 31.4231,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 26,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.8579,
+                "lat": 30.9348,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 274,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.6497,
+                "lat": 31.7921,
+                "group": "y2021",
+                "color": "Riots",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaDarom",
+                "long": 34.8139,
+                "lat": 31.3356,
+                "group": "y2021",
+                "color": "Strategic developments",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 34.9976,
+                "lat": 32.7853,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 13,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 34.9816,
+                "lat": 32.58,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 4,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.1535,
+                "lat": 32.5173,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.0985,
+                "lat": 32.6177,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 3,
+                "fatalities": 1
+            },
+            {
+                "admin1": "Haifa",
+                "long": 34.9039,
+                "lat": 32.4419,
+                "group": "y2019",
+                "color": "Battles",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.051,
+                "lat": 32.6617,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 19,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.0197,
+                "lat": 32.8167,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 4,
+                "fatalities": 1
+            },
+            {
+                "admin1": "Haifa",
+                "long": 34.9712,
+                "lat": 32.6932,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 5,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.1132,
+                "lat": 32.8115,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.0205,
+                "lat": 32.6371,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 717,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 34.9895,
+                "lat": 32.7946,
+                "group": "y2020",
+                "color": "Violence against civilians",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Haifa",
+                "long": 35.0306,
+                "lat": 32.6363,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 270,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8796,
+                "lat": 32.2716,
+                "group": "y2018",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8861,
+                "lat": 32.0256,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8589,
+                "lat": 31.9484,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 4,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9209,
+                "lat": 32.0217,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9537,
+                "lat": 32.1547,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 1,
+                "fatalities": 1
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9112,
+                "lat": 31.8963,
+                "group": "y2019",
+                "color": "Battles",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8291,
+                "lat": 31.9905,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 6,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9089,
+                "lat": 32.1305,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 26,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.872,
+                "lat": 32.0897,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 7,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9205,
+                "lat": 32.0551,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9055,
+                "lat": 32.1538,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 4,
+                "fatalities": 2
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9069,
+                "lat": 32.175,
+                "group": "y2020",
+                "color": "Battles",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8866,
+                "lat": 32.0136,
+                "group": "y2020",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.875,
+                "lat": 32.1014,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 1384,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8899,
+                "lat": 32.0864,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9589,
+                "lat": 32.1182,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 5,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9069,
+                "lat": 32.175,
+                "group": "y2020",
+                "color": "Violence against civilians",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.8755,
+                "lat": 32.1072,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 495,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaMerkaz",
+                "long": 34.9357,
+                "lat": 32.1158,
+                "group": "y2021",
+                "color": "Strategic developments",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.306,
+                "lat": 32.8887,
+                "group": "y2018",
+                "color": "Battles",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.5312,
+                "lat": 32.7922,
+                "group": "y2018",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.3602,
+                "lat": 32.9217,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 11,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.3424,
+                "lat": 32.8861,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 6,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.3537,
+                "lat": 32.8736,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 6,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.2762,
+                "lat": 32.7516,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 5,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.4723,
+                "lat": 33.0889,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.2852,
+                "lat": 32.8093,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 34,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.2677,
+                "lat": 32.8403,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.3874,
+                "lat": 33.0003,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.2997,
+                "lat": 32.7883,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.5439,
+                "lat": 33.1969,
+                "group": "y2020",
+                "color": "Battles",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.2755,
+                "lat": 32.8121,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 1433,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.4125,
+                "lat": 32.8946,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 5,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.4715,
+                "lat": 32.9934,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 4,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.3274,
+                "lat": 32.8461,
+                "group": "y2020",
+                "color": "Violence against civilians",
+                "size": 4,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.265,
+                "lat": 32.8018,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 493,
+                "fatalities": 0
+            },
+            {
+                "admin1": "HaZafon",
+                "long": 35.1987,
+                "lat": 32.853,
+                "group": "y2021",
+                "color": "Violence against civilians",
+                "size": 1,
+                "fatalities": 2
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.2025,
+                "lat": 31.7701,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 40,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1851,
+                "lat": 31.7662,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 7,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.2163,
+                "lat": 31.769,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.2163,
+                "lat": 31.769,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 34.9929,
+                "lat": 31.7307,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.2102,
+                "lat": 31.7714,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 41,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1971,
+                "lat": 31.7771,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 11,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1797,
+                "lat": 31.7676,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 7,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1452,
+                "lat": 31.776,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 205,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.2014,
+                "lat": 31.7719,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 41,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1863,
+                "lat": 31.766,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 8,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1397,
+                "lat": 31.7715,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 57,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Jerusalem",
+                "long": 35.1683,
+                "lat": 31.7668,
+                "group": "y2021",
+                "color": "Riots",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7806,
+                "lat": 32.0809,
+                "group": "y2018",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7833,
+                "lat": 32.0792,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 52,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.8072,
+                "lat": 32.0808,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 6,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7806,
+                "lat": 32.0809,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.771,
+                "lat": 32.0619,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7836,
+                "lat": 32.0804,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 52,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7881,
+                "lat": 32.0812,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 8,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7804,
+                "lat": 32.0721,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 8,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7906,
+                "lat": 32.0836,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.8053,
+                "lat": 32.1018,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 386,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.789,
+                "lat": 32.0682,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 18,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.7804,
+                "lat": 32.0731,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.803,
+                "lat": 32.101,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 117,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Tel Aviv",
+                "long": 34.8338,
+                "lat": 32.0807,
+                "group": "y2021",
+                "color": "Riots",
+                "size": 3,
+                "fatalities": 0
+            }
+        ]

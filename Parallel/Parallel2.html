@@ -58,21 +58,22 @@
 
                 <input id="update" name="updateButton" type="button" value="Update" onclick="updateRegionSelection()">  
                 </ul>     
+
+                
             </center> 
             </fieldset> 
                        
         </div>
 
-        
         <script>
+    
+            let selectedYear = 2020
+            let selectedYear2 = 2020
+            const colorKey = "region";
             
-        let selectedYear = 2020
-        const colorKey = "region";
-
-        let selectedItems = updateRegionSelection();
-
-        // Functions
-        function updateRegionSelection() {  
+            // let selectedItems = updateRegionSelection();
+            
+            function updateRegionSelection() {  
                 let checkboxes = document.getElementsByName("continent");  
                 let numberOfCheckedItems = 0;  
                 let selectedItems=[];
@@ -85,12 +86,24 @@
                 }
                 return selectedItems;
             }
-
         </script>
 
-   
-            <div class="indicators-lines" id="parallel">
-                <script src="main.js"></script>
+<table style="width: 100%">
+    <tr>
+
+        <td>
+            <div class="indicators-lines1" id="parallel1">
+            <script src="main1.js"></script>
+        </td>
+
+        <td>
+        
+            <div class="indicators-lines2" id="parallel2">
+            <script src="main2.js"></script>
+        </td>
+
+    </tr>        
+    </table>
 
     </body>
 </html>

@@ -1,0 +1,434 @@
+ [
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4236,
+                "lat": 31.448,
+                "group": "y2018",
+                "color": "Battles",
+                "size": 21,
+                "fatalities": 27
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4138,
+                "lat": 31.4474,
+                "group": "y2018",
+                "color": "Explosions/Remote violence",
+                "size": 279,
+                "fatalities": 48
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4356,
+                "lat": 31.4723,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 88,
+                "fatalities": 9
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4112,
+                "lat": 31.4281,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 219,
+                "fatalities": 178
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4166,
+                "lat": 31.4429,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 71,
+                "fatalities": 10
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4023,
+                "lat": 31.4569,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 101,
+                "fatalities": 10
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4129,
+                "lat": 31.4364,
+                "group": "y2019",
+                "color": "Battles",
+                "size": 18,
+                "fatalities": 9
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4211,
+                "lat": 31.4594,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 298,
+                "fatalities": 71
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4301,
+                "lat": 31.4653,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 94,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4069,
+                "lat": 31.4114,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 298,
+                "fatalities": 34
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4516,
+                "lat": 31.4795,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 75,
+                "fatalities": 1
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3926,
+                "lat": 31.4534,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 156,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3985,
+                "lat": 31.408,
+                "group": "y2020",
+                "color": "Battles",
+                "size": 6,
+                "fatalities": 6
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3976,
+                "lat": 31.43,
+                "group": "y2020",
+                "color": "Explosions/Remote violence",
+                "size": 97,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4464,
+                "lat": 31.4773,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 50,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3063,
+                "lat": 31.3402,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4326,
+                "lat": 31.454,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 25,
+                "fatalities": 5
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4082,
+                "lat": 31.4659,
+                "group": "y2020",
+                "color": "Violence against civilians",
+                "size": 45,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3063,
+                "lat": 31.3402,
+                "group": "y2021",
+                "color": "Battles",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3989,
+                "lat": 31.4237,
+                "group": "y2021",
+                "color": "Explosions/Remote violence",
+                "size": 8,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4489,
+                "lat": 31.4822,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 9,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4835,
+                "lat": 31.5272,
+                "group": "y2021",
+                "color": "Riots",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.4151,
+                "lat": 31.4446,
+                "group": "y2021",
+                "color": "Strategic developments",
+                "size": 10,
+                "fatalities": 0
+            },
+            {
+                "admin1": "Gaza Strip",
+                "long": 34.3743,
+                "lat": 31.4406,
+                "group": "y2021",
+                "color": "Violence against civilians",
+                "size": 23,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2074,
+                "lat": 31.8782,
+                "group": "y2018",
+                "color": "Battles",
+                "size": 39,
+                "fatalities": 22
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2336,
+                "lat": 32.242,
+                "group": "y2018",
+                "color": "Explosions/Remote violence",
+                "size": 3,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.207,
+                "lat": 31.9137,
+                "group": "y2018",
+                "color": "Protests",
+                "size": 153,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1901,
+                "lat": 31.9573,
+                "group": "y2018",
+                "color": "Riots",
+                "size": 460,
+                "fatalities": 14
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.239,
+                "lat": 31.9419,
+                "group": "y2018",
+                "color": "Strategic developments",
+                "size": 156,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1849,
+                "lat": 31.8485,
+                "group": "y2018",
+                "color": "Violence against civilians",
+                "size": 88,
+                "fatalities": 11
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1958,
+                "lat": 32.0029,
+                "group": "y2019",
+                "color": "Battles",
+                "size": 38,
+                "fatalities": 20
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1668,
+                "lat": 31.7514,
+                "group": "y2019",
+                "color": "Explosions/Remote violence",
+                "size": 4,
+                "fatalities": 1
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1858,
+                "lat": 31.96,
+                "group": "y2019",
+                "color": "Protests",
+                "size": 189,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1912,
+                "lat": 31.9326,
+                "group": "y2019",
+                "color": "Riots",
+                "size": 583,
+                "fatalities": 10
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2113,
+                "lat": 31.8782,
+                "group": "y2019",
+                "color": "Strategic developments",
+                "size": 294,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1804,
+                "lat": 31.8916,
+                "group": "y2019",
+                "color": "Violence against civilians",
+                "size": 208,
+                "fatalities": 12
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2118,
+                "lat": 31.9396,
+                "group": "y2020",
+                "color": "Battles",
+                "size": 25,
+                "fatalities": 11
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2933,
+                "lat": 32.3358,
+                "group": "y2020",
+                "color": "Explosions/Remote violence",
+                "size": 2,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2022,
+                "lat": 32.0538,
+                "group": "y2020",
+                "color": "Protests",
+                "size": 204,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1974,
+                "lat": 31.9317,
+                "group": "y2020",
+                "color": "Riots",
+                "size": 381,
+                "fatalities": 10
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2147,
+                "lat": 31.9311,
+                "group": "y2020",
+                "color": "Strategic developments",
+                "size": 235,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.186,
+                "lat": 31.9906,
+                "group": "y2020",
+                "color": "Violence against civilians",
+                "size": 98,
+                "fatalities": 6
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1904,
+                "lat": 31.9778,
+                "group": "y2021",
+                "color": "Battles",
+                "size": 7,
+                "fatalities": 4
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.4408,
+                "lat": 31.8399,
+                "group": "y2021",
+                "color": "Explosions/Remote violence",
+                "size": 1,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2002,
+                "lat": 31.9541,
+                "group": "y2021",
+                "color": "Protests",
+                "size": 54,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.214,
+                "lat": 31.9779,
+                "group": "y2021",
+                "color": "Riots",
+                "size": 95,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.2264,
+                "lat": 31.9755,
+                "group": "y2021",
+                "color": "Strategic developments",
+                "size": 47,
+                "fatalities": 0
+            },
+            {
+                "admin1": "West Bank",
+                "long": 35.1877,
+                "lat": 32.062,
+                "group": "y2021",
+                "color": "Violence against civilians",
+                "size": 27,
+                "fatalities": 4
+            }
+        ]

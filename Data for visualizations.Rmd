@@ -292,7 +292,25 @@ ParallelCoordinatesVis2 <-  SummaryConflicts %>%
 #write.csv(ParallelCoordinatesVis2, file = "Data/forvis/ParallelCoordinates1.csv", na = "")
 
 
-ParallelCoordinatesVis <- full_join(ParallelCoordinatesVis1,ParallelCoordinatesVis2, by = c("year", "continent","region")) 
+ParallelCoordinatesVis <- ParallelCoordinatesVis1 %>% full_join(ParallelCoordinatesVis2, 
+                                                                by = c("year", "continent","region")) %>% 
+  select(year, continent, region, 
+                                  `Fatalities (% of total)`,
+                                  `Fatalities (Average % of country population per 1000)`, 
+                                  `Conflicts (% of total)`, 
+                                  `Conflicts (Average % of country participation in the region)`,
+                                  `Population growth (Mean annual %)`,
+                                  `Individuals using the Internet (Mean % of population)`,
+                                  `Mobile cellular subscriptions (Mean per 10 million)`,
+                                  `International tourism, number of arrivals (Mean per 10 million)`,
+                                  `International tourism, number of departures (Mean per 10 million)`,
+                                  `Mortality rate, under-5 (Mean per 1,000 live births)`,
+                                  `Control of Corruption (Mean)`,
+                                  `Government Effectiveness (Mean)`,
+                                  `Political Stability and Absence of Violence/Terrorism (Mean)`,
+                                  `Rule of Law (Mean)`,
+                                  `Regulatory Quality (Mean)`,
+                                  `Voice and Accountability (Mean)`)
 write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates.csv", na = "")
 
 ```
@@ -523,31 +541,36 @@ write(prettify(Dspider3), file = "Data/forvis/Spider3.json")
 
 ##4
 fspider4 <- ConflictsData %>% 
-  group_by(country, event_type, Gactor1) %>% 
+  group_by(country,iso3, event_type, Gactor1) %>% 
   summarise(fatalities = sum(fatalities),
             conflicts = n()) %>% 
   mutate(government = case_when(Gactor1 %in% c("Government or mutinous force") ~ conflicts),
          rebelforce = case_when(Gactor1 == "Rebel force" ~ conflicts)) %>% 
-  group_by(country, event_type) %>% 
+  group_by(country,iso3, event_type) %>% 
   summarise(fatalities = sum(fatalities),
             conflicts = sum(conflicts),
             government = max(government, na.rm = TRUE),
             rebelforce = ifelse(max(rebelforce, na.rm = TRUE) == -Inf, 0, max(rebelforce, na.rm = TRUE))) %>% 
   mutate(battles = case_when(event_type %in% c("Battles") ~ conflicts),
          protest = case_when(event_type == "Protests" ~ conflicts)) %>% 
-  group_by(country) %>% 
-  summarise(fatalities = sum(fatalities),
-            conflicts = sum(conflicts),
-            battles = max(battles, na.rm = TRUE),
-            protests = max(protest, na.rm = TRUE),
-            government = max(government, na.rm = TRUE),
-            rebelforce = ifelse(max(rebelforce, na.rm = TRUE) == -Inf, 0, max(rebelforce, na.rm = TRUE)))
+  group_by(country, iso3) %>% 
+  summarise(`Number of fatalities` = sum(fatalities),
+            `Number of conflicts` = sum(conflicts),
+            `Involving battles` = max(battles, na.rm = TRUE),
+            `Involving protests` = max(protest, na.rm = TRUE),
+            `Started by government` = max(government, na.rm = TRUE),
+            `Started by rebel forces` = ifelse(max(rebelforce, na.rm = TRUE) == -Inf, 0, max(rebelforce, na.rm = TRUE)))
 
 
 fspider4 %>% 
   filter(fatalities > 50000 | conflicts > 10000 | protests >5000) %>% print(n=Inf)
 
-spider4 <- fspider4 %>% filter(country %in% c("Afghanistan", "Syria", "United States", "India", "Ukraine")) %>% 
+spider4 <- fspider4 %>% filter(country %in% c("Afghanistan", "Syria", "United States", "India", "Ukraine", 
+                                              "Israel", "Palestine", "Mexico", "Nigeria", "Somalia", "Azerbaijan")) %>% 
+  left_join(Indicators %>%  select(Country.Code, PV.EST) %>% group_by(Country.Code) %>% 
+              summarise(PV.EST = mean(PV.EST, na.rm = TRUE)) %>% 
+              mutate(`Political Stability and Absence of Violence/Terrorism` = rank(PV.EST)), 
+            by = c("iso3"="Country.Code")) %>% select(-iso3, -PV.EST) %>% 
   reshape2::melt() %>% 
   group_by(variable) %>% 
   mutate(value = value / sum(value)) %>%

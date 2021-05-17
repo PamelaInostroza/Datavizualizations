@@ -2,7 +2,7 @@
 <html>
     <head lang="en">
         <meta charset="utf-8">
-        <title>World conflicts visualizations</title>
+       
         <link rel="icon" type="image/ico" href="./assets/favicon.ico">
         <link rel="stylesheet" type="text/css" href="./assets/styles.css">
         <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -10,9 +10,7 @@
     </head>
 
     <body>
-        <H1>Are governmental and other indicators related in some way with the number of conflicts an fatalities a continent/region have?</H1> 
-        <h3>In this visualization twelve indicators are shown along with the number of conflicts and fatalities that occur in the years 2018-2021 (february).
-            
+       
         </h3>
             <center>
             <select name="plan" id="selectButton">
@@ -88,9 +86,31 @@
 
         </script>
 
-   
+   <!-- <table>
+       <tr>
+           <td> -->
             <div class="indicators-lines" id="parallel">
                 <script src="main.js"></script>
 
+            <div class="table" id = "tableContainer">
+            <!-- </td>
+            <td> -->
+            <!-- <table>
+                <th>Indicator</th>
+                <tr>
+                    <td>Fatalities (% of total)</td>
+                    <td><script>
+                      tableDiv.event.target.__data__["Fatalities (% of total)"]
+                        </script></td>
+                </tr>
+                <tr><td>Fatalities (mean)</td>
+                    <td><script>
+                            tableDiv.event.target.__data__["Fatalities (Average % of country population per 1000)"]
+                        </script></td>
+                </tr>
+            </table> -->
+        <!-- </td>
+        </tr>
+        </table> -->
     </body>
 </html>

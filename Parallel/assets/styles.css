@@ -222,6 +222,20 @@
   border: solid #ddd 1px;
   border-radius: 10px;
 }
+/* .table {
+  width: 130px;
+  height: 560px;
+  border: solid #ddd 1px;
+  border-radius: 10px;
+} */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
 .indicators-lines1 {
     width: 410px;
     height: 510px;

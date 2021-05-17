@@ -46,7 +46,7 @@
 			//////////////////////// Set-Up ////////////////////////////// 
 			////////////////////////////////////////////////////////////// 
 
-			var margin = {top: 100, right: 100, bottom: 100, left: 100},
+			var margin = {top: 100, right: 300, bottom: 100, left: 100},
 				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
 				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 					
@@ -62,13 +62,13 @@
 
 
 			var color = d3.scale.ordinal()
-				.range(["#EDC951","#CC333F","#00A0B0", "#00CC00", "#FF00FF","#995384", "#999384", "#649384"]);
+				.range(["#EDC951","#CC333F","#00A0B0", "#00CC00", "#FF00FF","#995384", "#999384", "#649384", "#006400","#FF4500"]);
 				
 			var radarChartOptions = {
 			  w: width,
 			  h: height,
 			  margin: margin,
-			  maxValue: 0.5,
+			  maxValue: 0.2,
 			  levels: 5,
 			  roundStrokes: true,
 			  color: color

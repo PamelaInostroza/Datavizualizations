@@ -99,8 +99,7 @@ function RadarChart(id, data, options) {
 	   .attr("dy", "0.4em")
 	   .style("font-size", "10px")
 	   .attr("fill", "#737373")
-	   .text(function(d,i) { return Format(maxValue * d/cfg.levels); });
-
+	   .text(function(d,i) { return  Format(maxValue * d/cfg.levels); });
 	/////////////////////////////////////////////////////////
 	//////////////////// Draw the axes //////////////////////
 	/////////////////////////////////////////////////////////
@@ -163,11 +162,11 @@ function RadarChart(id, data, options) {
 			//Dim all blobs
 			d3.selectAll(".radarArea")
 				.transition().duration(200)
-				.style("fill-opacity", 0.1); 
+				.style("fill-opacity", 0); 
 			//Bring back the hovered over blob
 			d3.select(this)
 				.transition().duration(200)
-				.style("fill-opacity", 0.7);	
+				.style("fill-opacity", 1);	
 		})
 		.on('mouseout', function(){
 			//Bring back all blobs
@@ -194,7 +193,7 @@ function RadarChart(id, data, options) {
 		.attr("cx", function(d,i){ return rScale(d.value) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("cy", function(d,i){ return rScale(d.value) * Math.sin(angleSlice*i - Math.PI/2); })
 		.style("fill", function(d,i,j) { return cfg.color(j); })
-		.style("fill-opacity", 0.8);
+		.style("fill-opacity", 0);
 
 	/////////////////////////////////////////////////////////
 	//////// Append invisible circles for tooltip ///////////
@@ -217,7 +216,7 @@ function RadarChart(id, data, options) {
 		.style("fill", "none")
 		.style("pointer-events", "all")
 		.on("mouseover", function(d,i) {
-			newX =  parseFloat(d3.select(this).attr('cx')) - 10;
+			newX =  parseFloat(d3.select(this).attr('cx')) - 50;
 			newY =  parseFloat(d3.select(this).attr('cy')) - 10;
 					
 			tooltip
@@ -229,7 +228,7 @@ function RadarChart(id, data, options) {
 		})
 		.on("mouseout", function(){
 			tooltip.transition().duration(200)
-				.style("opacity", 0);
+				.style("opacity", 1);
 		});
 		
 	//Set up the small tooltip for when you hover over a circle
@@ -259,7 +258,7 @@ function RadarChart(id, data, options) {
 		while (word = words.pop()) {
 		  line.push(word);
 		  tspan.text(line.join(" "));
-		  if (tspan.node().getComputedTextLength() > width) {
+		  if (tspan.node().getComputedTextLength() > width + 40) {
 			line.pop();
 			tspan.text(line.join(" "));
 			line = [word];
@@ -271,18 +270,26 @@ function RadarChart(id, data, options) {
 	
 
 // Handmade legend
-svg.append("circle").attr("cx",550).attr("cy",30).attr("r", 6).style("fill", "#EDC951")
-svg.append("circle").attr("cx",550).attr("cy",60).attr("r", 6).style("fill", "#CC333F")
-svg.append("circle").attr("cx",550).attr("cy",90).attr("r", 6).style("fill", "#00A0B0")
-svg.append("circle").attr("cx",550).attr("cy",120).attr("r", 6).style("fill", "#00CC00")
-svg.append("circle").attr("cx",550).attr("cy",150).attr("r", 6).style("fill", "#FF00FF")
-//svg.append("circle").attr("cx",200).attr("cy",270).attr("r", 6).style("fill", "#995384")
-svg.append("text").attr("x", 570).attr("y", 30).text("Afghanistan").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("circle").attr("cx",550).attr("cy",60).attr("r", 6).style("fill", "#EDC951")
+svg.append("circle").attr("cx",550).attr("cy",90).attr("r", 6).style("fill", "#CC333F")
+svg.append("circle").attr("cx",550).attr("cy",120).attr("r", 6).style("fill", "#00A0B0")
+svg.append("circle").attr("cx",550).attr("cy",150).attr("r", 6).style("fill", "#00CC00")
+svg.append("circle").attr("cx",550).attr("cy",180).attr("r", 6).style("fill", "#FF00FF")
+//svg.append("circle").attr("cx",550).attr("cy",210).attr("r", 6).style("fill", "#995384")
+//svg.append("circle").attr("cx",550).attr("cy",240).attr("r", 6).style("fill", "#999384")
+// svg.append("circle").attr("cx",550).attr("cy",270).attr("r", 6).style("fill", "#649384")
+// svg.append("circle").attr("cx",550).attr("cy",300).attr("r", 6).style("fill", "#006400")
+// svg.append("circle").attr("cx",550).attr("cy",330).attr("r", 6).style("fill", "#FF4500")
 svg.append("text").attr("x", 570).attr("y", 60).text("India").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 570).attr("y", 90).text("Syria").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 570).attr("y", 120).text("Ukraine").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 570).attr("y", 150).text("United States").style("font-size", "15px").attr("alignment-baseline","middle")
-//svg.append("text").attr("x", 220).attr("y", 270).text("India").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 90).text("Mexico").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 120).text("Syria").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 150).text("Ukraine").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 180).text("United States").style("font-size", "15px").attr("alignment-baseline","middle")
+//svg.append("text").attr("x", 570).attr("y", 210).text("United States").style("font-size", "15px").attr("alignment-baseline","middle")
+//svg.append("text").attr("x", 570).attr("y", 240).text("United States").style("font-size", "15px").attr("alignment-baseline","middle")
+// svg.append("text").attr("x", 570).attr("y", 270).text("Somalia").style("font-size", "15px").attr("alignment-baseline","middle")
+// svg.append("text").attr("x", 570).attr("y", 300).text("Syria").style("font-size", "15px").attr("alignment-baseline","middle")
+// svg.append("text").attr("x", 570).attr("y", 330).text("Ukraine").style("font-size", "15px").attr("alignment-baseline","middle")
 
 
 }//RadarChart

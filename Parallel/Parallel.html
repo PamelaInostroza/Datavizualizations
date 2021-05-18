@@ -2,7 +2,6 @@
 <html>
     <head lang="en">
         <meta charset="utf-8">
-       
         <link rel="icon" type="image/ico" href="./assets/favicon.ico">
         <link rel="stylesheet" type="text/css" href="./assets/styles.css">
         <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -10,9 +9,7 @@
     </head>
 
     <body>
-       
-        </h3>
-            <center>
+                  <center>
             <select name="plan" id="selectButton">
                 <option value="none" selected disabled hidden>
                   Select a Year
@@ -37,19 +34,19 @@
                     </li>  
                     <li>
                         <label class="container2">Asia
-                        <input type="checkbox" name="continent" value="Asia" checked="checked">
+                        <input type="checkbox" name="continent" value="Asia" >
                         <span class="checkmark2"></span>
                         </label>
                     </li> 
                     <li>
                         <label class="container3">Africa
-                        <input type="checkbox" name="continent" value="Africa" checked="checked">
+                        <input type="checkbox" name="continent" value="Africa" >
                         <span class="checkmark3"></span>
                         </label>
                     </li>
                     <li>
                         <label class="container4">Europe
-                        <input type="checkbox" name="continent" value="Europe" checked="checked">
+                        <input type="checkbox" name="continent" value="Europe" >
                         <span class="checkmark4"></span>
                         </label>
                     </li>
@@ -86,31 +83,19 @@
 
         </script>
 
-   <!-- <table>
+   <table>
        <tr>
-           <td> -->
+           <td>
             <div class="indicators-lines" id="parallel">
-                <script src="main.js"></script>
-
-            <div class="table" id = "tableContainer">
-            <!-- </td>
-            <td> -->
-            <!-- <table>
-                <th>Indicator</th>
-                <tr>
-                    <td>Fatalities (% of total)</td>
-                    <td><script>
-                      tableDiv.event.target.__data__["Fatalities (% of total)"]
-                        </script></td>
-                </tr>
-                <tr><td>Fatalities (mean)</td>
-                    <td><script>
-                            tableDiv.event.target.__data__["Fatalities (Average % of country population per 1000)"]
-                        </script></td>
-                </tr>
-            </table> -->
-        <!-- </td>
+            </td>
+            <td>
+            <table id="valuesTable">
+                
+               
+            </table>
+        </td>
         </tr>
-        </table> -->
+        </table>
+        <script src="main.js"></script>
     </body>
 </html>

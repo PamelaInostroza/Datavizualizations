@@ -217,17 +217,17 @@
 }
 /*****/
 .indicators-lines {
-  width: 1030px;
+  width: 810px;
   height: 560px;
   border: solid #ddd 1px;
   border-radius: 10px;
 }
-/* .table {
+.table {
   width: 130px;
   height: 560px;
   border: solid #ddd 1px;
   border-radius: 10px;
-} */
+}
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;

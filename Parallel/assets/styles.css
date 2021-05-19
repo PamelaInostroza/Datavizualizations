@@ -47,6 +47,18 @@
   -ms-user-select: none;
   user-select: none;
 }
+.container5 {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 /* Hide the browser's default checkbox */
 .container1 input {
@@ -71,6 +83,13 @@
   width: 0;
 }
 .container4 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container5 input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -110,6 +129,14 @@
   width: 13px;
   background-color: #eee;
 }
+.checkmark5 {
+  position: absolute;
+  top: 10;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: #eee;
+}
 /* On mouse-over, add a grey background color */
 .container1:hover input ~ .checkmark1 {
   background-color: #ccc;
@@ -121,6 +148,9 @@
   background-color: #ccc;
 }
 .container4:hover input ~ .checkmark4 {
+  background-color: #ccc;
+}
+.container5:hover input ~ .checkmark5 {
   background-color: #ccc;
 }
 /* When the checkbox is checked, add a blue background */
@@ -135,6 +165,9 @@
 }
 .container4 input:checked ~ .checkmark4 {
   background-color: #3CB371;
+}
+.container5 input:checked ~ .checkmark5 {
+  background-color: #FF8C00;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark1:after {
@@ -157,6 +190,11 @@
   position: absolute;
   display: none;
 }
+.checkmark5:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 /* Show the checkmark when checked */
 .container1 input:checked ~ .checkmark1:after {
   display: block;
@@ -168,6 +206,9 @@
   display: block;
 }
 .container4 input:checked ~ .checkmark4:after {
+  display: block;
+}
+.container5 input:checked ~ .checkmark5:after {
   display: block;
 }
 /* Style the checkmark/indicator */
@@ -205,6 +246,17 @@
   transform: rotate(45deg);
 }
 .container4 .checkmark4:after {
+  left: 2px;
+  top: 2px;
+  width: 4px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container5 .checkmark5:after {
   left: 2px;
   top: 2px;
   width: 4px;
@@ -261,9 +313,9 @@ ul.checkbox  {
   } 
 
 ul.checkbox li { 
-    border: 1px transparent solid; 
+    border: 5px transparent solid; 
     display:inline-block;
-    width: 6em;
+    width: 8em;
   }
 
   fieldset.group  { 

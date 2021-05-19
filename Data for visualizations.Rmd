@@ -52,43 +52,39 @@ str(Indicators)
 
 Conflicts <- read.csv("Data/Worldconflicts2018-2021.csv")
 str(Conflicts)
-ConflictsData <- Conflicts %>% mutate(Gactor1 = case_when(inter1 == 1 ~ "Government or mutinous force",
-                                         inter1 == 2 ~ "Rebel force",
-                                         inter1 == 3 ~ "Political militia",
-                                         inter1 == 4 ~ "Ethnic militia",
-                                         inter1 == 5 ~ "Rioters",
-                                         inter1 == 6 ~ "Protesters",
-                                         inter1 == 7 ~ "Civilians",
-                                         inter1 == 8 ~ "Outside/external force"),
-                     Gactor2 = case_when(inter2 == 1 ~ "Government or mutinous force",
-                                         inter2 == 2 ~ "Rebel force",
-                                         inter2 == 3 ~ "Political militia",
-                                         inter2 == 4 ~ "Ethnic militia",
-                                         inter2 == 5 ~ "Rioters",
-                                         inter2 == 6 ~ "Protesters",
-                                         inter2 == 7 ~ "Civilians",
-                                         inter2 == 8 ~ "Outside/external force"),
-                     actor2 = case_when(actor2 == "" ~ "Single actor event",
-                                        TRUE ~ actor2),
-                     Gactor2 = case_when(Gactor2 == "" ~ "Single actor event",
-                                        TRUE ~ Gactor2)) %>% 
-  mutate(continent = case_when(region %in% c("South Asia", "Southeast Asia", "East Asia" , 
-                                             "Caucasus and Central Asia", "Middle East") ~ "Asia",
+ConflictsData <- Conflicts %>% mutate(Gactor1 = 
+                                        case_when(inter1 == 1 ~ "Government or mutinous force",
+                                                  inter1 == 2 ~ "Rebel force",
+                                                  inter1 == 3 ~ "Political militia",
+                                                  inter1 == 4 ~ "Ethnic militia",
+                                                  inter1 == 5 ~ "Rioters",
+                                                  inter1 == 6 ~ "Protesters",
+                                                  inter1 == 7 ~ "Civilians",
+                                                  inter1 == 8 ~ "Outside/external force"),
+                                      Gactor2 = case_when(inter2 == 1 ~ "Government or mutinous force",
+                                                          inter2 == 2 ~ "Rebel force",
+                                                          inter2 == 3 ~ "Political militia",
+                                                          inter2 == 4 ~ "Ethnic militia",
+                                                          inter2 == 5 ~ "Rioters",
+                                                          inter2 == 6 ~ "Protesters",
+                                                          inter2 == 7 ~ "Civilians",
+                                                          inter2 == 8 ~ "Outside/external force"),
+                                      actor2 = case_when(actor2 == "" ~ "Single actor event",
+                                                         TRUE ~ actor2),                     
+                                      Gactor2 = case_when(Gactor2 == "" ~ "Single actor event",
+                                                          TRUE ~ Gactor2)) %>% 
+  mutate(continent = case_when(region %in% c("South Asia", "Southeast Asia", "East Asia") ~ "Asia",
                                region %in% c("North America", "South America", "Central America", "Caribbean") ~ "America",
                                region %in% c("Europe") ~ "Europe",
-                               region %in% c("Middle Africa", "Eastern Africa", "Southern Africa", 
-                                             "Northern Africa", "Western Africa") ~ "Africa" )) %>% 
-  
-  mutate(source_scale2 = case_when(source_scale %in% c("International", "National-International",
-                                                       "Subnational-International",
-                                                      "Local partner-International", "Regional-International", 
-                                                      "New media-International") ~ "International",
-                                  source_scale %in% c("National", "National-Regional", "Other-National",
-                                                      "Local partner-National","New media-National") ~ "National",
-                                  source_scale %in% c("New media", "Local partner-New media", "Other-New media",
-                                                      "New media-Subnational", "New media-Regional") ~ "New media",
-                                  source_scale %in% c("Subnational", "Regional", "Other-Subnational", 
-                                                      "Subnational-National", "Subnational-Regional", "Local partner-Regional") ~ "Regional",
+                               region %in% c("Middle Africa", "Eastern Africa", "Southern Africa", "Western Africa") ~ "Africa",
+                               region %in% c("Caucasus and Central Asia","Middle East", "Northern Africa") ~ "Caucasus and the Middle East")) %>% 
+  mutate(source_scale2 = case_when(source_scale %in% c("International", "National-International", "Subnational-International", "Local partner-International",
+                                                      "Regional-International", "New media-International") ~ "International",
+                                  source_scale %in% c("National", "National-Regional", "Other-National", "Local partner-National","New media-National") ~ "National",
+                                  source_scale %in% c("New media", "Local partner-New media", "Other-New media", "New media-Subnational", 
+                                                      "New media-Regional") ~ "New media",
+                                  source_scale %in% c("Subnational", "Regional", "Other-Subnational", "Subnational-National", "Subnational-Regional", 
+                                                      "Local partner-Regional") ~ "Regional",
                                   TRUE ~ "Other")) %>% 
   mutate(region2 = case_when(region == "Europe" & country %in% c("Austria","Belgium","France","Germany","Ireland","Liechtenstein","Luxembourg",
                                             "Monaco","Netherlands","Switzerland","United Kingdom","Vatican City","Bailiwick of Jersey",
@@ -100,7 +96,7 @@ ConflictsData <- Conflicts %>% mutate(Gactor1 = case_when(inter1 == 1 ~ "Governm
                              region == "Europe" & country %in% c("Albania", "Andorra", "Bosnia and Herzegovina", "Bulgaria", "Croatia","Cyprus", 
                                             "Greece", "Italy", "Malta", "Portugal", "Romania", "San Marino", "Slovenia", 
                                             "Spain", "North Macedonia", "Yugoslavia","Gibraltar") ~ "Southern Europe",
-         TRUE ~ region)) %>% 
+                             TRUE ~ region)) %>% 
   mutate(Motiv = case_when(grepl("coronavirus|pandemic", tolower(notes)) ~ "Covid",
                            grepl("politic", tolower(notes)) ~ "Political",
                            grepl("government|election|activist|leader|payment|authorities|corruption|resignation|price|disobedience|rebellion", 
@@ -116,12 +112,14 @@ ConflictsData <- Conflicts %>% mutate(Gactor1 = case_when(inter1 == 1 ~ "Governm
                            grepl("climate|weather|pollution|nuclear|environment|ecolog", tolower(notes)) ~ "Environment",
                            grepl("health|hospital|sanitary|medical", tolower(notes)) ~ "Health",
                            TRUE ~ "Other"))
+
 ConflictsData %>% filter(year ==2020) %>% 
   group_by(year,Motiv) %>% 
   count()
   
 head(ConflictsData)
 ConflictsData %>% select(source_scale2,source_scale) %>% unique() %>% arrange(source_scale2)
+
 SummaryConflicts <- ConflictsData %>% group_by(year, continent, region2, iso3, country) %>% 
   summarise(Conflicts = n(),
             Fatalities = sum(fatalities, na.rm = TRUE)) %>% 
@@ -235,7 +233,7 @@ cor[1:2,]
 
 
 # For parallel coordinates
-Ind <- c("IT.NET.USER.ZS", "IT.CEL.SETS", "ST.INT.ARVL","ST.INT.DPRT", "SH.DYN.MORT", "SP.POP.GROW")#"Fatalities2", "Conflicts2", 
+Ind <- c("Fatalities2", "Conflicts2", "IT.NET.USER.ZS", "IT.CEL.SETS", "ST.INT.ARVL","ST.INT.DPRT", "SH.DYN.MORT", "SP.POP.GROW") 
 ParallelCoordinatesVis1 <- SummaryConflicts   %>% 
   select(year, continent, region2, country, all_of(Ind)) %>% 
   arrange(year, continent, region2) %>% 
@@ -247,12 +245,12 @@ ParallelCoordinatesVis1 <- SummaryConflicts   %>%
   mutate_if(is.numeric, round, 1) %>% 
   mutate_if(~any(is.na(.)),~if_else(is.na(.),0,.)) %>% 
   rename(region = region2,
-         #`Conflicts (Average % of country participation in the region)` = Conflicts2,
-         #`Fatalities (Average % of country population per 1000)` = Fatalities2,
+         `Conflicts (Average % of country participation in the region)` = Conflicts2,
+         `Fatalities (Average % of country population per 1000)` = Fatalities2,
          `Individuals using the Internet (Mean % of population)` = IT.NET.USER.ZS, 
-  `Mobile cellular subscriptions (Mean per 10 million)` = IT.CEL.SETS, 
-  `International tourism, number of arrivals (Mean per 10 million)` = ST.INT.ARVL,
-  `International tourism, number of departures (Mean per 10 million)` = ST.INT.DPRT, 
+  #`Mobile cellular subscriptions (Mean per 10 million)` = IT.CEL.SETS, 
+  #`International tourism, number of arrivals (Mean per 10 million)` = ST.INT.ARVL,
+  #`International tourism, number of departures (Mean per 10 million)` = ST.INT.DPRT, 
   `Mortality rate, under-5 (Mean per 1,000 live births)` = SH.DYN.MORT, 
   `Population growth (Mean annual %)` = SP.POP.GROW
   )
@@ -296,21 +294,22 @@ ParallelCoordinatesVis <- ParallelCoordinatesVis1 %>% full_join(ParallelCoordina
                                                                 by = c("year", "continent","region")) %>% 
   select(year, continent, region, 
                                   `Fatalities (% of total)`,
-                          #        `Fatalities (Average % of country population per 1000)`, 
+                                  `Fatalities (Average % of country population per 1000)`, 
                                   `Conflicts (% of total)`, 
-                          #        `Conflicts (Average % of country participation in the region)`,
-                                  `Population growth (Mean annual %)`,
-                                  `Individuals using the Internet (Mean % of population)`,
-                                  `Mobile cellular subscriptions (Mean per 10 million)`,
-                                  `International tourism, number of arrivals (Mean per 10 million)`,
-                                  `International tourism, number of departures (Mean per 10 million)`,
-                                  `Mortality rate, under-5 (Mean per 1,000 live births)`,
+                                  `Conflicts (Average % of country participation in the region)`,
                                   `Control of Corruption (Mean)`,
                                   `Government Effectiveness (Mean)`,
                                   `Political Stability and Absence of Violence/Terrorism (Mean)`,
                                   `Rule of Law (Mean)`,
                                   `Regulatory Quality (Mean)`,
-                                  `Voice and Accountability (Mean)`)
+                                  `Voice and Accountability (Mean)`,
+                                  `Population growth (Mean annual %)`,
+                                  `Individuals using the Internet (Mean % of population)`,
+                        #          `Mobile cellular subscriptions (Mean per 10 million)`,
+                         #         `International tourism, number of arrivals (Mean per 10 million)`,
+                        #          `International tourism, number of departures (Mean per 10 million)`,
+                                  `Mortality rate, under-5 (Mean per 1,000 live births)`
+                                  )
 write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates.csv", na = "")
 
 ```

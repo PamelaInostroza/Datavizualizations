@@ -33,19 +33,22 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
         continent: d.continent,
         region: d.region,
         "Fatalities (% of total)": +d["Fatalities (% of total)"],
+        "Fatalities (Average % of country population per 1000)": +d["Fatalities (Average % of country population per 1000)"],
         "Conflicts (% of total)": +d["Conflicts (% of total)"],
-        "Population growth (Mean annual %)": +d["Population growth (Mean annual %)"],
-        "Individuals using the Internet (Mean % of population)": +d["Individuals using the Internet (Mean % of population)"], 
-        "Mobile cellular subscriptions (Mean per 10 million)": +d["Mobile cellular subscriptions (Mean per 10 million)"], 
-        "International tourism, number of arrivals (Mean per 10 million)": +d["International tourism, number of arrivals (Mean per 10 million)"], 
-        "International tourism, number of departures (Mean per 10 million)": +d["International tourism, number of departures (Mean per 10 million)"], 
-        "Mortality rate, under-5 (Mean per 1,000 live births)": +d["Mortality rate, under-5 (Mean per 1,000 live births)"], 
+        "Conflicts (Average % of country participation in the region)": +d["Conflicts (Average % of country participation in the region)"],
+        //"Mobile cellular subscriptions (Mean per 10 million)": +d["Mobile cellular subscriptions (Mean per 10 million)"], 
+        //"International tourism, number of arrivals (Mean per 10 million)": +d["International tourism, number of arrivals (Mean per 10 million)"], 
+        //"International tourism, number of departures (Mean per 10 million)": +d["International tourism, number of departures (Mean per 10 million)"], 
         "Control of Corruption (Mean)": +d["Control of Corruption (Mean)"],
         "Government Effectiveness (Mean)": +d["Government Effectiveness (Mean)"],
         "Political Stability and Absence of Violence/Terrorism (Mean)": +d["Political Stability and Absence of Violence/Terrorism (Mean)"],
         "Rule of Law (Mean)": +d["Rule of Law (Mean)"],
         "Regulatory Quality (Mean)": +d["Regulatory Quality (Mean)"],
-        "Voice and Accountability (Mean)": +d["Voice and Accountability (Mean)"]
+        "Voice and Accountability (Mean)": +d["Voice and Accountability (Mean)"],
+        "Population growth (Mean annual %)": +d["Population growth (Mean annual %)"],
+        "Individuals using the Internet (Mean % of population)": +d["Individuals using the Internet (Mean % of population)"], 
+        "Mortality rate, under-5 (Mean per 1,000 live births)": +d["Mortality rate, under-5 (Mean per 1,000 live births)"] 
+    
     }
     }).then(data => {
 
@@ -96,9 +99,9 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
         y.get('Rule of Law (Mean)').domain(y.get('Rule of Law (Mean)').domain().reverse());
         y.get('Voice and Accountability (Mean)').domain(y.get('Voice and Accountability (Mean)').domain().reverse());
         y.get('Individuals using the Internet (Mean % of population)').domain(y.get('Individuals using the Internet (Mean % of population)').domain().reverse());
-        y.get('Mobile cellular subscriptions (Mean per 10 million)').domain(y.get('Mobile cellular subscriptions (Mean per 10 million)').domain().reverse());
-        y.get('International tourism, number of arrivals (Mean per 10 million)').domain(y.get('International tourism, number of arrivals (Mean per 10 million)').domain().reverse());
-        y.get('International tourism, number of departures (Mean per 10 million)').domain(y.get('International tourism, number of departures (Mean per 10 million)').domain().reverse());
+        //y.get('Mobile cellular subscriptions (Mean per 10 million)').domain(y.get('Mobile cellular subscriptions (Mean per 10 million)').domain().reverse());
+        //y.get('International tourism, number of arrivals (Mean per 10 million)').domain(y.get('International tourism, number of arrivals (Mean per 10 million)').domain().reverse());
+        //y.get('International tourism, number of departures (Mean per 10 million)').domain(y.get('International tourism, number of departures (Mean per 10 million)').domain().reverse());
         y.get('Mortality rate, under-5 (Mean per 1,000 live births)').domain(y.get('Mortality rate, under-5 (Mean per 1,000 live births)').domain().reverse());
         y.get('Population growth (Mean annual %)').domain(y.get('Population growth (Mean annual %)').domain().reverse());
         
@@ -108,14 +111,16 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
 
         const colorScale = d3.scaleOrdinal()
             //.domain(selectedItems)
-            .domain(["Eastern Europe", "Southern Europe", "Northern Europe", "Western Europe",
-                    "Eastern Africa", "Middle Africa", "Northern Africa", "Southern Africa", "Western Africa",
-                    "Caribbean", "Central America", "North America", "South America",
-                    "Caucasus and Central Asia", "East Asia", "Middle East", "South Asia","Southeast Asia" ])
-            .range(["#7FFF00","#32CD32","#00FF00","#228B22", // green
-                    "#CD5C5C", "#DC143C", "#B22222", "#FF0000", "#8B0000", //red
-                    "#20B2AA","#5F9EA0","#008B8B","#008080", //cyan
-                    "#4169E1", "#0000FF", "#0000CD", "#00008B","#000080" //blue
+            .domain(["Caribbean", "Central America", "North America", "South America",
+                    "East Asia", "South Asia","Southeast Asia",
+                    "Eastern Africa", "Middle Africa", "Southern Africa", "Western Africa",
+                    "Eastern Europe", "Southern Europe", "Northern Europe", "Western Europe",
+                    "Northern Africa",  "Caucasus and Central Asia","Middle East"])
+            .range(["#20B2AA","#5F9EA0","#008B8B","#008080", //cyan
+                    "#4169E1", "#0000FF", "#0000CD", //blue
+                    "#CD5C5C", "#DC143C", "#B22222", "#FF0000", //red
+                    "#7FFF00","#32CD32","#00FF00","#228B22", // green
+                    "#FF8C00", "#FFA500", "#FFD700" //orange
             ])
             //.range(d3.schemeTableau10)
             ;
@@ -124,13 +129,13 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
         
         const x0 = d3.axisLeft(y.get('Fatalities (% of total)')).tickFormat(d3.format("d"));
         const x1 = d3.axisLeft(y.get('Conflicts (% of total)')).tickFormat(d3.format("d"));
-        //const x8 = d3.axisLeft(y.get('Fatalities (Average % of country population per 1000)')).tickFormat(d3.format("d"));
-        //const x9 = d3.axisLeft(y.get('Conflicts (Average % of country participation in the region)')).tickFormat(d3.format("d"));
+        const x8 = d3.axisLeft(y.get('Fatalities (Average % of country population per 1000)')).tickFormat(d3.format("d"));
+        const x9 = d3.axisLeft(y.get('Conflicts (Average % of country participation in the region)')).tickFormat(d3.format("d"));
         const x15 = d3.axisLeft(y.get('Population growth (Mean annual %)')).tickFormat(d3.format(".2n"));
         const x10 = d3.axisLeft(y.get('Individuals using the Internet (Mean % of population)')).tickFormat(d3.format("d"));
-        const x11 = d3.axisLeft(y.get('Mobile cellular subscriptions (Mean per 10 million)')).tickFormat(d3.format(".2n"));
-        const x12 = d3.axisLeft(y.get('International tourism, number of arrivals (Mean per 10 million)')).tickFormat(d3.format(".2n"));
-        const x13 = d3.axisLeft(y.get('International tourism, number of departures (Mean per 10 million)')).tickFormat(d3.format(".2n"));
+        //const x11 = d3.axisLeft(y.get('Mobile cellular subscriptions (Mean per 10 million)')).tickFormat(d3.format(".2n"));
+        //const x12 = d3.axisLeft(y.get('International tourism, number of arrivals (Mean per 10 million)')).tickFormat(d3.format(".2n"));
+        //const x13 = d3.axisLeft(y.get('International tourism, number of departures (Mean per 10 million)')).tickFormat(d3.format(".2n"));
         const x14 = d3.axisLeft(y.get('Mortality rate, under-5 (Mean per 1,000 live births)')).tickFormat(d3.format(".2n"));
         const x2 = d3.axisLeft(y.get('Control of Corruption (Mean)')).tickFormat(d3.format(".2n"));
         const x3 = d3.axisLeft(y.get('Government Effectiveness (Mean)')).tickFormat(d3.format(".2n"));
@@ -142,13 +147,13 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
 
         g.append("g").attr("transform", "translate(" + x('Fatalities (% of total)') + ")").call(x0);
         g.append("g").attr("transform", "translate(" + x('Conflicts (% of total)') + ")").call(x1);
-        //g.append("g").attr("transform", "translate(" + x('Fatalities (Average % of country population per 1000)') + ")").call(x8);
-        //g.append("g").attr("transform", "translate(" + x('Conflicts (Average % of country participation in the region)') + ")").call(x9);
+        g.append("g").attr("transform", "translate(" + x('Fatalities (Average % of country population per 1000)') + ")").call(x8);
+        g.append("g").attr("transform", "translate(" + x('Conflicts (Average % of country participation in the region)') + ")").call(x9);
         g.append("g").attr("transform", "translate(" + x('Population growth (Mean annual %)') + ")").call(x15);
         g.append("g").attr("transform", "translate(" + x('Individuals using the Internet (Mean % of population)') + ")").call(x10);
-        g.append("g").attr("transform", "translate(" + x('Mobile cellular subscriptions (Mean per 10 million)') + ")").call(x11);
-        g.append("g").attr("transform", "translate(" + x('International tourism, number of arrivals (Mean per 10 million)') + ")").call(x12);
-        g.append("g").attr("transform", "translate(" + x('International tourism, number of departures (Mean per 10 million)') + ")").call(x13);
+        //g.append("g").attr("transform", "translate(" + x('Mobile cellular subscriptions (Mean per 10 million)') + ")").call(x11);
+        //g.append("g").attr("transform", "translate(" + x('International tourism, number of arrivals (Mean per 10 million)') + ")").call(x12);
+        //g.append("g").attr("transform", "translate(" + x('International tourism, number of departures (Mean per 10 million)') + ")").call(x13);
         g.append("g").attr("transform", "translate(" + x('Mortality rate, under-5 (Mean per 1,000 live births)') + ")").call(x14);
         g.append("g").attr("transform", "translate(" + x('Control of Corruption (Mean)') + ")").call(x2);
         g.append("g").attr("transform", "translate(" + x('Government Effectiveness (Mean)') + ")").call(x3);
@@ -282,7 +287,7 @@ function hover_in1() {
     // The this keyword allows you to obtain the element you select as an object.
     //console.log(this);
     // You can simply change the attributes of this DOM element as follows.
-    d3.select(this).attr("stroke", "red").attr("stroke-width", 2.5);
+    d3.select(this).attr("stroke", "black");
     
     // Table -- update values
     const variables = Object.keys(event.target.__data__); 
@@ -303,8 +308,8 @@ function hover_in1() {
         .duration(200)		
         .style("opacity", .9);		
     div.html("<strong>" + event.target.__data__.year + "</strong>" + "<br/>" +
-    "<strong>" + event.target.__data__.continent + "</strong>" + "<br/>" + 
-    "<strong>" + event.target.__data__.region + "</strong>"
+            "<strong>" + event.target.__data__.continent + "</strong>" + "<br/>" + 
+            "<strong>" + event.target.__data__.region + "</strong>"
         // "Fatalities (%): " + event.target.__data__["Fatalities (% of total)"]+ "<br/>" + 
         // "Fatalities (mean): " + event.target.__data__["Fatalities (Average % of country population per 1000)"]  + "<br/>" + 
         // "Conflicts (%): " + event.target.__data__["Conflicts (% of total)"] + "<br/>" + 

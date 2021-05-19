@@ -203,7 +203,7 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
             .enter().append("path")
             .attr("d", d => line(d3.cross(keystodraw, [d], (key, d) => [key, d[key]])))
             .attr("stroke", function (d){return colorScale(d.region)})
-            .attr("stroke-width", 3.5)
+            .attr("stroke-width", 2.5)
             .attr("stroke-opacity", 0.4)
             .attr("fill", "none")
             .on("mouseover", hover_in1)  // functions are below.
@@ -237,7 +237,7 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
                 .join("path")
                 .attr("d", d => line(d3.cross(keystodraw, [d], (key, d) => [key, d[key]])))
                 .attr("stroke", function (d){return colorScale(d.region)})
-                .attr("stroke-width", 3.5)
+                .attr("stroke-width", 2.5)
                 .attr("stroke-opacity", 0.4)
                 .attr("fill", "none")
                 .on("mouseover", hover_in1)  // functions are below.
@@ -250,12 +250,12 @@ d3.csv('./assets/ParallelCoordinates.csv', d => {
             // Reverse everything again like it was before hovering.
             d3.select(".continent-paths1").selectAll("path")
                 .attr("stroke", function (d){return colorScale(d.region)})
-                .attr("stroke-width", 3.5)
+                .attr("stroke-width", 2.5)
                 .attr("stroke-opacity", 0.4);
 
             d3.select(".continent-paths2").selectAll("path")
                 .attr("stroke", function (d){return colorScale(d.region)})
-                .attr("stroke-width", 3.5)
+                .attr("stroke-width", 2.5)
                 .attr("stroke-opacity", 0.4);
 
                 div.transition()		

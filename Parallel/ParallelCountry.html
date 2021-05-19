@@ -2,7 +2,6 @@
 <html>
     <head lang="en">
         <meta charset="utf-8">
-        <title>World conflicts visualizations</title>
         <link rel="icon" type="image/ico" href="./assets/favicon.ico">
         <link rel="stylesheet" type="text/css" href="./assets/styles.css">
         <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -10,11 +9,7 @@
     </head>
 
     <body>
-        <H1>Are governmental and other indicators related in some way with the number of conflicts an fatalities a continent/region have?</H1> 
-        <h3>In this visualization twelve indicators are shown along with the number of conflicts and fatalities that occur in the years 2018-2021 (february).
-            
-        </h3>
-            <center>
+                  <center>
             <select name="plan" id="selectButton">
                 <option value="none" selected disabled hidden>
                   Select a Year
@@ -54,26 +49,31 @@
                         <input type="checkbox" name="continent" value="Europe" checked="checked">
                         <span class="checkmark4"></span>
                         </label>
+                    </li>     
+                    <li>
+                        <label class="container5">Caucasus / Middle East
+                        <input type="checkbox" name="continent" value="Caucasus and the Middle East" checked="checked">
+                        <span class="checkmark5"></span>
+                        </label>
                     </li>
 
                 <input id="update" name="updateButton" type="button" value="Update" onclick="updateRegionSelection()">  
                 </ul>     
-
-                
             </center> 
             </fieldset> 
                        
         </div>
 
+        
         <script>
-    
-            let selectedYear = 2020
-            let selectedYear2 = 2020
-            const colorKey = "region";
             
-            // let selectedItems = updateRegionSelection();
-            
-            function updateRegionSelection() {  
+        let selectedYear = 2020
+        const colorKey = "continent";
+
+        let selectedItems = updateRegionSelection();
+
+        // Functions
+        function updateRegionSelection() {  
                 let checkboxes = document.getElementsByName("continent");  
                 let numberOfCheckedItems = 0;  
                 let selectedItems=[];
@@ -86,24 +86,22 @@
                 }
                 return selectedItems;
             }
+
         </script>
 
-<table style="width: 100%">
-    <tr>
-
-        <td>
-            <div class="indicators-lines1" id="parallel1">
-            <script src="main1.js"></script>
+   <table>
+       <tr>
+           <td>
+            <div class="indicators-lines" id="parallel">
+            </td>
+            <td>
+            <table id="valuesTable">
+                
+               
+            </table>
         </td>
-
-        <td>
-        
-            <div class="indicators-lines2" id="parallel2">
-            <script src="main2.js"></script>
-        </td>
-
-    </tr>        
-    </table>
-
+        </tr>
+        </table>
+        <script src="mainCountry.js"></script>
     </body>
 </html>

@@ -232,7 +232,7 @@ cor[1:2,]
 
 
 
-# For parallel coordinates
+# For parallel coordinates regional
 Ind <- c("Fatalities2", "Conflicts2", "IT.NET.USER.ZS", "IT.CEL.SETS", "ST.INT.ARVL","ST.INT.DPRT", "SH.DYN.MORT", "SP.POP.GROW") 
 ParallelCoordinatesVis1 <- SummaryConflicts   %>% 
   select(year, continent, region2, country, all_of(Ind)) %>% 
@@ -311,6 +311,54 @@ ParallelCoordinatesVis <- ParallelCoordinatesVis1 %>% full_join(ParallelCoordina
                                   `Mortality rate, under-5 (Mean per 1,000 live births)`
                                   )
 write.csv(ParallelCoordinatesVis, file = "Data/forvis/ParallelCoordinates.csv", na = "")
+
+
+
+
+# For parallel coordinates national
+Ind <- c("Fatalities2", "Conflicts2", "IT.NET.USER.ZS", "SH.DYN.MORT", "SP.POP.GROW") 
+ParallelCountry1 <- SummaryConflicts   %>% 
+  select(year, continent, region2, country, all_of(Ind),Fatalities, Conflicts, 
+         CC.EST, GE.EST, PV.EST, RL.EST, RQ.EST, VA.EST) %>% 
+  arrange(year, continent, country) %>% 
+  mutate_if(~any(is.na(.)),~if_else(is.na(.),0,.)) %>% 
+  group_by(year) %>% 
+  mutate(Fatalities= Fatalities/sum(Fatalities, na.rm = TRUE)*100,
+         Conflicts = Conflicts/sum(Conflicts, na.rm = TRUE)*100) %>% 
+  mutate_if(is.numeric, round, 1) %>% 
+  rename(region = region2,
+         `Conflicts (Average % of country participation in the region)` = Conflicts2,
+         `Fatalities (Average % of country population per 1000)` = Fatalities2,
+         `Individuals using the Internet (Mean % of population)` = IT.NET.USER.ZS, 
+         `Mortality rate, under-5 (Mean per 1,000 live births)` = SH.DYN.MORT, 
+         `Population growth (Mean annual %)` = SP.POP.GROW,
+         `Conflicts (% of total)` = Conflicts,
+         `Fatalities (% of total)` = Fatalities,
+         `Control of Corruption (Mean)` = CC.EST, 
+         `Government Effectiveness (Mean)` = GE.EST, 
+         `Political Stability and Absence of Violence/Terrorism (Mean)` = PV.EST, 
+         `Rule of Law (Mean)` = RL.EST, 
+         `Regulatory Quality (Mean)` = RQ.EST, 
+         `Voice and Accountability (Mean)` = VA.EST
+         )
+
+ParallelCountry1 <- ParallelCountry1 %>% 
+  select(year, continent, country,
+         `Fatalities (% of total)`,
+         `Fatalities (Average % of country population per 1000)`, 
+         `Conflicts (% of total)`, 
+         `Conflicts (Average % of country participation in the region)`,
+         `Control of Corruption (Mean)`,
+         `Government Effectiveness (Mean)`,
+         `Political Stability and Absence of Violence/Terrorism (Mean)`,
+         `Rule of Law (Mean)`,
+         `Regulatory Quality (Mean)`,
+         `Voice and Accountability (Mean)`,
+         `Population growth (Mean annual %)`,
+         `Individuals using the Internet (Mean % of population)`,
+         `Mortality rate, under-5 (Mean per 1,000 live births)`
+         )
+write.csv(ParallelCountry1, file = "Data/forvis/ParallelCountry.csv", na = "")
 
 ```
 

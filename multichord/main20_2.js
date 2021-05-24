@@ -1,6 +1,9 @@
 // Adapted from Mike Bostock's UberData Chord diagram example
 //   https://bost.ocks.org/mike/uberdata/
 
+
+
+
 // Formatting functions
 var formatPercent = d3.format(".1%");
 
@@ -17,19 +20,19 @@ var formatNumber = function (x){
 }
 
 // Chord chart elements
-var arc = d3.arc()
+var arc2 = d3.arc()
     .innerRadius(innerRadius)
     .outerRadius(outerRadius);
 
-var layout = d3.multichord()
+var layout2 = d3.multichord()
     .padAngle(.05)
     .sortSubgroups(d3.descending) 
     .sortChords(d3.descending);
 
-var path = d3.ribbon()
+var path2 = d3.ribbon()
     .radius(innerRadius);
 
-var svg = d3.select("#vis1").append("svg")
+var svg2 = d3.select("#vis2").append("svg")
   .attr("width", WIDTH)
   .attr("height", HEIGHT)
   // .attr("x", CHORD_VIS.X)
@@ -37,57 +40,57 @@ var svg = d3.select("#vis1").append("svg")
 
 
 d3.queue()
-    .defer(d3.json, "./assets/MultipleCatChordDiag20.json")
+    .defer(d3.json, "./assets/MultipleCatChordDiag20_2.json")
     .await(ready);
 
-function ready(error, data) {
+function ready(error, data2) {
   if (error) throw error;
 
-  var nodes = data.nodes,
-  categories = data.categories;
+  var nodes2 = data2.nodes,
+  categories2 = data2.categories;
 
-  var chords = layout(data.links)  
-console.log(chords)
+  var chords2 = layout2(data2.links)  
+console.log(chords2)
   // Compute the chord layout.
-  var g =  svg.append("g")
+  var g2 =  svg2.append("g")
     .attr("id", "circle")
     .attr("transform", "translate(" + (WIDTH / 2) + "," + (HEIGHT / 2) + ")")
-    .datum(chords);
+    .datum(chords2);
 
-  g.append("circle")
+  g2.append("circle")
     .attr("r", outerRadius)
 
-  g.append("g").attr("id", "groups");
-  g.append("g").attr("id", "chords");
+  g2.append("g").attr("id", "groups");
+  g2.append("g").attr("id", "chords2");
 
 
-  var group, groupPath, groupText, chord;
+  var group2, groupPath2, groupText2, chord2;
 
   // Add a group per neighborhood.
-  group = g.select("#groups")
+  group2= g2.select("#groups")
     .selectAll("g")
-      .data(function(chords){ return chords.groups})
+      .data(function(chords2){ return chords2.groups})
     .enter().append("g")
-    .attr("class", "group")
+    .attr("class", "group2")
     .on("mouseover", mouseover)
     .on("mouseout", mouseover_restore);
   
   // Add the group arc.
-  groupPath = group.append("path")
-      .attr("id", function(d, i) { return "group" + i; })
-      .attr("d", arc)
-      .style("fill", function(d, i) { return nodes[i].color; });
+  groupPath2 = group2.append("path")
+      .attr("id", function(d, i) { return "group2" + i; })
+      .attr("d", arc2)
+      .style("fill", function(d, i) { return nodes2[i].color; });
 
   // Add a text label.
-  groupText = group.append("text")
+  groupText2 = group2.append("text")
       .attr("x", 6)
       .attr("dy", 15)
       .append("textPath")
-      .attr("xlink:href", function(d, i) { return "#group" + i; })
-      .text(function(d, i) { return nodes[i].name; })
+      .attr("xlink:href", function(d, i) { return "#group2" + i; })
+      .text(function(d, i) { return nodes2[i].name; })
       .attr("opacity", function(d, i) {
         // Hide labels that don't fit
-        if (groupPath._groups[0][i].getTotalLength() / 2 < this.getComputedTextLength()) {
+        if (groupPath2._groups[0][i].getTotalLength() / 2 < this.getComputedTextLength()) {
           return 0;
         } else { 
           return 1;
@@ -96,40 +99,40 @@ console.log(chords)
       .style("font-size", "12px")
 
   // Add a mouseover title.
-  group.append("title").text(function(d, i) {
-    return nodes[i].name
-        + "\n" + "In: " + formatNumber(chords.groups[i].value.in)
-        + "\n" + "Out: " + formatNumber(chords.groups[i].value.out);
+  group2.append("title").text(function(d, i) {
+    return nodes2[i].name
+        + "\n" + "In: " + formatNumber(chords2.groups[i].value.in)
+        + "\n" + "Out: " + formatNumber(chords2.groups[i].value.out);
   });
   
 
   // Add the chords.
-  chord = g.select("#chords").selectAll("g")
-      .data(function(chords) { return chords;})
+  chord = g2.select("#chords2").selectAll("g")
+      .data(function(chords2) { return chords2;})
       .enter().append("g")
       .attr("class", "chord");
 
   chord.append("path")
       .attr("class", "chord")
-      .style("fill", function(d) { return nodes[d.source.index].color; })
-      .attr("d", path)
+      .style("fill", function(d) { return nodes2[d.source.index].color; })
+      .attr("d", path2)
       .on("mouseover", mouseover_types)
       .on("mouseout", mouseover_restore);
 
   // Add a mouseover title for each chord.
   chord.append("title").text(function(d) {
-    return categories[d.source.category].name
-        + "\n" + nodes[d.source.index].name
-        + " → " + nodes[d.target.index].name
+    return categories2[d.source.category].name
+        + "\n" + nodes2[d.source.index].name
+        + " → " + nodes2[d.target.index].name
         + ": " + formatNumber(d.source.value)
-        + "\n" + nodes[d.target.index].name
-        + " → " + nodes[d.source.index].name
+        + "\n" + nodes2[d.target.index].name
+        + " → " + nodes2[d.source.index].name
         + ": " + formatNumber(d.target.value);
   });
 
 
   function mouseover(d) {
-    g.select("#chords").selectAll("path")
+    g2.select("#chords2").selectAll("path")
       .classed("fade", function(p) {
         return p.source.index != d.index
             && p.target.index != d.index;
@@ -138,7 +141,7 @@ console.log(chords)
 
 
   function mouseover_types(d) {
-    g.select("#chords").selectAll("path")
+    g2.select("#chords2").selectAll("path")
       .classed("fade", function(p) {
         return p.source.category != d.source.category
             && p.target.category != d.target.category;
@@ -147,7 +150,7 @@ console.log(chords)
 
 
   function mouseover_restore(d) {
-    g.select("#chords").selectAll("path")
+    g2.select("#chords2").selectAll("path")
       .classed("fade", function(p) {
         return false;
       });

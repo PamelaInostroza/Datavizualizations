@@ -684,6 +684,28 @@ print_json_lines(jsonlite::toJSON(ToJsonData5, pretty = TRUE), 1:30)
 
 validate(data5)
 write(prettify(data5), file = "Data/forvis/DependencyDiagram2.json")
+
+ToJsonData6 <- ConflictsData %>% filter(year == 2020) %>% 
+  select(country, Gactor2, Gactor1) %>% 
+  mutate(Gactor2 = ifelse(is.na(Gactor2), "Single actor", Gactor2), 
+         name = paste0(paste0(paste0("Conflicts.", Gactor2),"."),gsub("\\.","",gsub(",","",gsub(" ","",country)))), 
+         Gactor2 = paste0(paste0(paste0("Conflicts.", Gactor2),"."),gsub("\\.","",gsub(",","",gsub(" ","",country))))) %>% 
+  group_by(name, Gactor1) %>% 
+  summarise(size = n()) %>% 
+  group_by(name) %>% 
+  summarise(size = sum(size),
+    imports = list(Gactor1)) %>% 
+  ungroup() %>% 
+  select(name, size, imports)
+  
+
+data6 <- jsonlite::toJSON(ToJsonData6, pretty = TRUE)
+print_json_lines(jsonlite::toJSON(ToJsonData6, pretty = TRUE), 1:30)
+
+
+validate(data6)
+write(prettify(data6), file = "Data/forvis/DependencyDiagram3.json")
+
 ```
 
 ## Multiple categories chord diagram
@@ -764,6 +786,55 @@ links20 = dataforJson20 %>% tidyr::nest(data = everything()) %>% rename(links = 
 print_json_lines(jsonlite::toJSON(links20, pretty = TRUE), 1:30)
 validate(links20)
 write(prettify(links20), file = "Data/forvis/MultipleCatChordDiag20.json")
+
+
+###Actor2
+ToJsonDataMC_2 <- ConflictsData %>% 
+  arrange(year, Gactor2, Gactor1, region2) %>%
+  group_by(year, Gactor2, Gactor1, region2) %>%
+  mutate(Gactor2 = ifelse(is.na(Gactor2), "Single Actor", Gactor2)) %>%
+  summarise(#fatalities = sum(fatalities),
+            conflicts = n()
+            ) %>%
+  mutate(#fatalities = ifelse(is.na(fatalities), 0, fatalities),
+         conflicts = ifelse(is.na(conflicts), 0, conflicts)
+         ) %>%
+  reshape2::dcast(year   + Gactor2+ Gactor1~ region2) %>%
+  reshape2::melt(id.vars = c("year","Gactor2", "Gactor1"), variable.name = "region2") %>%
+  mutate(value = ifelse(is.na(value), 0, value)) %>%
+  reshape2::dcast(year + Gactor2 + region2 ~ Gactor1) %>%
+  mutate(`Single Actor` = 0) %>% 
+  replace(is.na(.), 0)
+
+dataforJson2 <- ToJsonDataMC_2 %>% 
+  group_by(year , Gactor2) %>%
+  summarise(delete = list(Civilians),
+            delete1= list(`Ethnic militia`),
+            delete2= list(`Government or mutinous force`),
+            delete3= list(`Outside/external force`),
+            delete4= list(`Political militia`),
+            delete5= list(`Protesters`),
+            delete6= list(`Rebel force`),
+            delete7= list(`Rioters`),
+            delete8= list(`Single Actor`)) %>% 
+  select(-Gactor2) %>% ungroup()
+
+dataforJson20_2 <- dataforJson2 %>% filter(year == 2020) %>% select(-year)
+
+name<- colnames(ToJsonDataMC_2 %>% filter(year == 2020))[!colnames(ToJsonDataMC_2 %>% filter(year == 2020)) %in% c("year","Gactor2","region2")]
+color <- c("#4e79a7","#59a14f","#9c755f","#f28e2b","#edc948","#bab0ac","#e15759","#b07aa1","#76b7b2")#,"#ff9da7")
+nodes = data.frame(name, color) %>% tidyr::nest(data = everything()) %>% rename(nodes = data) %>% jsonlite::toJSON()
+
+categories <- ToJsonDataMC_2 %>% filter(year == 2020) %>% select(region2) %>% unique() %>% as.data.frame() %>% 
+  rename(name = region2) %>% tidyr::nest(data = everything()) %>% rename(categories=data) %>% jsonlite::toJSON()
+
+links20_2 = dataforJson20_2 %>% tidyr::nest(data = everything()) %>% rename(links = data) %>% jsonlite::toJSON(pretty = TRUE)
+
+print_json_lines(jsonlite::toJSON(links20_2, pretty = TRUE), 1:30)
+validate(links20_2)
+write(prettify(links20_2), file = "Data/forvis/MultipleCatChordDiag20_2.json")
+
+
 
 #2021
 dataforJson21 <- dataforJson %>% filter(year == 2021) %>% select(-year)
